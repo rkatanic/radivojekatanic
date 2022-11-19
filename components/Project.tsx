@@ -1,9 +1,9 @@
-import { Project } from "../types/project";
-import { DATE_FORMAT } from "../util/dateTimeUtils";
-import { FiZap, FiArrowUpRight } from "react-icons/fi";
-import { TbTerminal2 } from "react-icons/tb";
+import { Project as ProjectType } from "../types/project";
+import { DATE_FORMAT } from "../utils/dateTimeUtils";
+import { FiArrowUpRight } from "react-icons/fi";
+
 interface Props {
-  project: Project;
+  project: ProjectType;
 }
 
 const Project = ({ project }: Props): JSX.Element => (

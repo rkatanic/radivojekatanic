@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render 1`] = `
+<body>
+  <div>
+    <div
+      class="m-auto w-full max-w-2xl flex items-center justify-between py-10 font-medium"
+    >
+      <div
+        class="dark:text-gray-200 text-gray-900 "
+      >
+        rkatanic
+      </div>
+      <div
+        class="flex gap-4"
+      >
+        <span
+          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-200 text-gray-900"
+        >
+          About
+        </span>
+        <span
+          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-400 text-gray-300"
+        >
+          Labs
+        </span>
+        <span
+          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-400 text-gray-300"
+        >
+          Contact
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;

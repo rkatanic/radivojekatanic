@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavLink should render 1`] = `
+<body>
+  <div>
+    <span
+      class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-400 text-gray-300"
+    >
+      Label
+    </span>
+  </div>
+</body>
+`;
+
+exports[`NavLink should render with active link 1`] = `
+<body>
+  <div>
+    <span
+      class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-200 text-gray-900"
+    >
+      Label
+    </span>
+  </div>
+</body>
+`;

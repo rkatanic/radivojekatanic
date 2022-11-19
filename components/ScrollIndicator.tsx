@@ -1,5 +1,3 @@
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-
 const ScrollIndicator = (): JSX.Element => (
   <div className="absolute top-0 -left-16 h-full flex flex-col justify-between font-medium dark:font-normal">
     <a

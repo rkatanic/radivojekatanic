@@ -1,5 +1,3 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-
 const Footer = () => (
   <div className="m-auto w-full max-w-2xl flex items-end justify-between py-10 border-t border-gray-100 dark:border-gray-800 mt-16 text-sm text-gray-300 dark:text-gray-600">
     <div className="whitespace-nowrap flex-1">© 2022 Radivoje Katanic.</div>
