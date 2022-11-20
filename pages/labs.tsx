@@ -28,7 +28,7 @@ const Labs = (): JSX.Element => (
       <h1 className="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
         Small personal tools & experiments
       </h1>
-      <p className="text-gray-500 dark:text-gray-300">
+      <p className="text-gray-500 dark:text-gray-400">
         In a free time I play around with different tools in order to strengthen
         my development skills. These apps are results of that experimentation.
       </p>

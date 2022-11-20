@@ -7,12 +7,12 @@ exports[`Header should render 1`] = `
       class="m-auto w-full max-w-2xl flex items-center justify-between py-10 font-medium"
     >
       <div
-        class="dark:text-gray-200 text-gray-900 "
+        class="dark:text-gray-200 text-gray-900 text-sm"
       >
-        rkatanic
+        RK
       </div>
       <div
-        class="flex gap-4"
+        class="flex gap-4 items-center"
       >
         <span
           class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-200 text-gray-900"
@@ -20,15 +20,44 @@ exports[`Header should render 1`] = `
           About
         </span>
         <span
-          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-400 text-gray-300"
+          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-500 text-gray-400"
         >
           Labs
         </span>
         <span
-          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-400 text-gray-300"
+          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-500 text-gray-400"
         >
           Contact
         </span>
+        <div
+          class="lg:hidden"
+        >
+          <button
+            class="border w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 dark:border-gray-700 cursor-pointer group dark:hover:bg-gray-100 hover:bg-gray-900 shadow-md dark:shadow-black"
+            type="button"
+          >
+            <svg
+              class="dark:fill-gray-100 dark:group-hover:fill-black group-hover:fill-white"
+              fill="currentColor"
+              height="1rem"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2V4a8 8 0 1 0 0 16z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>

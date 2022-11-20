@@ -1,6 +1,5 @@
 import { useState, useEffect, EffectCallback } from "react";
-import { FiSun, FiMoon } from "react-icons/fi";
-
+import { RiContrastFill } from "react-icons/ri";
 const ThemeSwitch = (): JSX.Element => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
@@ -23,29 +22,16 @@ const ThemeSwitch = (): JSX.Element => {
   };
 
   return (
-    <label
-      htmlFor="theme-switch"
-      className="border w-9 h-9 flex items-center justify-center rounded-full dark:border-gray-700 cursor-pointer group dark:hover:bg-gray-100 hover:bg-gray-900 shadow-sm"
+    <button
+      onClick={hanleThemeToggle}
+      type="button"
+      className="border w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 dark:border-gray-700 cursor-pointer group dark:hover:bg-gray-100 hover:bg-gray-900 shadow-md dark:shadow-black"
     >
-      <input
-        id="theme-switch"
-        className="sr-only"
-        type="checkbox"
-        checked={isDarkMode}
-        onChange={hanleThemeToggle}
+      <RiContrastFill
+        className="dark:fill-gray-100 dark:group-hover:fill-black group-hover:fill-white"
+        size="1rem"
       />
-      {isDarkMode ? (
-        <FiSun
-          className="dark:stroke-gray-100 dark:group-hover:stroke-black group-hover:stroke-white"
-          size="1rem"
-        />
-      ) : (
-        <FiMoon
-          className="stroke-gray-900 dark:stroke-gray-100 dark:group-hover:stroke-black group-hover:stroke-white"
-          size="1rem"
-        />
-      )}
-    </label>
+    </button>
   );
 };
 export default ThemeSwitch;

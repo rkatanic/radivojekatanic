@@ -1,11 +1,11 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [outcome, setOutcome] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+  // const [outcome, setOutcome] = useState("");
 
   return (
     <div className="m-auto max-w-2xl h-full flex-1">
@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="dark:text-gray-200 text-3xl mb-4 font-semibold">
           Have a question, or just want to say hello?
         </div>
-        <div className="dark:text-gray-300 text-gray-500">
+        <div className="dark:text-gray-400 text-gray-500">
           Feel free to do so. Don&apos;t hesitate to ask anything.
         </div>
       </div>
@@ -45,7 +45,7 @@ const Contact = () => {
           <div>
             {outcome &&
               (outcome === "successs" ? (
-                <div className="dark:text-blue-300 text-sm">
+                <div className="dark:text-amber-300 text-sm">
                   Success! I will respond as soon as possible.
                 </div>
               ) : (
@@ -63,7 +63,7 @@ const Contact = () => {
         </div>
       </form> */}
       <div className="my-8">
-        <div className="dark:text-gray-300 text-gray-500 mb-4">
+        <div className="dark:text-gray-400 text-gray-500 mb-4">
           write me at:
         </div>
         <a
@@ -78,7 +78,7 @@ const Contact = () => {
         </a>
       </div>
       <div>
-        <div className="dark:text-gray-300 text-gray-500 mb-4">
+        <div className="dark:text-gray-400 text-gray-500 mb-4">
           or follow me on:
         </div>
         <div className="flex gap-16">

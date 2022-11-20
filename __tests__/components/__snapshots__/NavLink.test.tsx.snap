@@ -4,7 +4,7 @@ exports[`NavLink should render 1`] = `
 <body>
   <div>
     <span
-      class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-400 text-gray-300"
+      class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-500 text-gray-400"
     >
       Label
     </span>

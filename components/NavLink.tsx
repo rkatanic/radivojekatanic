@@ -15,7 +15,7 @@ const NavLink = ({ link, label }: Props): JSX.Element => {
         className={`cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 ${
           activeLink === link
             ? "dark:text-gray-200 text-gray-900"
-            : "dark:text-gray-400 text-gray-300"
+            : "dark:text-gray-500 text-gray-400"
         }`}
       >
         {label}
