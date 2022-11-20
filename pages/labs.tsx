@@ -25,10 +25,10 @@ const PROJECTS = [
 const Labs = (): JSX.Element => (
   <div className="m-auto max-w-5xl flex-1">
     <div className="m-auto max-w-2xl mb-12">
-      <h1 className="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-semibold mb-4 text-neutral-800 dark:text-neutral-200">
         Small personal tools & experiments
       </h1>
-      <p className="text-gray-500 dark:text-gray-400">
+      <p className="text-neutral-500 dark:text-neutral-400">
         In a free time I play around with different tools in order to strengthen
         my development skills. These apps are results of that experimentation.
       </p>

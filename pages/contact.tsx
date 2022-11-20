@@ -10,10 +10,10 @@ const Contact = () => {
   return (
     <div className="m-auto max-w-2xl h-full flex-1">
       <div>
-        <div className="dark:text-gray-200 text-3xl mb-4 font-semibold">
+        <div className="dark:text-neutral-200 text-3xl mb-4 font-semibold">
           Have a question, or just want to say hello?
         </div>
-        <div className="dark:text-gray-400 text-gray-500">
+        <div className="dark:text-neutral-400 text-neutral-500">
           Feel free to do so. Don&apos;t hesitate to ask anything.
         </div>
       </div>
@@ -23,7 +23,7 @@ const Contact = () => {
           required
           placeholder="Your Name"
           type="text"
-          className="pb-3 border-b-2 bg-transparent w-full border-gray-100 dark:border-gray-700 outline-0 focus:border-gray-900 dark:focus:border-gray-200 placeholder-gray-300 dark:text-gray-100"
+          className="pb-3 border-b-2 bg-transparent w-full border-neutral-100 dark:border-neutral-700 outline-0 focus:border-neutral-900 dark:focus:border-neutral-200 placeholder-neutral-300 dark:text-neutral-100"
         />
 
         <input
@@ -31,7 +31,7 @@ const Contact = () => {
           required
           placeholder="E-mail"
           type="text"
-          className="pb-3 border-b-2 bg-transparent w-full border-gray-100 dark:border-gray-700 outline-0 focus:border-gray-900 dark:focus:border-gray-200 placeholder-gray-300 dark:text-gray-100"
+          className="pb-3 border-b-2 bg-transparent w-full border-neutral-100 dark:border-neutral-700 outline-0 focus:border-neutral-900 dark:focus:border-neutral-200 placeholder-neutral-300 dark:text-neutral-100"
         />
         <textarea
           onChange={(e) => setMessage(e.target.value)}
@@ -39,13 +39,13 @@ const Contact = () => {
           minLength={6}
           rows={7}
           placeholder="Message"
-          className="pb-3 border-b-2 bg-transparent w-full border-gray-100 dark:border-gray-700 outline-0 focus:border-gray-900 dark:focus:border-gray-200 placeholder-gray-300 dark:text-gray-100"
+          className="pb-3 border-b-2 bg-transparent w-full border-neutral-100 dark:border-neutral-700 outline-0 focus:border-neutral-900 dark:focus:border-neutral-200 placeholder-neutral-300 dark:text-neutral-100"
         />
         <div className="flex items-center justify-between w-full">
           <div>
             {outcome &&
               (outcome === "successs" ? (
-                <div className="dark:text-amber-300 text-sm">
+                <div className="dark:text-emerald-300 text-sm">
                   Success! I will respond as soon as possible.
                 </div>
               ) : (
@@ -56,29 +56,29 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="rounded-full w-40 bg-gray-900 text-gray-200 dark:bg-gray-200 dark:text-gray-900 font-semibold tracking-wide p-2 dark:shadow-black shadow-gray-300 shadow-md"
+            className="rounded-full w-40 bg-neutral-900 text-neutral-200 dark:bg-neutral-200 dark:text-neutral-900 font-semibold tracking-wide p-2 dark:shadow-black shadow-neutral-300 shadow-md"
           >
             Send
           </button>
         </div>
       </form> */}
       <div className="my-8">
-        <div className="dark:text-gray-400 text-gray-500 mb-4">
+        <div className="dark:text-neutral-400 text-neutral-500 mb-4">
           write me at:
         </div>
         <a
           href="mailto:rkatanic96@gmail.com"
-          className="dark:text-gray-200 font-medium text-3xl hover:underline group relative"
+          className="dark:text-neutral-200 font-medium text-2xl sm:text-3xl hover:underline group relative"
         >
           rkatanic96@gmail.com
           <FiArrowUpRight
-            className="transition-opacity duration-200 stroke-gray-300 dark:stroke-gray-500 absolute left-full bottom-5 group-hover:opacity-100 opacity-0"
+            className="transition-opacity duration-200 stroke-neutral-300 dark:stroke-neutral-500 absolute left-full bottom-5 group-hover:opacity-100 opacity-0"
             size="1.25rem"
           />
         </a>
       </div>
       <div>
-        <div className="dark:text-gray-400 text-gray-500 mb-4">
+        <div className="dark:text-neutral-400 text-neutral-500 mb-4">
           or follow me on:
         </div>
         <div className="flex gap-16">
@@ -86,11 +86,11 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/rkatanic"
-            className="dark:text-gray-200 font-medium text-3xl group hover:underline relative"
+            className="dark:text-neutral-200 font-medium text-2xl sm:text-3xl group hover:underline relative"
           >
             GitHub
             <FiArrowUpRight
-              className="transition-opacity duration-200 stroke-gray-300 dark:stroke-gray-500 absolute left-full bottom-5 group-hover:opacity-100 opacity-0"
+              className="transition-opacity duration-200 stroke-neutral-300 dark:stroke-neutral-500 absolute left-full bottom-5 group-hover:opacity-100 opacity-0"
               size="1.25rem"
             />
           </a>
@@ -98,11 +98,11 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/radivoje-katanic"
-            className="dark:text-gray-200 font-medium text-3xl group hover:underline relative"
+            className="dark:text-neutral-200 font-medium text-2xl sm:text-3xl group hover:underline relative"
           >
             LinkedIn
             <FiArrowUpRight
-              className="transition-opacity duration-200 stroke-gray-300 dark:stroke-gray-500 absolute left-full bottom-5 group-hover:opacity-100 opacity-0"
+              className="transition-opacity duration-200 stroke-neutral-300 dark:stroke-neutral-500 absolute left-full bottom-5 group-hover:opacity-100 opacity-0"
               size="1.25rem"
             />
           </a>

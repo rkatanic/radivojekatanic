@@ -4,7 +4,7 @@ exports[`Footer should render 1`] = `
 <body>
   <div>
     <div
-      class="m-auto w-full max-w-2xl flex items-end justify-between py-10 border-t dark:border-gray-800 mt-16 text-sm text-gray-400 dark:text-gray-500"
+      class="m-auto w-full max-w-2xl flex items-end justify-between py-10 border-t dark:border-neutral-800 mt-16 text-sm text-neutral-400 dark:text-neutral-500"
     >
       <div
         class="whitespace-nowrap flex-1"
@@ -15,7 +15,7 @@ exports[`Footer should render 1`] = `
         class="flex gap-4"
       >
         <a
-          class="hover:text-gray-900 dark:hover:text-gray-200 hover:underline"
+          class="hover:text-neutral-900 dark:hover:text-neutral-200 hover:underline"
           href="https://github.com/rkatanic"
           rel="noreferrer"
           target="_blank"
@@ -23,7 +23,7 @@ exports[`Footer should render 1`] = `
           GitHub
         </a>
         <a
-          class="hover:text-gray-900 dark:hover:text-gray-200 hover:underline"
+          class="hover:text-neutral-900 dark:hover:text-neutral-200 hover:underline"
           href="https://www.linkedin.com/in/radivoje-katanic"
           rel="noreferrer"
           target="_blank"

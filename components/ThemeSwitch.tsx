@@ -25,12 +25,9 @@ const ThemeSwitch = (): JSX.Element => {
     <button
       onClick={hanleThemeToggle}
       type="button"
-      className="border w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 dark:border-gray-700 cursor-pointer group dark:hover:bg-gray-100 hover:bg-gray-900 shadow-md dark:shadow-black"
+      className="sm:border w-11 h-11 sm:w-9 sm:h-9 flex items-center justify-center rounded-full sm:bg-white sm:dark:bg-neutral-800 dark:border-neutral-700 cursor-pointer group sm:dark:hover:bg-neutral-100 sm:hover:bg-neutral-900 sm:shadow-md sm:dark:shadow-black"
     >
-      <RiContrastFill
-        className="dark:fill-gray-100 dark:group-hover:fill-black group-hover:fill-white"
-        size="1rem"
-      />
+      <RiContrastFill className="dark:fill-neutral-100 sm:dark:group-hover:fill-black sm:group-hover:fill-white w-5 h-5 sm:w-4 sm:h-4" />
     </button>
   );
 };

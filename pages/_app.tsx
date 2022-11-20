@@ -24,7 +24,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
       dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
     />
 
-    <div className="fixed inset-0 h-8 bg-gradient-to-b dark:from-gray-900 z-10"></div>
+    <div className="fixed inset-0 h-8 bg-gradient-to-b dark:from-neutral-900 z-10"></div>
     <Layout>
       <Component {...pageProps} />
     </Layout>

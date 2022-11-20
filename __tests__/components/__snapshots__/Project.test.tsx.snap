@@ -4,7 +4,7 @@ exports[`Project should render 1`] = `
 <body>
   <div>
     <a
-      class="border dark:border-gray-800 w-full flex flex-col gap-4 p-6 rounded-xl hover:bg-gray-50/50 dark:hover:bg-gray-800/30 cursor-pointer group"
+      class="border dark:border-neutral-800 w-full flex flex-col gap-4 p-6 rounded-xl hover:bg-neutral-50/50 dark:hover:bg-neutral-800/30 cursor-pointer group"
       href="project-url"
       target="blank"
     >
@@ -12,30 +12,30 @@ exports[`Project should render 1`] = `
         class="flex items-baseline justify-between"
       >
         <h3
-          class="flex flex-wrap gap-3 items-baseline font-medium dark:text-gray-200 text-xl font-medium"
+          class="flex flex-wrap gap-3 items-baseline font-medium dark:text-neutral-200 text-xl font-medium"
         >
           Project name
         </h3>
         <div
-          class="whitespace-nowrap flex gap-3 items-center text-gray-400 dark:text-gray-600 text-sm"
+          class="whitespace-nowrap flex gap-3 items-center text-neutral-400 dark:text-neutral-600 text-sm"
         >
           Jan 01, 2022
         </div>
       </div>
       <p
-        class="text-gray-500 dark:text-gray-400 mb-2"
+        class="text-neutral-500 dark:text-neutral-400 mb-2"
       >
         Project description.
       </p>
       <hr
-        class="dark:border-gray-800"
+        class="dark:border-neutral-800"
       />
       <div
-        class="gap-1 text-sm items-center text-gray-400 dark:text-gray-500 group-hover:text-amber-500 dark:group-hover:text-amber-300 flex"
+        class="gap-1 text-sm items-center text-neutral-400 dark:text-neutral-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-300 flex"
       >
         Go to link
         <svg
-          class="stroke-gray-400 dark:stroke-gray-500 group-hover:stroke-amber-400 dark:group-hover:stroke-amber-300"
+          class="stroke-neutral-400 dark:stroke-neutral-500 group-hover:stroke-emerald-400 dark:group-hover:stroke-emerald-300"
           fill="none"
           height="1rem"
           stroke="currentColor"
@@ -66,7 +66,7 @@ exports[`Project should render with badge 1`] = `
 <body>
   <div>
     <a
-      class="border dark:border-gray-800 w-full flex flex-col gap-4 p-6 rounded-xl hover:bg-gray-50/50 dark:hover:bg-gray-800/30 cursor-pointer group"
+      class="border dark:border-neutral-800 w-full flex flex-col gap-4 p-6 rounded-xl hover:bg-neutral-50/50 dark:hover:bg-neutral-800/30 cursor-pointer group"
       href="project-url"
       target="blank"
     >
@@ -74,35 +74,35 @@ exports[`Project should render with badge 1`] = `
         class="flex items-baseline justify-between"
       >
         <h3
-          class="flex flex-wrap gap-3 items-baseline font-medium dark:text-gray-200 text-xl font-medium"
+          class="flex flex-wrap gap-3 items-baseline font-medium dark:text-neutral-200 text-xl font-medium"
         >
           Project name
           <div
-            class="whitespace-nowrap text-xs rounded-full bg-amber-50/50 dark:bg-amber-800/20 border border-amber-300 text-amber-600 dark:text-amber-300 max-w-min px-1.5"
+            class="whitespace-nowrap text-xs rounded-full bg-emerald-50/50 dark:bg-emerald-800/20 border border-emerald-300 text-emerald-600 dark:text-emerald-300 max-w-min px-1.5"
           >
             badge label
           </div>
         </h3>
         <div
-          class="whitespace-nowrap flex gap-3 items-center text-gray-400 dark:text-gray-600 text-sm"
+          class="whitespace-nowrap flex gap-3 items-center text-neutral-400 dark:text-neutral-600 text-sm"
         >
           Jan 01, 2022
         </div>
       </div>
       <p
-        class="text-gray-500 dark:text-gray-400 mb-2"
+        class="text-neutral-500 dark:text-neutral-400 mb-2"
       >
         Project description.
       </p>
       <hr
-        class="dark:border-gray-800"
+        class="dark:border-neutral-800"
       />
       <div
-        class="gap-1 text-sm items-center text-gray-400 dark:text-gray-500 group-hover:text-amber-500 dark:group-hover:text-amber-300 flex"
+        class="gap-1 text-sm items-center text-neutral-400 dark:text-neutral-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-300 flex"
       >
         Go to link
         <svg
-          class="stroke-gray-400 dark:stroke-gray-500 group-hover:stroke-amber-400 dark:group-hover:stroke-amber-300"
+          class="stroke-neutral-400 dark:stroke-neutral-500 group-hover:stroke-emerald-400 dark:group-hover:stroke-emerald-300"
           fill="none"
           height="1rem"
           stroke="currentColor"

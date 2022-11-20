@@ -7,7 +7,7 @@ exports[`Header should render 1`] = `
       class="m-auto w-full max-w-2xl flex items-center justify-between py-10 font-medium"
     >
       <div
-        class="dark:text-gray-200 text-gray-900 text-sm"
+        class="dark:text-neutral-200 text-neutral-900 text-sm"
       >
         RK
       </div>
@@ -15,17 +15,17 @@ exports[`Header should render 1`] = `
         class="flex gap-4 items-center"
       >
         <span
-          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-200 text-gray-900"
+          class="cursor-pointer dark:hover:text-neutral-200 hover:text-neutral-900 dark:text-neutral-200 text-neutral-900"
         >
           About
         </span>
         <span
-          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-500 text-gray-400"
+          class="cursor-pointer dark:hover:text-neutral-200 hover:text-neutral-900 dark:text-neutral-500 text-neutral-400"
         >
           Labs
         </span>
         <span
-          class="cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 dark:text-gray-500 text-gray-400"
+          class="cursor-pointer dark:hover:text-neutral-200 hover:text-neutral-900 dark:text-neutral-500 text-neutral-400"
         >
           Contact
         </span>
@@ -33,11 +33,11 @@ exports[`Header should render 1`] = `
           class="lg:hidden"
         >
           <button
-            class="border w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 dark:border-gray-700 cursor-pointer group dark:hover:bg-gray-100 hover:bg-gray-900 shadow-md dark:shadow-black"
+            class="border w-9 h-9 flex items-center justify-center rounded-full bg-white dark:bg-neutral-800 dark:border-neutral-700 cursor-pointer group dark:hover:bg-neutral-100 hover:bg-neutral-900 shadow-md dark:shadow-black"
             type="button"
           >
             <svg
-              class="dark:fill-gray-100 dark:group-hover:fill-black group-hover:fill-white"
+              class="dark:fill-neutral-100 dark:group-hover:fill-black group-hover:fill-white"
               fill="currentColor"
               height="1rem"
               stroke="currentColor"

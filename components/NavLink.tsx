@@ -4,18 +4,19 @@ import { useRouter } from "next/router";
 interface Props {
   link: string;
   label: string;
+  onClick?: () => void;
 }
 
-const NavLink = ({ link, label }: Props): JSX.Element => {
+const NavLink = ({ link, label, onClick }: Props): JSX.Element => {
   const { asPath: activeLink } = useRouter();
 
   return (
-    <Link href={link}>
+    <Link href={link} onClick={onClick}>
       <span
-        className={`cursor-pointer dark:hover:text-gray-200 hover:text-gray-900 ${
+        className={`block cursor-pointer dark:hover:text-neutral-200 hover:text-neutral-900 ${
           activeLink === link
-            ? "dark:text-gray-200 text-gray-900"
-            : "dark:text-gray-500 text-gray-400"
+            ? "dark:text-neutral-200 text-neutral-900"
+            : "dark:text-neutral-500 text-neutral-400"
         }`}
       >
         {label}
