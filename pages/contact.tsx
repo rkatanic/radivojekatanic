@@ -1,11 +1,11 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const Contact = () => {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
-  // const [outcome, setOutcome] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [outcome, setOutcome] = useState("");
 
   return (
     <div className="m-auto max-w-2xl h-full flex-1">
@@ -17,7 +17,7 @@ const Contact = () => {
           Feel free to do so. Don&apos;t hesitate to ask anything.
         </div>
       </div>
-      {/* <form className="flex flex-col gap-8 my-12 items-end">
+      <form className="flex flex-col gap-8 my-12 items-end">
         <input
           onChange={(e) => setName(e.target.value)}
           required
@@ -45,11 +45,11 @@ const Contact = () => {
           <div>
             {outcome &&
               (outcome === "successs" ? (
-                <div className="dark:text-emerald-300 text-sm">
+                <div className="dark:text-teal-300 text-sm">
                   Success! I will respond as soon as possible.
                 </div>
               ) : (
-                <div className="dark:text-red-400 text-sm">
+                <div className="dark:text-neutral-400 text-sm">
                   Failed to send e-mail. Please try again later.
                 </div>
               ))}
@@ -61,7 +61,7 @@ const Contact = () => {
             Send
           </button>
         </div>
-      </form> */}
+      </form>
       <div className="my-8">
         <div className="dark:text-neutral-400 text-neutral-500 mb-4">
           write me at:

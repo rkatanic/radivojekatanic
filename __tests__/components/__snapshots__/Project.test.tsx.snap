@@ -31,11 +31,11 @@ exports[`Project should render 1`] = `
         class="dark:border-neutral-800"
       />
       <div
-        class="gap-1 text-sm items-center text-neutral-400 dark:text-neutral-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-300 flex"
+        class="gap-1 text-sm items-center text-neutral-400 dark:text-neutral-500 group-hover:text-teal-500 dark:group-hover:text-teal-300 flex"
       >
         Go to link
         <svg
-          class="stroke-neutral-400 dark:stroke-neutral-500 group-hover:stroke-emerald-400 dark:group-hover:stroke-emerald-300"
+          class="stroke-neutral-400 dark:stroke-neutral-500 group-hover:stroke-teal-400 dark:group-hover:stroke-teal-300"
           fill="none"
           height="1rem"
           stroke="currentColor"
@@ -78,7 +78,7 @@ exports[`Project should render with badge 1`] = `
         >
           Project name
           <div
-            class="whitespace-nowrap text-xs rounded-full bg-emerald-50/50 dark:bg-emerald-800/20 border border-emerald-300 text-emerald-600 dark:text-emerald-300 max-w-min px-1.5"
+            class="whitespace-nowrap text-xs rounded-full bg-teal-50/50 dark:bg-teal-800/20 border border-teal-300 text-teal-600 dark:text-teal-300 max-w-min px-1.5"
           >
             badge label
           </div>
@@ -98,11 +98,11 @@ exports[`Project should render with badge 1`] = `
         class="dark:border-neutral-800"
       />
       <div
-        class="gap-1 text-sm items-center text-neutral-400 dark:text-neutral-500 group-hover:text-emerald-500 dark:group-hover:text-emerald-300 flex"
+        class="gap-1 text-sm items-center text-neutral-400 dark:text-neutral-500 group-hover:text-teal-500 dark:group-hover:text-teal-300 flex"
       >
         Go to link
         <svg
-          class="stroke-neutral-400 dark:stroke-neutral-500 group-hover:stroke-emerald-400 dark:group-hover:stroke-emerald-300"
+          class="stroke-neutral-400 dark:stroke-neutral-500 group-hover:stroke-teal-400 dark:group-hover:stroke-teal-300"
           fill="none"
           height="1rem"
           stroke="currentColor"

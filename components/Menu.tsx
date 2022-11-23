@@ -5,6 +5,7 @@ import { FiMenu } from "react-icons/fi";
 const LINKS = [
   { link: "/", label: "About" },
   { link: "/labs", label: "Labs" },
+  { link: "/snippets", label: "Snippets" },
   { link: "/contact", label: "Contact" },
 ];
 

@@ -6,7 +6,7 @@ describe("Project", (): void => {
     const { baseElement } = render(
       <Project
         project={{
-          name: "Project name",
+          title: "Project name",
           description: "Project description.",
           creationDate: "2022-01-01",
           link: "project-url",
@@ -21,7 +21,7 @@ describe("Project", (): void => {
     const { baseElement } = render(
       <Project
         project={{
-          name: "Project name",
+          title: "Project name",
           description: "Project description.",
           creationDate: "2022-01-01",
           link: "project-url",

@@ -1,6 +1,4 @@
-import NavLink from "./NavLink";
 import ThemeSwitch from "./ThemeSwitch";
-import { FiMenu } from "react-icons/fi";
 import Menu from "./Menu";
 
 const LINKS = [

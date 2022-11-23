@@ -1,7 +1,7 @@
 export interface Project {
-  name: string;
+  title: string;
   description: string;
   creationDate: string;
-  link: string;
   badgeLabel?: string;
+  link: string;
 }
