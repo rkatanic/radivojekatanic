@@ -8,3 +8,73 @@ html,
 body {
   font-family: IBM Plex Sans;
 }
+
+.cube {
+  top: 0rem;
+  left: 0rem;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-1deg) rotateY(-1deg) rotateZ(-1deg);
+  height: 16rem;
+  width: 16rem;
+}
+
+.cube div {
+  height: 16rem;
+  width: 16rem;
+  background: transparent;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.inner {
+  background: none;
+  border: 1px dashed hsl(214, 8%, 26%);
+  border-radius: 50%;
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(calc(6.5rem * 2));
+}
+
+.bottom {
+  transform: rotateX(90deg) translateZ(-calc(6.5rem * 1.2));
+}
+
+.sphere-one {
+  transform: rotateX(0) translateZ(0);
+}
+
+.sphere-two {
+  transform: rotateY(-90deg) translateZ(0);
+}
+
+.sphere-three {
+  transform: rotateX(90deg) translateY(0);
+}
+
+.sphere-three {
+  transform: rotateY(55deg) rotateX(45deg) translateY(0);
+}
+
+.sphere-five {
+  transform: rotateY(-45deg) rotateX(-75deg) translateY(0);
+}
+
+.sphere-six {
+  transform: rotateY(-45deg) rotateX(45deg) translateY(0);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(-1deg) rotateY(-1deg) rotateZ(-1deg);
+  }
+
+  50% {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}

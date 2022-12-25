@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project should render 1`] = `
+<body>
+  <div>
+    <div
+      class="group relative flex border shadow-md transition-[border] duration-200 dark:border-gray-700 dark:hover:border-sky-400"
+    >
+      <div
+        class="flex-1 p-4"
+      >
+        <div
+          class="mb-4 text-xl font-medium tracking-wide dark:border-gray-700 dark:text-gray-200"
+        >
+          Project Title
+        </div>
+        <div
+          class="absolute top-4 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide group-hover:text-sky-300 dark:text-gray-500"
+        >
+          View 
+          <svg
+            class="mb-0.5"
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="9 18 15 12 9 6"
+            />
+          </svg>
+        </div>
+        <p
+          class="text-lg leading-relaxed tracking-wide dark:text-gray-400"
+        >
+          Project description.
+        </p>
+        <hr
+          class="my-4 dark:border-gray-800"
+        />
+        <div
+          class="mb-2 flex items-center gap-2 text-sm dark:text-gray-400"
+        >
+          Oct 10, 2010
+        </div>
+      </div>
+      <div
+        class="xbg-gradient-to-r relative h-full w-44 overflow-hidden from-gray-900 to-gray-800/40"
+      >
+        <div
+          class="cube group-hover:animate-[rotate_30s_linear_infinite]"
+        >
+          <div
+            class="sphere-one inner"
+          />
+          <div
+            class="sphere-two inner"
+          />
+          <div
+            class="sphere-three inner"
+          />
+          <div
+            class="sphere-four inner"
+          />
+          <div
+            class="sphere-five inner"
+          />
+          <div
+            class="sphere-six inner"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

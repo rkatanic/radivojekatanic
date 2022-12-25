@@ -1,11 +1,11 @@
-export interface Project {
+export interface ProjectType {
   slug: string;
   title: string;
   description: string;
-  content: string;
   creationDate: string;
-  updated: ProjectUpdated;
-  links: ProjectLink[];
+  content?: string;
+  updated?: ProjectUpdated;
+  links?: ProjectLink[];
 }
 
 export interface ProjectUpdated {

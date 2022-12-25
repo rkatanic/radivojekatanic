@@ -1,7 +1,7 @@
 ---
-title: "Markdown Editor"
-description: "Simple markdown editor for personal needs."
-creationDate: "2022-04-15"
+title: "Image To Text Converter"
+description: "Simple OCR Converter. Supports 50+ languages."
+creationDate: "2022-03-15"
 updated: { description: "Updates README", date: "2022-03-15" }
 links:
   [

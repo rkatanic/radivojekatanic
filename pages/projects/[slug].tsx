@@ -1,5 +1,5 @@
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
-import { Project as ProjectType } from "../../types/Project";
+import { ProjectType } from "../../types/Project";
 import Markdown from "@/components/Markdown";
 import ProjectTable from "@/components/project/ProjectTable";
 

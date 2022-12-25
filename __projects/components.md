@@ -1,7 +1,7 @@
 ---
-title: "Markdown Editor"
-description: "Simple markdown editor for personal needs."
-creationDate: "2022-04-15"
+title: "Components"
+description: "Collection of components built with Tailwind CSS."
+creationDate: "2022-10-03"
 updated: { description: "Updates README", date: "2022-03-15" }
 links:
   [

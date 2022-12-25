@@ -1,7 +1,7 @@
 ---
-title: "Markdown Editor"
-description: "Simple markdown editor for personal needs."
-creationDate: "2022-04-15"
+title: "Color Scale"
+description: "Tool for generating color shade palette. Based on HSL."
+creationDate: "2022-10-03"
 updated: { description: "Updates README", date: "2022-03-15" }
 links:
   [

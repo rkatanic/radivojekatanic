@@ -1,8 +1,4 @@
-import Footer from "./Footer";
-import Header from "./Header";
 import Menu from "./Menu";
-import ScrollIndicator from "./ScrollIndicator";
-import ThemeSwitch from "./ThemeSwitch";
 
 interface Props {
   children: JSX.Element;

@@ -1,25 +1,15 @@
-import Link from "next/link";
+import Project from "@/components/Project";
 import { getAllProjects } from "../../lib/api";
-import { Project as ProjectType } from "../../types/Project";
+import { ProjectType } from "../../types/Project";
 
 type Props = {
   projects: ProjectType[];
 };
 
 const Projects = ({ projects }: Props): JSX.Element => (
-  <div className="text-white">
-    {projects.map((project) => (
-      <Link
-        href={`/projects/${project.slug}`}
-        className="border dark:border-gray-700"
-      >
-        <div className="border-b p-4 text-lg font-medium tracking-wide dark:border-gray-700">
-          {project.title}
-        </div>
-        <div className="p-4">
-          <p className="text-lg dark:text-gray-400">{project.description}</p>
-        </div>
-      </Link>
+  <div className="flex flex-col gap-4">
+    {projects.map((project, i) => (
+      <Project project={project} key={i} />
     ))}
   </div>
 );
