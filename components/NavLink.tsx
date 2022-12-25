@@ -9,16 +9,16 @@ interface Props {
 
 const NavLink = ({ link, label, icon }: Props): JSX.Element => {
   const { asPath } = useRouter();
-  const isActiveLink = asPath === link;
+  const isActiveLink = asPath.includes(link);
 
   return (
     <Link href={link}>
       <span
         className={`${
           isActiveLink
-            ? "bg-sky-500"
-            : "dark:text-gray-300 dark:hover:text-gray-200"
-        } flex items-center gap-3 py-1.5 px-3 font-medium dark:text-white`}
+            ? "bg-sky-500 dark:text-gray-100"
+            : "dark:text-gray-400 dark:hover:text-gray-200"
+        } flex items-center gap-3 py-1.5 px-3 font-medium`}
       >
         {icon}
         {label}

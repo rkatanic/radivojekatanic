@@ -3,12 +3,12 @@ import ThemeSwitch from "./ThemeSwitch";
 import { FiMail, FiUser, FiZap } from "react-icons/fi";
 
 const LINKS = [
-  // { link: "/", label: "About", icon: <FiUser className="" /> },
-  { link: "/labs", label: "Labs", icon: <FiZap className="" /> },
+  // { link: "/", label: "About", icon: <FiUser /> },
+  { link: "/projects", label: "Labs", icon: <FiZap /> },
   // {
   //   link: "/contact",
   //   label: "Contact",
-  //   icon: <FiMail className="" />,
+  //   icon: <FiMail />,
   // },
 ];
 
@@ -22,7 +22,7 @@ const Menu = (): JSX.Element => (
       <h1 className="text-xl font-medium dark:text-gray-200">
         Radivoje Katanic
       </h1>
-      <h3 className="text-lg text-gray-300">Software Developer</h3>
+      <h3 className="text-lg text-gray-400">Software Developer</h3>
     </div>
     <hr className="my-4 dark:border-gray-800" />
     <div>

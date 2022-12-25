@@ -1,35 +1,21 @@
+import { FiCheck } from "react-icons/fi";
 import ReactMarkdown from "react-markdown";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import codeTheme from "utils/codeTheme";
+import remarkGfm from "remark-gfm";
+import { toKebabLowerCase } from "utils/stringUtils";
 
 interface Props {
   markdown: string;
 }
 
 const Markdown = ({ markdown }: Props): JSX.Element => (
-  <div className="text-neutral-200 my-8">
+  <div className="my-8">
     <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
       children={markdown}
       components={{
         p,
-        h1,
-        h2,
         h3,
-        code({ node, inline, className, children, ...props }) {
-          const match = /language-(\w+)/.exec(className || "");
-          return !inline && match ? (
-            <SyntaxHighlighter
-              children={String(children).replace(/\n$/, "")}
-              style={codeTheme as any}
-              language={match[1]}
-              {...props}
-            />
-          ) : (
-            <code className={className} {...props}>
-              {children}
-            </code>
-          );
-        },
+        li,
       }}
     />
   </div>
@@ -37,24 +23,34 @@ const Markdown = ({ markdown }: Props): JSX.Element => (
 
 export default Markdown;
 
-const h1 = ({ children }: any): JSX.Element => (
-  <h2 className="text-3xl font-semibold dark:text-neutral-200 text-neutral-900 mb-4">
-    {children}
-  </h2>
-);
-
-const h2 = ({ children }: any): JSX.Element => (
-  <h2 className="text-2xl font-semibold dark:text-neutral-200 text-neutral-900 mb-4">
-    {children}
-  </h2>
-);
-
-const h3 = ({ children }: any): JSX.Element => (
-  <h2 className="text-xl font-semibold dark:text-neutral-200 text-neutral-900 mb-4">
-    {children}
-  </h2>
-);
+const h3 = ({ children }: any): JSX.Element => {
+  const hrefId = toKebabLowerCase(children[0] as string);
+  return (
+    <a
+      href={`#${hrefId}`}
+      id={hrefId}
+      className="relative mb-4 block text-2xl font-semibold before:absolute before:-left-6 before:text-gray-700 before:opacity-0 before:transition-opacity before:duration-300 before:content-['#'] hover:before:opacity-100 dark:text-gray-200"
+    >
+      {children}
+    </a>
+  );
+};
 
 const p = ({ children }: any) => (
-  <p className="dark:text-neutral-400 text-neutral-500 mb-4">{children}</p>
+  <p className="mb-4 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
+    {children}
+  </p>
+);
+
+const li = ({ checked, children }: any): JSX.Element => (
+  <li className="flex items-center gap-3 text-lg leading-8 text-gray-500 dark:text-gray-400">
+    {checked ? (
+      <div className="flex h-4 w-4 items-center justify-center bg-sky-500 shadow-md">
+        <FiCheck className="stroke-white stroke-[3px]" size="0.75rem" />
+      </div>
+    ) : (
+      <div className="flex h-4 w-4 items-center justify-center border shadow-md dark:border-gray-600"></div>
+    )}
+    {children[2]}
+  </li>
 );

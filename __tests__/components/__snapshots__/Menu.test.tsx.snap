@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should render 1`] = `
+<body>
+  <div>
+    <div
+      class="sticky top-20 max-h-min w-64 border p-4 shadow-md dark:border-gray-700 dark:bg-gray-900"
+    >
+      <div
+        class="flex flex-col items-center"
+      >
+        <div
+          class="relative my-3 flex h-16 w-16 items-center justify-center rounded-full bg-gray-50 text-2xl dark:bg-gray-800"
+        >
+          <span
+            class="dark:text-gray-200"
+          >
+            rk
+          </span>
+        </div>
+        <h1
+          class="text-xl font-medium dark:text-gray-200"
+        >
+          Radivoje Katanic
+        </h1>
+        <h3
+          class="text-lg text-gray-400"
+        >
+          Software Developer
+        </h3>
+      </div>
+      <hr
+        class="my-4 dark:border-gray-800"
+      />
+      <div>
+        <span
+          class="bg-sky-500 dark:text-gray-100 flex items-center gap-3 py-1.5 px-3 font-medium"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+            />
+          </svg>
+          Labs
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;

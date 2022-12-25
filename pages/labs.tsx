@@ -1,4 +1,4 @@
-import Project from "../components/Project";
+import Project from "../components/project/Project";
 
 const PROJECTS = [
   {
@@ -24,8 +24,8 @@ const PROJECTS = [
 
 const Labs = (): JSX.Element => (
   <div className="m-auto max-w-5xl flex-1">
-    <div className="m-auto max-w-2xl mb-12">
-      <h1 className="text-3xl font-semibold mb-4 text-neutral-800 dark:text-neutral-200">
+    <div className="m-auto mb-12 max-w-2xl">
+      <h1 className="mb-4 text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
         Small personal tools & experiments
       </h1>
       <p className="text-neutral-500 dark:text-neutral-400">
