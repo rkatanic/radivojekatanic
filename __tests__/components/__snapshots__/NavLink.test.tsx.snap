@@ -1,23 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavLink should render 1`] = `
+exports[`NavLink should render with active link 1`] = `
 <body>
   <div>
     <span
-      class="cursor-pointer dark:hover:text-neutral-200 hover:text-neutral-900 dark:text-neutral-500 text-neutral-400"
+      class="bg-sky-500 flex items-center gap-3 py-1.5 px-3 font-medium dark:text-white"
     >
+      <div>
+        icon
+      </div>
       Label
     </span>
   </div>
 </body>
 `;
 
-exports[`NavLink should render with active link 1`] = `
+exports[`NavLink should render with inactive link 1`] = `
 <body>
   <div>
     <span
-      class="cursor-pointer dark:hover:text-neutral-200 hover:text-neutral-900 dark:text-neutral-200 text-neutral-900"
+      class="dark:text-gray-300 dark:hover:text-gray-200 flex items-center gap-3 py-1.5 px-3 font-medium dark:text-white"
     >
+      <div>
+        icon
+      </div>
       Label
     </span>
   </div>

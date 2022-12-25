@@ -7,9 +7,14 @@ exports[`Footer should render 1`] = `
       class="m-auto w-full max-w-2xl flex items-end justify-between py-10 border-t dark:border-neutral-800 mt-16 text-sm text-neutral-400 dark:text-neutral-500"
     >
       <div
-        class="whitespace-nowrap flex-1"
+        class="hidden sm:block whitespace-nowrap flex-1"
       >
         © 2022 Radivoje Katanic.
+      </div>
+      <div
+        class="sm:hidden whitespace-nowrap flex-1"
+      >
+        © 2022 Radivoje K.
       </div>
       <div
         class="flex gap-4"

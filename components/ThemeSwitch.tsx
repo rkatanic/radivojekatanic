@@ -22,13 +22,22 @@ const ThemeSwitch = (): JSX.Element => {
   };
 
   return (
-    <button
-      onClick={hanleThemeToggle}
-      type="button"
-      className="sm:border w-11 h-11 sm:w-9 sm:h-9 flex items-center justify-center rounded-full dark:bg-neutral-900/80 dark:border-neutral-800 cursor-pointer group sm:dark:hover:bg-neutral-100 sm:hover:bg-neutral-900 sm:shadow-md sm:dark:shadow-black"
+    <label
+      className="relative inline-flex cursor-pointer items-center"
+      htmlFor="toggle"
     >
-      <RiContrastFill className="dark:fill-neutral-100 sm:dark:group-hover:fill-black sm:group-hover:fill-white w-5 h-5 sm:w-4 sm:h-4" />
-    </button>
+      <input
+        onChange={hanleThemeToggle}
+        className="peer sr-only"
+        id="toggle"
+        type="checkbox"
+        checked={isDarkMode}
+      />
+      <div className="peer h-3 w-7 rounded-full bg-gray-200 after:absolute after:top-[5px] after:left-0 after:h-3.5 after:w-3.5 after:rounded-full after:border after:border-zinc-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-sky-500 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-0 dark:border-zinc-600 dark:bg-gray-600" />
+      <span className="text-smx ml-3 tracking-wide dark:text-gray-200">
+        Night Theme
+      </span>
+    </label>
   );
 };
 export default ThemeSwitch;

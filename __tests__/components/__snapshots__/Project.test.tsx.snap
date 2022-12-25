@@ -9,7 +9,7 @@ exports[`Project should render 1`] = `
       target="blank"
     >
       <div
-        class="flex items-baseline justify-between"
+        class="flex items-baseline justify-between gap-4"
       >
         <h3
           class="flex flex-wrap gap-3 items-baseline font-medium dark:text-neutral-200 text-xl font-medium"
@@ -71,7 +71,7 @@ exports[`Project should render with badge 1`] = `
       target="blank"
     >
       <div
-        class="flex items-baseline justify-between"
+        class="flex items-baseline justify-between gap-4"
       >
         <h3
           class="flex flex-wrap gap-3 items-baseline font-medium dark:text-neutral-200 text-xl font-medium"

@@ -4,21 +4,23 @@ import { useRouter } from "next/router";
 interface Props {
   link: string;
   label: string;
-  onClick?: () => void;
+  icon: JSX.Element;
 }
 
-const NavLink = ({ link, label, onClick }: Props): JSX.Element => {
-  const { asPath: activeLink } = useRouter();
+const NavLink = ({ link, label, icon }: Props): JSX.Element => {
+  const { asPath } = useRouter();
+  const isActiveLink = asPath === link;
 
   return (
-    <Link href={link} onClick={onClick}>
+    <Link href={link}>
       <span
-        className={`block cursor-pointer dark:hover:text-neutral-200 hover:text-neutral-900 ${
-          activeLink === link
-            ? "dark:text-neutral-200 text-neutral-900"
-            : "dark:text-neutral-500 text-neutral-400"
-        }`}
+        className={`${
+          isActiveLink
+            ? "bg-sky-500"
+            : "dark:text-gray-300 dark:hover:text-gray-200"
+        } flex items-center gap-3 py-1.5 px-3 font-medium dark:text-white`}
       >
+        {icon}
         {label}
       </span>
     </Link>
