@@ -3,7 +3,7 @@ import ThemeSwitch from "./ThemeSwitch";
 import { FiMail, FiUser, FiZap } from "react-icons/fi";
 
 const LINKS = [
-  // { link: "/", label: "About", icon: <FiUser /> },
+  { link: "/about", label: "About", icon: <FiUser /> },
   { link: "/projects", label: "Labs", icon: <FiZap /> },
   // {
   //   link: "/contact",
