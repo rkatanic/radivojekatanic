@@ -4,7 +4,7 @@ exports[`Project should render 1`] = `
 <body>
   <div>
     <div
-      class="group relative flex border shadow-md transition-[border] duration-200 dark:border-gray-700 dark:hover:border-sky-400"
+      class="group relative flex border shadow-md transition-[border] duration-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:border-sky-400"
     >
       <div
         class="flex-1 p-4"

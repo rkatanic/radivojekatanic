@@ -78,3 +78,14 @@ body {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 }
+
+.dots {
+  background-image: radial-gradient(hsl(214, 8%, 20%) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+}
+
+.grid-lines {
+  background-image: linear-gradient(hsl(214, 8%, 12.25%) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(214, 8%, 12.25%) 1px, transparent 1px);
+  background-size: 0.5rem 0.5rem;
+}

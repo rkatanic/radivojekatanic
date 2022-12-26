@@ -34,7 +34,7 @@ const ThemeSwitch = (): JSX.Element => {
         checked={isDarkMode}
       />
       <div className="peer h-3 w-7 rounded-full bg-gray-200 after:absolute after:top-[5px] after:left-0 after:h-3.5 after:w-3.5 after:rounded-full after:border after:border-zinc-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-sky-500 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-0 dark:border-zinc-600 dark:bg-gray-600" />
-      <span className="text-smx ml-3 tracking-wide dark:text-gray-200">
+      <span className="text-smx ml-3 tracking-wide dark:text-gray-300">
         Night Theme
       </span>
     </label>

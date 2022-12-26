@@ -1,10 +1,11 @@
 import NavLink from "./NavLink";
 import ThemeSwitch from "./ThemeSwitch";
-import { FiMail, FiUser, FiZap } from "react-icons/fi";
+import { FiMail, FiUser } from "react-icons/fi";
+import { RiFlaskLine } from "react-icons/ri";
 
 const LINKS = [
   { link: "/about", label: "About", icon: <FiUser /> },
-  { link: "/projects", label: "Labs", icon: <FiZap /> },
+  { link: "/projects", label: "Labs", icon: <RiFlaskLine /> },
   // {
   //   link: "/contact",
   //   label: "Contact",
@@ -13,7 +14,7 @@ const LINKS = [
 ];
 
 const Menu = (): JSX.Element => (
-  <div className="sticky top-20 max-h-min w-64 border p-4 shadow-md dark:border-gray-700 dark:bg-gray-900">
+  <div className="sticky top-20 w-64 border p-4 shadow-md dark:border-gray-700 dark:bg-gray-900">
     <div className="flex flex-col items-center">
       <div className="relative my-3 flex h-16 w-16 items-center justify-center rounded-full bg-gray-50 text-2xl dark:bg-gray-800">
         <span className="dark:text-gray-200">rk</span>

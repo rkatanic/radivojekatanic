@@ -10,8 +10,8 @@ const Home = (): JSX.Element => (
         Hey, my name is Radivoje Katanic. I am a software developer based in
         Bosnia & Herzegovina. In a free time I like experimenting with different
         technologies and building small{" "}
-        <Link href="/labs">
-          <span className="cursor-pointer font-medium text-gray-800 hover:text-sky-500 hover:underline dark:font-normal dark:text-gray-200 dark:hover:text-sky-300">
+        <Link href="/projects">
+          <span className="cursor-pointer font-medium text-gray-800 underline hover:text-sky-500 dark:font-normal dark:text-gray-200 dark:hover:text-sky-300">
             tools
           </span>
         </Link>{" "}

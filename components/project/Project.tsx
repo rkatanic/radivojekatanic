@@ -1,22 +1,28 @@
 import Link from "next/link";
 import { FiChevronRight } from "react-icons/fi";
 import { DATE_FORMAT } from "utils/dateTimeUtils";
-import { ProjectType } from "../types/Project";
+import { ProjectType } from "../../types/Project";
 
 interface Props {
   project: ProjectType;
+  index: number;
 }
 
 const Project = ({
   project: { slug, title, description, creationDate },
+  index,
 }: Props): JSX.Element => (
   <Link className="flex w-full" href={`/projects/${slug}`}>
-    <div className="group relative flex border shadow-md transition-[border] duration-200 dark:border-gray-700 dark:hover:border-sky-400">
+    <div className="group relative flex border shadow-md transition-[border] duration-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:border-sky-400">
       <div className="flex-1 p-4">
         <div className="mb-4 text-xl font-medium tracking-wide dark:border-gray-700 dark:text-gray-200">
           {title}
         </div>
-        <div className="absolute top-4 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide group-hover:text-sky-300 dark:text-gray-500">
+        <div className="absolute top-6 right-4 z-10 flex items-end gap-1 border py-0.5 px-1 text-xs font-light tracking-wide dark:border-gray-700 dark:text-gray-300">
+          <span className="dark:text-gray-400">#</span> 0{index + 1}{" "}
+          <span className="dark:text-gray-500"></span>
+        </div>
+        <div className="absolute bottom-6 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide group-hover:text-sky-300 dark:text-gray-500">
           View <FiChevronRight className="mb-0.5" />
         </div>
         <p className="text-lg leading-relaxed tracking-wide dark:text-gray-400">
