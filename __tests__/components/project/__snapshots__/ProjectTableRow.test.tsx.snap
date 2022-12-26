@@ -4,7 +4,7 @@ exports[`ProjectTableRow should render application link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b border-gray-800 py-2.5 px-4 hover:bg-gray-800/30"
+      class="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -23,7 +23,7 @@ exports[`ProjectTableRow should render application link 1`] = `
         />
       </svg>
       <a
-        class="text-gray-100 cursor-pointer tracking-wide  hover:text-sky-300 hover:underline"
+        class="dark:text-gray-100 cursor-pointer tracking-wide hover:text-sky-500 hover:underline dark:hover:text-sky-300"
         href="url-link"
       >
         index.html
@@ -37,7 +37,7 @@ exports[`ProjectTableRow should render file link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b border-gray-800 py-2.5 px-4 hover:bg-gray-800/30"
+      class="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -59,7 +59,7 @@ exports[`ProjectTableRow should render file link 1`] = `
         />
       </svg>
       <a
-        class="text-gray-100 cursor-pointer tracking-wide  hover:text-sky-300 hover:underline"
+        class="dark:text-gray-100 cursor-pointer tracking-wide hover:text-sky-500 hover:underline dark:hover:text-sky-300"
         href="#readme"
       >
         README.md
@@ -73,7 +73,7 @@ exports[`ProjectTableRow should render image link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b border-gray-800 py-2.5 px-4 hover:bg-gray-800/30"
+      class="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -105,7 +105,7 @@ exports[`ProjectTableRow should render image link 1`] = `
         />
       </svg>
       <a
-        class="text-gray-100 cursor-pointer tracking-wide  hover:text-sky-300 hover:underline"
+        class="dark:text-gray-100 cursor-pointer tracking-wide hover:text-sky-500 hover:underline dark:hover:text-sky-300"
         href="image-url"
       >
         mockup-01.png

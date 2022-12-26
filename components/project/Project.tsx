@@ -13,23 +13,22 @@ const Project = ({
   index,
 }: Props): JSX.Element => (
   <Link className="flex w-full" href={`/projects/${slug}`}>
-    <div className="group relative flex border shadow-md transition-[border] duration-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:border-sky-400">
+    <div className="group relative flex border border-gray-300 bg-slate-50 shadow-sm transition-[border] duration-200 hover:border-sky-400 dark:border-gray-700 dark:bg-gray-900 dark:shadow-md dark:hover:border-sky-400">
       <div className="flex-1 p-4">
         <div className="mb-4 text-xl font-medium tracking-wide dark:border-gray-700 dark:text-gray-200">
           {title}
         </div>
-        <div className="absolute top-6 right-4 z-10 flex items-end gap-1 border py-0.5 px-1 text-xs font-light tracking-wide dark:border-gray-700 dark:text-gray-300">
-          <span className="dark:text-gray-400">#</span> 0{index + 1}{" "}
-          <span className="dark:text-gray-500"></span>
+        <div className="absolute top-6 right-4 z-10 flex items-end gap-1 border border-gray-300 py-0.5 px-1 text-xs font-light tracking-wide text-gray-600 dark:border-gray-700 dark:text-gray-300">
+          <span className="text-gray-400">#</span> 0{index + 1}
         </div>
-        <div className="absolute bottom-6 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide group-hover:text-sky-300 dark:text-gray-500">
+        <div className="absolute bottom-6 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide text-gray-400 group-hover:text-sky-500 dark:text-gray-500 dark:group-hover:text-sky-300">
           View <FiChevronRight className="mb-0.5" />
         </div>
-        <p className="text-lg leading-relaxed tracking-wide dark:text-gray-400">
+        <p className="text-lg leading-relaxed tracking-wide text-gray-500 dark:text-gray-400">
           {description}
         </p>
         <hr className="my-4 dark:border-gray-800" />
-        <div className="mb-2 flex items-center gap-2 text-sm dark:text-gray-400">
+        <div className="mb-2 flex items-center gap-2 text-sm text-gray-400 dark:text-gray-400">
           {DATE_FORMAT.format(new Date(creationDate))}
         </div>
       </div>

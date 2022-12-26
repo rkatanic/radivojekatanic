@@ -27,9 +27,15 @@ body {
   transform-style: preserve-3d;
 }
 
-.inner {
+.dark .inner {
   background: none;
   border: 1px dashed hsl(214, 8%, 26%);
+  border-radius: 50%;
+}
+
+.inner {
+  background: none;
+  border: 1px dashed hsl(214, 8%, 82%);
   border-radius: 50%;
 }
 
@@ -79,13 +85,24 @@ body {
   }
 }
 
-.dots {
+.dark .dots {
   background-image: radial-gradient(hsl(214, 8%, 20%) 1px, transparent 1px);
   background-size: 4rem 4rem;
 }
 
-.grid-lines {
+.dark .grid-lines {
   background-image: linear-gradient(hsl(214, 8%, 12.25%) 1px, transparent 1px),
     linear-gradient(90deg, hsl(214, 8%, 12.25%) 1px, transparent 1px);
+  background-size: 0.5rem 0.5rem;
+}
+
+.dots {
+  background-image: radial-gradient(hsl(214, 8%, 86%) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+}
+
+.grid-lines {
+  background-image: linear-gradient(hsl(214, 8%, 96%) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(214, 8%, 96%) 1px, transparent 1px);
   background-size: 0.5rem 0.5rem;
 }

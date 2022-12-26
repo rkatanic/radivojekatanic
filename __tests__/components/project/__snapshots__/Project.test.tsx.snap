@@ -4,7 +4,7 @@ exports[`Project should render 1`] = `
 <body>
   <div>
     <div
-      class="group relative flex border shadow-md transition-[border] duration-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:border-sky-400"
+      class="group relative flex border border-gray-300 bg-slate-50 shadow-sm transition-[border] duration-200 hover:border-sky-400 dark:border-gray-700 dark:bg-gray-900 dark:shadow-md dark:hover:border-sky-400"
     >
       <div
         class="flex-1 p-4"
@@ -15,22 +15,18 @@ exports[`Project should render 1`] = `
           Project Title
         </div>
         <div
-          class="absolute top-6 right-4 z-10 flex items-end gap-1 border py-0.5 px-1 text-xs font-light tracking-wide dark:border-gray-700 dark:text-gray-300"
+          class="absolute top-6 right-4 z-10 flex items-end gap-1 border border-gray-300 py-0.5 px-1 text-xs font-light tracking-wide text-gray-600 dark:border-gray-700 dark:text-gray-300"
         >
           <span
-            class="dark:text-gray-400"
+            class="text-gray-400"
           >
             #
           </span>
            0
           NaN
-           
-          <span
-            class="dark:text-gray-500"
-          />
         </div>
         <div
-          class="absolute bottom-6 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide group-hover:text-sky-300 dark:text-gray-500"
+          class="absolute bottom-6 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide text-gray-400 group-hover:text-sky-500 dark:text-gray-500 dark:group-hover:text-sky-300"
         >
           View 
           <svg
@@ -51,7 +47,7 @@ exports[`Project should render 1`] = `
           </svg>
         </div>
         <p
-          class="text-lg leading-relaxed tracking-wide dark:text-gray-400"
+          class="text-lg leading-relaxed tracking-wide text-gray-500 dark:text-gray-400"
         >
           Project description.
         </p>
@@ -59,7 +55,7 @@ exports[`Project should render 1`] = `
           class="my-4 dark:border-gray-800"
         />
         <div
-          class="mb-2 flex items-center gap-2 text-sm dark:text-gray-400"
+          class="mb-2 flex items-center gap-2 text-sm text-gray-400 dark:text-gray-400"
         >
           Oct 10, 2010
         </div>

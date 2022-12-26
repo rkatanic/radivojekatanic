@@ -25,13 +25,13 @@ const ProjectTableRowIcon = ({
 const ProjectTableRow = ({
   link: { title, href, type },
 }: Props): JSX.Element => (
-  <div className="flex items-center gap-3 border-b border-gray-800 py-2.5 px-4 hover:bg-gray-800/30">
+  <div className="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30">
     <ProjectTableRowIcon type={type} />
     <a
       href={href}
       className={`${
-        href === "" ? "pointer-events-none dark:text-gray-400" : "text-gray-100"
-      } cursor-pointer tracking-wide  hover:text-sky-300 hover:underline`}
+        href === "" ? "pointer-events-none text-gray-400" : "dark:text-gray-100"
+      } cursor-pointer tracking-wide hover:text-sky-500 hover:underline dark:hover:text-sky-300`}
     >
       {title}
     </a>

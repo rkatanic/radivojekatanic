@@ -13,9 +13,9 @@ const LINKS = [
 ];
 
 const Menu = (): JSX.Element => (
-  <div className="sticky top-20 w-64 border p-4 shadow-md dark:border-gray-700 dark:bg-gray-900">
+  <div className="sticky top-20 w-64 border border-gray-300 bg-slate-50 p-4 shadow-sm dark:border-gray-700 dark:bg-gray-900 dark:shadow-md">
     <div className="mt-2 flex flex-col items-center gap-4">
-      <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-gray-50 text-2xl dark:bg-gray-800">
+      <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl dark:bg-gray-800">
         <span className="dark:text-gray-200">rk</span>
       </div>
 
@@ -28,17 +28,17 @@ const Menu = (): JSX.Element => (
 
       <div className="flex justify-center gap-6">
         <a href="https://github.com/rkatanic" target="_blank" rel="noreferrer">
-          <FiGithub className="dark:stroke-gray-400 dark:hover:stroke-sky-400" />
+          <FiGithub className="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400" />
         </a>
         <a
           href="https://www.linkedin.com/in/radivoje-katanic/"
           target="_blank"
           rel="noreferrer"
         >
-          <FiLinkedin className="dark:stroke-gray-400 dark:hover:stroke-sky-400" />
+          <FiLinkedin className="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400" />
         </a>
         <a href="mailto:rkatanic@outlook.com" target="_blank" rel="noreferrer">
-          <FiMail className="dark:stroke-gray-400 dark:hover:stroke-sky-400" />
+          <FiMail className="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400" />
         </a>
       </div>
     </div>
