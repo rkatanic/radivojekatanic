@@ -15,7 +15,22 @@ exports[`Project should render 1`] = `
           Project Title
         </div>
         <div
-          class="absolute top-4 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide group-hover:text-sky-300 dark:text-gray-500"
+          class="absolute top-6 right-4 z-10 flex items-end gap-1 border py-0.5 px-1 text-xs font-light tracking-wide dark:border-gray-700 dark:text-gray-300"
+        >
+          <span
+            class="dark:text-gray-400"
+          >
+            #
+          </span>
+           0
+          NaN
+           
+          <span
+            class="dark:text-gray-500"
+          />
+        </div>
+        <div
+          class="absolute bottom-6 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide group-hover:text-sky-300 dark:text-gray-500"
         >
           View 
           <svg

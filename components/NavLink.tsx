@@ -18,7 +18,7 @@ const NavLink = ({ link, label, icon }: Props): JSX.Element => {
           isActiveLink
             ? "bg-sky-500 dark:text-gray-100"
             : "dark:text-gray-400 dark:hover:text-gray-200"
-        } flex items-center gap-3 py-1.5 px-3 font-medium`}
+        } flex items-center gap-3 py-2 px-3 font-medium`}
       >
         {icon}
         {label}
