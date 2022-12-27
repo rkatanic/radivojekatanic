@@ -1,31 +1,30 @@
 ---
 title: "Image To Text Converter"
-description: "Simple OCR Converter. Supports 50+ languages."
-creationDate: "2022-03-15"
-updated: { description: "Updates README", date: "2022-03-15" }
+description: "Online character recognition tool. Supports 50+ languages."
+creationDate: "2021-11-06"
+updated: { description: "Update README", date: "2022-12-27" }
 links:
   [
     {
       title: "index.html",
-      href: "https://rkatanic.github.io/markdown-editor",
+      href: "https://image-to-text-converter.vercel.app/",
       type: "application",
     },
     { title: "mockup-01.png", href: "", type: "image" },
     { title: "mockup-02.png", href: "", type: "image" },
     { title: "mockup-03.png", href: "", type: "image" },
     { title: "todos.json", href: "#todos", type: "file" },
-    { title: "README.md", href: "#markdown-editor", type: "file" },
+    { title: "README.md", href: "#image-to-text-converter", type: "file" },
   ]
 ---
 
-### Markdown Editor
+### Image To Text Converter
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper.\
- Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet.\
-\
-Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Simple tool used for converting pictures into text.
+It features over 50 different character specific languages.\
+User can either paste valid URL of the picture file or upload an image.
+Supported upload formats are jpg, jpeg, png, bmp & pbm.
 
 ### Todos
 
 - [ ] Update design
-- [x] Improve responsiveness

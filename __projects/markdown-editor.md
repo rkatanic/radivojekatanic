@@ -1,8 +1,8 @@
 ---
 title: "Markdown Editor"
 description: "Simple markdown editor for personal needs."
-creationDate: "2022-04-15"
-updated: { description: "Updates README", date: "2022-03-15" }
+creationDate: "2022-02-28"
+updated: { description: "Update README", date: "2022-12-27" }
 links:
   [
     {
@@ -20,12 +20,12 @@ links:
 
 ### Markdown Editor
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper.\
- Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet.\
-\
-Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Markdown Editor is tool made for in-browser editing of notes based on markdown syntax.
+Features markdown file preview, download and save by persisting markdown syntax in local storage.
 
 ### Todos
 
-- [ ] Update design
+- [x] Add theme Switch
 - [x] Improve responsiveness
+- [ ] Add keyboard shortcuts
+- [ ] Update design

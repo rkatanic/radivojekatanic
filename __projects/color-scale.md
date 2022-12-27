@@ -1,31 +1,34 @@
 ---
 title: "Color Scale"
 description: "Tool for generating color shade palette. Based on HSL."
-creationDate: "2022-10-03"
-updated: { description: "Updates README", date: "2022-03-15" }
+creationDate: "2022-10-21"
+updated: { description: "Update README", date: "2022-12-27" }
 links:
   [
     {
       title: "index.html",
-      href: "https://rkatanic.github.io/markdown-editor",
+      href: "https://color-scale.vercel.app/",
       type: "application",
     },
     { title: "mockup-01.png", href: "", type: "image" },
     { title: "mockup-02.png", href: "", type: "image" },
     { title: "mockup-03.png", href: "", type: "image" },
     { title: "todos.json", href: "#todos", type: "file" },
-    { title: "README.md", href: "#markdown-editor", type: "file" },
+    { title: "README.md", href: "#color-scale", type: "file" },
   ]
 ---
 
-### Markdown Editor
+### Color Scale
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper.\
- Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet.\
-\
-Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Color Scale is tool made for generating color palette with 10 shades with balanced brightness steps between each shade.\
+It's based on HSL (hue, saturation, brightness) color specification, but also feature Hex color values.
+
+Application includes options to manipulate with HSL values of whole palette, with same options being present for each shade separately.\
+It also has output window where color values are present in both HSL and Hex color specification as well as different predefined outputs for json, css and scss file.\
+On every initial page load application generates new color palette.
+
+It also features Hex to HSL converter and vice versa.
 
 ### Todos
 
 - [ ] Update design
-- [x] Improve responsiveness

@@ -30,8 +30,8 @@ const ProjectTableRow = ({
     <a
       href={href}
       className={`${
-        href === "" ? "pointer-events-none text-gray-400" : "dark:text-gray-100"
-      } cursor-pointer tracking-wide hover:text-sky-500 hover:underline dark:hover:text-sky-300`}
+        href === "" ? "pointer-events-none" : "border-b"
+      } cursor-pointer border-gray-900 tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-100 dark:hover:border-sky-300 dark:hover:text-sky-300`}
     >
       {title}
     </a>

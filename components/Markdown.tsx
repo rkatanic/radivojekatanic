@@ -16,6 +16,7 @@ const Markdown = ({ markdown }: Props): JSX.Element => (
         p,
         h3,
         li,
+        a,
       }}
     />
   </div>
@@ -40,6 +41,17 @@ const p = ({ children }: any) => (
   <p className="mb-4 text-lg leading-relaxed text-gray-500 dark:text-gray-400">
     {children}
   </p>
+);
+
+const a = ({ children, node }: any) => (
+  <a
+    href={node?.properties?.href}
+    target="_blank"
+    rel="noreferrer"
+    className="mb-4 cursor-pointer border-b border-gray-900 text-lg leading-relaxed text-gray-900 hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
+  >
+    {children}
+  </a>
 );
 
 const li = ({ checked, children }: any): JSX.Element => (
