@@ -39,8 +39,8 @@ const Home = (): JSX.Element => (
       </h1>
       <p className="flex-1 text-lg leading-relaxed text-gray-500 dark:text-gray-400">
         This site is established in November 2022. Main purpose of the website
-        is to share thoughts and projects I'm currently working on. It&apos;s
-        built with Next.js, Tailwind CSS and deployed on Vercel.
+        is to share thoughts and projects I&apos;m currently working on.
+        It&apos;s built with Next.js, Tailwind CSS and deployed on Vercel.
         <br />
         <br /> Last time modified on December 2022.
       </p>

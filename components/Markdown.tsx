@@ -11,14 +11,15 @@ const Markdown = ({ markdown }: Props): JSX.Element => (
   <div className="my-8">
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
-      children={markdown}
       components={{
         p,
         h3,
         li,
         a,
       }}
-    />
+    >
+      {markdown}
+    </ReactMarkdown>
   </div>
 );
 
