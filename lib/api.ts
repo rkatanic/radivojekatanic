@@ -39,10 +39,11 @@ export const getProjectBySlug = (slug: string, fields: string[] = []) => {
 
 export const getAllProjects = (fields: string[] = []) => {
   const slugs = getProjectSlugs();
-  const snippets = slugs.map((slug) => getProjectBySlug(slug, fields));
-  // sort projects by date in descending order
-  // .sort((project1, project2) =>
-  // project1.creationDate > project2.creationDate ? -1 : 1
-  // );
+  const snippets = slugs
+    .map((slug) => getProjectBySlug(slug, fields))
+    // sort projects by date in descending order
+    .sort((project1, project2) =>
+      project1.creationDate > project2.creationDate ? -1 : 1
+    );
   return snippets;
 };
