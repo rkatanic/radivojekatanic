@@ -13,7 +13,7 @@ const LINKS = [
 ];
 
 const Menu = (): JSX.Element => (
-  <div className="sticky top-20 w-64 border border-gray-300 bg-slate-50 p-4 shadow-sm dark:border-gray-700 dark:bg-gray-900 dark:shadow-md">
+  <div className="sticky top-16 w-64 border border-gray-300 bg-slate-50 p-4 shadow-sm dark:border-gray-700 dark:bg-gray-900 dark:shadow-md">
     <div className="mt-2 flex flex-col items-center gap-4">
       <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl dark:bg-gray-800">
         <span className="dark:text-gray-200">rk</span>

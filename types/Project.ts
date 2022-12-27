@@ -3,9 +3,9 @@ export interface ProjectType {
   title: string;
   description: string;
   creationDate: string;
-  content?: string;
-  updated?: ProjectUpdated;
-  links?: ProjectLink[];
+  content: string;
+  updated: ProjectUpdated;
+  links: ProjectLink[];
 }
 
 export interface ProjectUpdated {

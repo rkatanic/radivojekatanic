@@ -1,5 +1,7 @@
 import { useState, useEffect, EffectCallback } from "react";
 import { RiContrastFill } from "react-icons/ri";
+import IconButon from "./IconButton";
+
 const ThemeSwitch = (): JSX.Element => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
@@ -22,19 +24,11 @@ const ThemeSwitch = (): JSX.Element => {
   };
 
   return (
-    <label
-      className="flex h-9 w-9 cursor-pointer items-center justify-center border border-gray-300 bg-slate-50 shadow-sm dark:border-gray-700 dark:bg-gray-900 dark:shadow-md"
-      htmlFor="toggle"
-    >
-      <input
-        onChange={hanleThemeToggle}
-        className="peer sr-only"
-        id="toggle"
-        type="checkbox"
-        checked={isDarkMode}
-      />
-      <RiContrastFill className="fill-gray-400" />
-    </label>
+    <IconButon
+      onClick={hanleThemeToggle}
+      icon={<RiContrastFill className="fill-gray-400" />}
+      tooltip="Theme"
+    />
   );
 };
 export default ThemeSwitch;
