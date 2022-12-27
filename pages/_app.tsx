@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import Layout from "../components/Layout";
 
 import "../styles/globals.css";
@@ -19,6 +20,10 @@ const isDarkModeActiveScript = `
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>
+    <Head>
+      <title>Radivoje Katanic</title>
+      <meta name="description" content="Software Developer" />
+    </Head>
     <script
       key="theme-script"
       dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
