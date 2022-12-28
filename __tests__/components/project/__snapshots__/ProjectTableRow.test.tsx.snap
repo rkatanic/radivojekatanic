@@ -4,7 +4,7 @@ exports[`ProjectTableRow should render application link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
+      class="flex items-center gap-3 border-b py-3 px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -23,7 +23,7 @@ exports[`ProjectTableRow should render application link 1`] = `
         />
       </svg>
       <a
-        class="border-b cursor-pointer border-gray-900 tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-100 dark:hover:border-sky-300 dark:hover:text-sky-300"
+        class="border-b cursor-pointer border-gray-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
         href="url-link"
       >
         index.html
@@ -37,7 +37,7 @@ exports[`ProjectTableRow should render file link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
+      class="flex items-center gap-3 border-b py-3 px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -59,7 +59,7 @@ exports[`ProjectTableRow should render file link 1`] = `
         />
       </svg>
       <a
-        class="border-b cursor-pointer border-gray-900 tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-100 dark:hover:border-sky-300 dark:hover:text-sky-300"
+        class="border-b cursor-pointer border-gray-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
         href="#readme"
       >
         README.md
@@ -73,7 +73,7 @@ exports[`ProjectTableRow should render image link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
+      class="flex items-center gap-3 border-b py-3 px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -105,7 +105,7 @@ exports[`ProjectTableRow should render image link 1`] = `
         />
       </svg>
       <a
-        class="border-b cursor-pointer border-gray-900 tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-100 dark:hover:border-sky-300 dark:hover:text-sky-300"
+        class="border-b cursor-pointer border-gray-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
         href="image-url"
       >
         mockup-01.png

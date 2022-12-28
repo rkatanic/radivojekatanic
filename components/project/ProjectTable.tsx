@@ -9,8 +9,8 @@ interface Props {
 }
 
 const ProjectTable = ({ updated, links }: Props): JSX.Element => (
-  <div className="border border-gray-300 bg-slate-50 shadow-sm dark:border-gray-700 dark:bg-gray-900 dark:shadow-md">
-    <div className="flex items-center justify-between gap-3 border-b border-gray-300 px-4 py-4 dark:border-gray-700">
+  <div className="border-2 border-gray-200 bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:shadow-md">
+    <div className="flex items-center justify-between gap-3 border-b-2 border-gray-200 px-4 py-4 dark:border-gray-800">
       <div className="flex items-center gap-3 tracking-wide">
         <h3 className="text-lg font-medium dark:text-gray-200">rkatanic</h3>
         <p className="text-gray-500 dark:text-gray-300">
