@@ -10,12 +10,12 @@ exports[`Project should render 1`] = `
         class="flex-1 p-4"
       >
         <div
-          class="mb-4 text-xl font-medium tracking-wide dark:border-gray-700 dark:text-gray-200"
+          class="mb-4 text-2xl font-medium dark:border-gray-700 dark:text-gray-200"
         >
           Project Title
         </div>
         <div
-          class="absolute top-6 right-4 z-10 flex items-end gap-1 border-2 border-gray-200 py-1 px-2 text-xs font-light tracking-wide text-gray-600 dark:border-gray-800 dark:text-gray-300"
+          class="absolute top-4 right-4 z-10 flex items-end gap-1 border-2 border-gray-200 py-1 px-2 text-xs font-medium tracking-wide text-gray-600 dark:border-gray-800 dark:text-gray-300"
         >
           <span
             class="text-gray-400"
@@ -26,25 +26,12 @@ exports[`Project should render 1`] = `
           NaN
         </div>
         <div
-          class="absolute bottom-6 right-4 z-10 flex items-end gap-1 text-sm font-light tracking-wide text-gray-400 group-hover:text-sky-500 dark:text-gray-500 dark:group-hover:text-sky-300"
+          class="group absolute bottom-6 right-4 z-10 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-gray-400 group-hover:text-sky-500 dark:text-gray-500 dark:group-hover:text-sky-300"
         >
-          View 
-          <svg
-            class="mb-0.5"
-            fill="none"
-            height="1em"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              points="9 18 15 12 9 6"
-            />
-          </svg>
+          View
+          <div
+            class="h-[2px] w-3 bg-gray-400 dark:bg-gray-500 dark:group-hover:bg-sky-300"
+          />
         </div>
         <p
           class="text-lg leading-relaxed tracking-wide text-gray-500 dark:text-gray-400"
@@ -55,7 +42,7 @@ exports[`Project should render 1`] = `
           class="my-4 dark:border-gray-800"
         />
         <div
-          class="mb-2 flex items-center gap-2 text-sm text-gray-400 dark:text-gray-400"
+          class="mb-2 flex items-center gap-2 text-sm uppercase tracking-wide text-gray-600 dark:text-gray-400"
         >
           Oct 10, 2010
         </div>

@@ -21,7 +21,7 @@ const ProjectTable = ({ updated, links }: Props): JSX.Element => (
         {DATE_FORMAT.format(new Date(updated.date))}
       </p>
     </div>
-    <div className="flex items-center gap-3 border-b py-2.5 px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30">
+    <div className="flex h-11 items-center gap-3 border-b px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30">
       <FiFolder className="stroke-gray-400" />
       <p className="pointer-events-none tracking-wide dark:text-gray-200">
         src

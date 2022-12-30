@@ -4,7 +4,7 @@ exports[`ProjectTableRow should render application link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b py-3 px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
+      class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -37,7 +37,7 @@ exports[`ProjectTableRow should render file link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b py-3 px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
+      class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"
@@ -73,7 +73,7 @@ exports[`ProjectTableRow should render image link 1`] = `
 <body>
   <div>
     <div
-      class="flex items-center gap-3 border-b py-3 px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
+      class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
     >
       <svg
         class="stroke-gray-400"

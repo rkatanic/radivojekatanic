@@ -25,7 +25,7 @@ const ProjectTableRowIcon = ({
 const ProjectTableRow = ({
   link: { title, href, type },
 }: Props): JSX.Element => (
-  <div className="flex items-center gap-3 border-b py-3 px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30">
+  <div className="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30">
     <ProjectTableRowIcon type={type} />
     <a
       href={href}
