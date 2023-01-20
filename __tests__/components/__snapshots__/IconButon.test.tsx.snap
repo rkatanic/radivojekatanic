@@ -4,7 +4,7 @@ exports[`IconButon should render 1`] = `
 <body>
   <div>
     <button
-      class="group relative flex h-10 w-10 items-center justify-center border-2 border-neutral-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
+      class="group relative flex h-10 w-10 items-center justify-center rounded-full border-2 border-neutral-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
       type="button"
     >
       <div>
