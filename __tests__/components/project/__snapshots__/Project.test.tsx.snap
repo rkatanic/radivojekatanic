@@ -3,77 +3,94 @@
 exports[`Project should render 1`] = `
 <body>
   <div>
-    <div
-      class="group relative flex border-2 border-neutral-200 bg-slate-50 shadow-sm transition-[border] duration-200 hover:border-sky-400 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-400"
+    <a
+      class="flex w-full"
+      href="/projects/project-slug"
     >
       <div
-        class="flex-1 p-4"
+        class="w-full rounded-lg border bg-white shadow-sm"
       >
         <div
-          class="mb-4 text-2xl font-medium dark:border-neutral-700 dark:text-neutral-200"
+          class="p-6"
         >
-          Project Title
-        </div>
-        <div
-          class="absolute top-4 right-4 z-10 flex items-end gap-1 border-2 border-neutral-200 py-1 px-2 text-xs font-medium tracking-wide text-neutral-600 dark:border-neutral-800 dark:text-neutral-300"
-        >
-          <span
-            class="text-neutral-400"
+          <div
+            class="mb-6 flex items-start gap-4"
           >
-            #
-          </span>
-           0
-          NaN
+            <div
+              class="flex h-14 w-14 items-center justify-center rounded-full bg-gray-50 text-gray-400"
+            >
+              <svg
+                fill="none"
+                height="1.25rem"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1.25rem"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                />
+                <polyline
+                  points="3.27 6.96 12 12.01 20.73 6.96"
+                />
+                <line
+                  x1="12"
+                  x2="12"
+                  y1="22.08"
+                  y2="12"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3
+                class="text-lg font-medium leading-8 text-gray-900"
+              >
+                Project Title
+              </h3>
+              <p
+                class="text-sm text-gray-500"
+              >
+                Oct 10, 2010
+              </p>
+            </div>
+          </div>
+          <p
+            class="leading-6 text-gray-600"
+          >
+            Project description.
+          </p>
         </div>
         <div
-          class="group absolute bottom-6 right-4 z-10 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-neutral-400 group-hover:text-sky-500 dark:text-neutral-500 dark:group-hover:text-sky-300"
+          class="flex items-center gap-2 border-t p-4 px-6 text-sm font-medium text-sky-400"
         >
-          View
-          <div
-            class="h-[2px] w-3 bg-neutral-400 dark:bg-neutral-500 dark:group-hover:bg-sky-300"
-          />
-        </div>
-        <p
-          class="text-lg leading-relaxed tracking-wide text-neutral-500 dark:text-neutral-400"
-        >
-          Project description.
-        </p>
-        <hr
-          class="my-4 dark:border-neutral-800"
-        />
-        <div
-          class="mb-2 flex items-center gap-2 text-sm uppercase tracking-wide text-neutral-600 dark:text-neutral-400"
-        >
-          Oct 10, 2010
+          View project 
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="5"
+              x2="19"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 5 19 12 12 19"
+            />
+          </svg>
         </div>
       </div>
-      <div
-        class="xbg-gradient-to-r relative h-full w-44 overflow-hidden from-neutral-900 to-neutral-800/40"
-      >
-        <div
-          class="cube group-hover:animate-[rotate_30s_linear_infinite]"
-        >
-          <div
-            class="sphere-one inner"
-          />
-          <div
-            class="sphere-two inner"
-          />
-          <div
-            class="sphere-three inner"
-          />
-          <div
-            class="sphere-four inner"
-          />
-          <div
-            class="sphere-five inner"
-          />
-          <div
-            class="sphere-six inner"
-          />
-        </div>
-      </div>
-    </div>
+    </a>
   </div>
 </body>
 `;

@@ -1,53 +1,13 @@
 import NavLink from "./NavLink";
-import { FiGithub, FiLinkedin, FiMail, FiUser } from "react-icons/fi";
-import { RiFlaskLine } from "react-icons/ri";
-
-const LINKS = [
-  { link: "/about", label: "About", icon: <FiUser /> },
-  { link: "/projects", label: "Labs", icon: <RiFlaskLine /> },
-  // {
-  //   link: "/contact",
-  //   label: "Contact",
-  //   icon: <FiMail />,
-  // },
-];
 
 const Menu = (): JSX.Element => (
-  <div className="sticky top-16 w-64 border-2 border-neutral-200 bg-slate-50 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md">
-    <div className="mt-2 flex flex-col items-center gap-4">
-      <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl dark:bg-neutral-800/70">
-        <span className="dark:text-neutral-200">rk</span>
+  <div className="h-16 w-full border-b bg-white shadow-md">
+    <div className="m-auto flex h-full w-full max-w-3xl items-center justify-between">
+      <div className="h-5 w-5 rounded-full border-4 border-gray-800"></div>
+      <div className="flex">
+        <NavLink link="/about" label="About" />
+        {/* <NavLink link="/projects" label="Playground" /> */}
       </div>
-
-      <div className="text-center">
-        <h1 className="text-xl font-medium dark:text-neutral-200">
-          Radivoje Katanic
-        </h1>
-        <h3 className="text-lg text-neutral-400">Software Developer</h3>
-      </div>
-
-      <div className="flex justify-center gap-6">
-        <a href="https://github.com/rkatanic" target="_blank" rel="noreferrer">
-          <FiGithub className="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/radivoje-katanic/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FiLinkedin className="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400" />
-        </a>
-        <a href="mailto:rkatanic@outlook.com" target="_blank" rel="noreferrer">
-          <FiMail className="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400" />
-        </a>
-      </div>
-    </div>
-
-    <hr className="my-4 dark:border-neutral-800" />
-    <div>
-      {LINKS.map(({ link, label, icon }, i) => (
-        <NavLink key={i} link={link} label={label} icon={icon} />
-      ))}
     </div>
   </div>
 );

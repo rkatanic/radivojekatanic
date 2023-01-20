@@ -4,11 +4,8 @@ exports[`NavLink should render with active link 1`] = `
 <body>
   <div>
     <span
-      class="bg-sky-500 dark:text-neutral-50 flex items-center gap-3 py-2 px-3 font-medium"
+      class="bg-gray-50 text-gray-900 rounded-lg py-2 px-3 font-medium hover:text-gray-900"
     >
-      <div>
-        icon
-      </div>
       Label
     </span>
   </div>
@@ -19,11 +16,8 @@ exports[`NavLink should render with inactive link 1`] = `
 <body>
   <div>
     <span
-      class="text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 flex items-center gap-3 py-2 px-3 font-medium"
+      class="text-gray-600 rounded-lg py-2 px-3 font-medium hover:text-gray-900"
     >
-      <div>
-        icon
-      </div>
       Label
     </span>
   </div>

@@ -16,7 +16,7 @@ const Projects = ({ projects }: Props): JSX.Element => (
     </p>
     <div className="grid grid-cols-2 gap-6">
       {projects.map((project, i) => (
-        <Project key={i} project={project} index={i} />
+        <Project key={i} project={project} />
       ))}
     </div>
   </div>

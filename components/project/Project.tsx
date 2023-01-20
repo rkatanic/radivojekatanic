@@ -1,18 +1,15 @@
-import Link from "next/link";
-import { FiArrowRight, FiBox, FiChevronRight } from "react-icons/fi";
+import { FiArrowRight, FiBox } from "react-icons/fi";
 import { DATE_FORMAT } from "utils/dateTimeUtils";
 import { ProjectType } from "../../types/Project";
 
 interface Props {
   project: ProjectType;
-  index: number;
 }
 
 const Project = ({
   project: { slug, title, description, creationDate },
-  index,
 }: Props): JSX.Element => (
-  <Link className="flex w-full" href={`/projects/${slug}`}>
+  <a className="flex w-full" href={`/projects/${slug}`}>
     <div className="w-full rounded-lg border bg-white shadow-sm">
       <div className="p-6">
         <div className="mb-6 flex items-start gap-4">
@@ -34,7 +31,7 @@ const Project = ({
         View project <FiArrowRight />
       </div>
     </div>
-  </Link>
+  </a>
 );
 
 export default Project;

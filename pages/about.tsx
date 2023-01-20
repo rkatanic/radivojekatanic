@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FiCalendar, FiDownloadCloud } from "react-icons/fi";
 
 const Home = (): JSX.Element => (
@@ -11,9 +10,6 @@ const Home = (): JSX.Element => (
             Radivoje Katanić
           </h1>
           <div className="flex items-start gap-2">
-            {/* <button className="flex h-9 items-center gap-2 rounded-lg border border-gray-300 bg-white px-3 text-sm font-medium text-gray-600 shadow-sm hover:text-gray-900 hover:shadow-md">
-                  <FiDownloadCloud /> Download CV
-                </button> */}
             <button className="flex h-9 items-center gap-2 rounded-lg  border bg-gray-800 px-3 text-sm font-medium text-white shadow-sm hover:bg-gray-900 hover:shadow-md">
               <FiDownloadCloud /> Download CV
             </button>
