@@ -17,8 +17,8 @@ const Layout = ({ children }: Props): JSX.Element => {
   };
 
   return (
-    <div className="z-10 flex min-h-screen flex-col items-start justify-center bg-slate-50  dark:bg-neutral-900">
-      <div className="-mb-8 h-60 w-full bg-gradient-to-r from-orange-300 via-fuchsia-300 to-indigo-300"></div>
+    <div className="z-10 flex min-h-screen flex-col items-start justify-center bg-white  dark:bg-neutral-900">
+      <div className="h-60 w-full bg-gradient-to-r from-orange-300 via-fuchsia-300 to-indigo-300"></div>
       <div className="m-auto w-full max-w-3xl"> {children}</div>
     </div>
   );

@@ -9,7 +9,7 @@ interface Props {
 }
 
 const ProjectTable = ({ updated, links }: Props): JSX.Element => (
-  <div className="rounded-md border-2 border-neutral-200 bg-slate-50 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md">
+  <div className="rounded-md border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md">
     <div className="flex items-center justify-between gap-3 border-b-2 border-neutral-200 px-4 py-4 dark:border-neutral-800">
       <div className="flex items-center gap-3 tracking-wide">
         <h3 className="text-lg font-medium dark:text-neutral-200">rkatanic</h3>
