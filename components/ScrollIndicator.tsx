@@ -1,7 +1,7 @@
 import Menu from "./Menu";
 
 const ScrollIndicator = (): JSX.Element => (
-  <div className="w-40 absolute dark:text-zinc-200 -left-48">
+  <div className="absolute -left-48 w-40 dark:text-neutral-200">
     <Menu />
   </div>
 );

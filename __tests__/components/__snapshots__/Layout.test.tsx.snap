@@ -4,19 +4,19 @@ exports[`Layout given project page should render with go back button 1`] = `
 <body>
   <div>
     <div
-      class="z-10 flex min-h-screen items-start justify-center gap-8 bg-slate-50 py-16 px-8  dark:bg-gray-900"
+      class="z-10 flex min-h-screen items-start justify-center gap-8 bg-slate-50 py-16 px-8  dark:bg-neutral-900"
     >
       <div
-        class="sticky top-16 w-64 border-2 border-gray-200 bg-slate-50 p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900 dark:shadow-md"
+        class="sticky top-16 w-64 border-2 border-neutral-200 bg-slate-50 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md"
       >
         <div
           class="mt-2 flex flex-col items-center gap-4"
         >
           <div
-            class="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl dark:bg-gray-800/70"
+            class="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl dark:bg-neutral-800/70"
           >
             <span
-              class="dark:text-gray-200"
+              class="dark:text-neutral-200"
             >
               rk
             </span>
@@ -25,12 +25,12 @@ exports[`Layout given project page should render with go back button 1`] = `
             class="text-center"
           >
             <h1
-              class="text-xl font-medium dark:text-gray-200"
+              class="text-xl font-medium dark:text-neutral-200"
             >
               Radivoje Katanic
             </h1>
             <h3
-              class="text-lg text-gray-400"
+              class="text-lg text-neutral-400"
             >
               Software Developer
             </h3>
@@ -44,7 +44,7 @@ exports[`Layout given project page should render with go back button 1`] = `
               target="_blank"
             >
               <svg
-                class="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
+                class="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
                 fill="none"
                 height="1em"
                 stroke="currentColor"
@@ -66,7 +66,7 @@ exports[`Layout given project page should render with go back button 1`] = `
               target="_blank"
             >
               <svg
-                class="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
+                class="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
                 fill="none"
                 height="1em"
                 stroke="currentColor"
@@ -99,7 +99,7 @@ exports[`Layout given project page should render with go back button 1`] = `
               target="_blank"
             >
               <svg
-                class="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
+                class="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
                 fill="none"
                 height="1em"
                 stroke="currentColor"
@@ -121,11 +121,11 @@ exports[`Layout given project page should render with go back button 1`] = `
           </div>
         </div>
         <hr
-          class="my-4 dark:border-gray-800"
+          class="my-4 dark:border-neutral-800"
         />
         <div>
           <span
-            class="text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 flex items-center gap-3 py-2 px-3 font-medium"
+            class="text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 flex items-center gap-3 py-2 px-3 font-medium"
           >
             <svg
               fill="none"
@@ -150,7 +150,7 @@ exports[`Layout given project page should render with go back button 1`] = `
             About
           </span>
           <span
-            class="bg-sky-500 dark:text-gray-50 flex items-center gap-3 py-2 px-3 font-medium"
+            class="bg-sky-500 dark:text-neutral-50 flex items-center gap-3 py-2 px-3 font-medium"
           >
             <svg
               fill="currentColor"
@@ -190,11 +190,11 @@ exports[`Layout given project page should render with go back button 1`] = `
           class="sticky top-16 flex h-full flex-col gap-3"
         >
           <button
-            class="group relative flex h-10 w-10 items-center justify-center border-2 border-gray-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-gray-800 dark:bg-gray-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
+            class="group relative flex h-10 w-10 items-center justify-center border-2 border-neutral-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
             type="button"
           >
             <svg
-              class="fill-gray-400 group-hover:fill-gray-900 dark:group-hover:fill-white"
+              class="fill-neutral-400 group-hover:fill-neutral-900 dark:group-hover:fill-white"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -214,10 +214,10 @@ exports[`Layout given project page should render with go back button 1`] = `
               </g>
             </svg>
             <div
-              class="pointer-events-none absolute left-[3.25rem] whitespace-nowrap border-2 border-gray-300 bg-slate-50 px-2 py-0.5 text-sm font-medium text-gray-500 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:shadow-xl"
+              class="pointer-events-none absolute left-[3.25rem] whitespace-nowrap border-2 border-neutral-300 bg-slate-50 px-2 py-0.5 text-sm font-medium text-neutral-500 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:shadow-xl"
             >
               <svg
-                class="absolute -left-2.5 top-1/2 -translate-y-1/2 fill-gray-300 dark:fill-gray-600"
+                class="absolute -left-2.5 top-1/2 -translate-y-1/2 fill-neutral-300 dark:fill-neutral-600"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -235,11 +235,11 @@ exports[`Layout given project page should render with go back button 1`] = `
             </div>
           </button>
           <button
-            class="group relative flex h-10 w-10 items-center justify-center border-2 border-gray-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-gray-800 dark:bg-gray-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
+            class="group relative flex h-10 w-10 items-center justify-center border-2 border-neutral-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
             type="button"
           >
             <svg
-              class="stroke-gray-400 group-hover:stroke-gray-900 dark:group-hover:stroke-white"
+              class="stroke-neutral-400 group-hover:stroke-neutral-900 dark:group-hover:stroke-white"
               data-testid="go-back-icon"
               fill="none"
               height="1em"
@@ -262,10 +262,10 @@ exports[`Layout given project page should render with go back button 1`] = `
               />
             </svg>
             <div
-              class="pointer-events-none absolute left-[3.25rem] whitespace-nowrap border-2 border-gray-300 bg-slate-50 px-2 py-0.5 text-sm font-medium text-gray-500 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:shadow-xl"
+              class="pointer-events-none absolute left-[3.25rem] whitespace-nowrap border-2 border-neutral-300 bg-slate-50 px-2 py-0.5 text-sm font-medium text-neutral-500 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:shadow-xl"
             >
               <svg
-                class="absolute -left-2.5 top-1/2 -translate-y-1/2 fill-gray-300 dark:fill-gray-600"
+                class="absolute -left-2.5 top-1/2 -translate-y-1/2 fill-neutral-300 dark:fill-neutral-600"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -293,19 +293,19 @@ exports[`Layout should render 1`] = `
 <body>
   <div>
     <div
-      class="z-10 flex min-h-screen items-start justify-center gap-8 bg-slate-50 py-16 px-8  dark:bg-gray-900"
+      class="z-10 flex min-h-screen items-start justify-center gap-8 bg-slate-50 py-16 px-8  dark:bg-neutral-900"
     >
       <div
-        class="sticky top-16 w-64 border-2 border-gray-200 bg-slate-50 p-4 shadow-sm dark:border-gray-800 dark:bg-gray-900 dark:shadow-md"
+        class="sticky top-16 w-64 border-2 border-neutral-200 bg-slate-50 p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md"
       >
         <div
           class="mt-2 flex flex-col items-center gap-4"
         >
           <div
-            class="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl dark:bg-gray-800/70"
+            class="relative flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl dark:bg-neutral-800/70"
           >
             <span
-              class="dark:text-gray-200"
+              class="dark:text-neutral-200"
             >
               rk
             </span>
@@ -314,12 +314,12 @@ exports[`Layout should render 1`] = `
             class="text-center"
           >
             <h1
-              class="text-xl font-medium dark:text-gray-200"
+              class="text-xl font-medium dark:text-neutral-200"
             >
               Radivoje Katanic
             </h1>
             <h3
-              class="text-lg text-gray-400"
+              class="text-lg text-neutral-400"
             >
               Software Developer
             </h3>
@@ -333,7 +333,7 @@ exports[`Layout should render 1`] = `
               target="_blank"
             >
               <svg
-                class="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
+                class="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
                 fill="none"
                 height="1em"
                 stroke="currentColor"
@@ -355,7 +355,7 @@ exports[`Layout should render 1`] = `
               target="_blank"
             >
               <svg
-                class="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
+                class="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
                 fill="none"
                 height="1em"
                 stroke="currentColor"
@@ -388,7 +388,7 @@ exports[`Layout should render 1`] = `
               target="_blank"
             >
               <svg
-                class="stroke-gray-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
+                class="stroke-neutral-400 hover:stroke-sky-500 dark:hover:stroke-sky-400"
                 fill="none"
                 height="1em"
                 stroke="currentColor"
@@ -410,11 +410,11 @@ exports[`Layout should render 1`] = `
           </div>
         </div>
         <hr
-          class="my-4 dark:border-gray-800"
+          class="my-4 dark:border-neutral-800"
         />
         <div>
           <span
-            class="text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 flex items-center gap-3 py-2 px-3 font-medium"
+            class="text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 flex items-center gap-3 py-2 px-3 font-medium"
           >
             <svg
               fill="none"
@@ -439,7 +439,7 @@ exports[`Layout should render 1`] = `
             About
           </span>
           <span
-            class="text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 flex items-center gap-3 py-2 px-3 font-medium"
+            class="text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 flex items-center gap-3 py-2 px-3 font-medium"
           >
             <svg
               fill="currentColor"
@@ -479,11 +479,11 @@ exports[`Layout should render 1`] = `
           class="sticky top-16 flex h-full flex-col gap-3"
         >
           <button
-            class="group relative flex h-10 w-10 items-center justify-center border-2 border-gray-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-gray-800 dark:bg-gray-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
+            class="group relative flex h-10 w-10 items-center justify-center border-2 border-neutral-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
             type="button"
           >
             <svg
-              class="fill-gray-400 group-hover:fill-gray-900 dark:group-hover:fill-white"
+              class="fill-neutral-400 group-hover:fill-neutral-900 dark:group-hover:fill-white"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -503,10 +503,10 @@ exports[`Layout should render 1`] = `
               </g>
             </svg>
             <div
-              class="pointer-events-none absolute left-[3.25rem] whitespace-nowrap border-2 border-gray-300 bg-slate-50 px-2 py-0.5 text-sm font-medium text-gray-500 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:shadow-xl"
+              class="pointer-events-none absolute left-[3.25rem] whitespace-nowrap border-2 border-neutral-300 bg-slate-50 px-2 py-0.5 text-sm font-medium text-neutral-500 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:shadow-xl"
             >
               <svg
-                class="absolute -left-2.5 top-1/2 -translate-y-1/2 fill-gray-300 dark:fill-gray-600"
+                class="absolute -left-2.5 top-1/2 -translate-y-1/2 fill-neutral-300 dark:fill-neutral-600"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"

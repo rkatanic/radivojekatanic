@@ -27,7 +27,7 @@ const ThemeSwitch = (): JSX.Element => {
     <IconButon
       onClick={hanleThemeToggle}
       icon={
-        <RiContrastFill className="fill-gray-400 group-hover:fill-gray-900 dark:group-hover:fill-white" />
+        <RiContrastFill className="fill-neutral-400 group-hover:fill-neutral-900 dark:group-hover:fill-white" />
       }
       tooltip="Theme"
     />

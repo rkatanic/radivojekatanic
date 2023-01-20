@@ -28,8 +28,8 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
       key="theme-script"
       dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
     />
-    <div className="grid-lines fixed inset-0"></div>
-    <div className="dots fixed inset-0"></div>
+    {/* <div className="grid-lines fixed inset-0"></div> */}
+    {/* <div className="dots fixed inset-0"></div> */}
     <Layout>
       <Component {...pageProps} />
     </Layout>
