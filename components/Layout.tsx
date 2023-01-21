@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Menu from "./Menu";
 
 interface Props {
@@ -9,6 +10,7 @@ const Layout = ({ children }: Props): JSX.Element => (
     <Menu />
     <div className="h-60 w-full bg-gradient-to-r from-lime-100 via-sky-100 to-blue-100"></div>
     <div className="m-auto w-full max-w-3xl">{children}</div>
+    <Footer />
   </div>
 );
 

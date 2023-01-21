@@ -1,26 +1,35 @@
-const Footer = () => (
-  <div className="m-auto w-full max-w-2xl flex items-end justify-between py-10 border-t dark:border-neutral-800 mt-16 text-sm text-neutral-400 dark:text-neutral-500">
-    <div className="hidden sm:block whitespace-nowrap flex-1">
-      © 2022 Radivoje Katanic.
-    </div>
-    <div className="sm:hidden whitespace-nowrap flex-1">© 2022 Radivoje K.</div>
-    <div className="flex gap-4">
-      <a
-        className="hover:text-neutral-900 dark:hover:text-neutral-200 hover:underline"
-        target="_blank"
-        rel="noreferrer"
-        href="https://github.com/rkatanic"
-      >
-        GitHub
-      </a>
-      <a
-        className="hover:text-neutral-900 dark:hover:text-neutral-200 hover:underline"
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.linkedin.com/in/radivoje-katanic"
-      >
-        LinkedIn
-      </a>
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+
+const Footer = (): JSX.Element => (
+  <div className="w-full border-t py-12">
+    <div className="m-auto flex max-w-3xl items-center justify-between text-gray-400">
+      <span>© {new Date().getFullYear()} Radivoje Katanic</span>
+      <div className="flex gap-6">
+        <a
+          className="hover:text-gray-900"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/radivoje-katanic"
+        >
+          <FiLinkedin />
+        </a>
+        <a
+          className="hover:text-gray-900"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/rkatanic"
+        >
+          <FiGithub />
+        </a>
+        <a
+          className="hover:text-gray-900"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:rkatanic96@gmail.com"
+        >
+          <FiMail />
+        </a>
+      </div>
     </div>
   </div>
 );
