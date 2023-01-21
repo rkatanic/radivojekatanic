@@ -6,7 +6,7 @@ const Menu = (): JSX.Element => (
       <div className="h-5 w-5 rounded-full border-4 border-gray-800"></div>
       <div className="flex">
         <NavLink link="/about" label="About" />
-        {/* <NavLink link="/projects" label="Playground" /> */}
+        <NavLink link="/contact" label="Contact" />
       </div>
     </div>
   </div>

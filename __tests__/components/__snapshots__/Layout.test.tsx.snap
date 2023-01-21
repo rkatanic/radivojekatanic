@@ -4,7 +4,7 @@ exports[`Layout should render 1`] = `
 <body>
   <div>
     <div
-      class="z-10 flex min-h-screen flex-col items-start justify-center bg-white  dark:bg-neutral-900"
+      class="justify-x z-10 flex min-h-screen flex-col items-start bg-white  dark:bg-neutral-900"
     >
       <div
         class="h-16 w-full border-b bg-white shadow-md"
@@ -23,6 +23,11 @@ exports[`Layout should render 1`] = `
             >
               About
             </span>
+            <span
+              class="text-gray-600 rounded-lg py-2 px-3 font-medium hover:text-gray-900"
+            >
+              Contact
+            </span>
           </div>
         </div>
       </div>
@@ -30,7 +35,7 @@ exports[`Layout should render 1`] = `
         class="h-60 w-full bg-gradient-to-r from-lime-100 via-sky-100 to-blue-100"
       />
       <div
-        class="m-auto w-full max-w-3xl"
+        class="mx-auto w-full max-w-3xl"
       >
         <div>
           children

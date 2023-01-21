@@ -31,36 +31,6 @@ const Home = (): JSX.Element => (
       </div>
     </div>
 
-    {/* <form className="my-12 mt-8 flex flex-col gap-6">
-          <div className="flex items-baseline">
-            <div className="flex-1 text-sm text-gray-900">Name*</div>
-            <input
-              required
-              type="text"
-              className="w-full flex-[3] rounded-lg border border-gray-300 p-2 text-sm shadow-sm"
-            />
-          </div>
-          <div className="flex items-baseline">
-            <div className="flex-1 text-sm text-gray-900">E-mail*</div>
-            <input
-              required
-              type="text"
-              className="w-full flex-[3] rounded-lg border border-gray-300 p-2 text-sm shadow-sm"
-            />
-          </div>
-          <div className="flex items-baseline">
-            <div className="flex-1 text-sm text-gray-900">Message*</div>
-            <textarea
-              rows={10}
-              required
-              className="w-full flex-[3] rounded-lg border border-gray-300 p-2 text-sm shadow-sm"
-            />
-          </div>
-          <button className="max-w-min self-end rounded-lg bg-gray-800 p-2 px-6 text-sm font-medium text-white hover:bg-gray-900 hover:shadow-md">
-            Send
-          </button>
-        </form> */}
-
     <div className="my-12 flex">
       <div className="flex-1">
         <h3 className="mb-2 whitespace-nowrap font-medium leading-6 text-gray-900">
