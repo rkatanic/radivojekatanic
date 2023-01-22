@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FiFileText, FiMapPin } from "react-icons/fi";
+import Menu from "./Menu";
 
 const Profile = (): JSX.Element => (
   <div className="mt-12 overflow-hidden rounded-xl border">
@@ -40,6 +41,7 @@ const Profile = (): JSX.Element => (
         </div>
       </div>
     </div>
+    <Menu />
   </div>
 );
 
