@@ -1,6 +1,11 @@
 import Layout from "@/components/Layout";
-import { fireEvent, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
+jest.mock("next/config", () => () => ({
+  publicRuntimeConfig: {
+    lastModifiedDate: "01-10-2020",
+  },
+}));
 const useRouter = jest.spyOn(require("next/router"), "useRouter");
 
 describe("Layout", (): void => {

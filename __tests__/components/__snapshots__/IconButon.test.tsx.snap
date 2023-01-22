@@ -10,25 +10,6 @@ exports[`IconButon should render 1`] = `
       <div>
         icon
       </div>
-      <div
-        class="pointer-events-none absolute left-[3.25rem] whitespace-nowrap border-2 border-neutral-300 bg-slate-50 px-2 py-0.5 text-sm font-medium text-neutral-500 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:shadow-xl"
-      >
-        <svg
-          class="absolute -left-2.5 top-1/2 -translate-y-1/2 fill-neutral-300 dark:fill-neutral-600"
-          fill="currentColor"
-          height="1em"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 6 16"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 2L0 8l6 6V2z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
     </button>
   </div>
 </body>

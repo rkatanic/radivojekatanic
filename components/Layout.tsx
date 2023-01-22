@@ -6,10 +6,9 @@ interface Props {
 }
 
 const Layout = ({ children }: Props): JSX.Element => (
-  <div className="justify-x z-10 flex min-h-screen flex-col items-start bg-white  dark:bg-neutral-900">
-    <Menu />
-    <div className="h-60 w-full bg-gradient-to-r from-lime-100 via-sky-100 to-blue-100"></div>
-    <div className="mx-auto w-full max-w-3xl">{children}</div>
+  <div className="z-10 flex min-h-screen flex-col items-start justify-between bg-white  dark:bg-neutral-900">
+    {/* <Menu /> */}
+    <div className="mx-auto w-full max-w-4xl">{children}</div>
     <Footer />
   </div>
 );

@@ -29,7 +29,6 @@ const ThemeSwitch = (): JSX.Element => {
       icon={
         <RiContrastFill className="fill-neutral-400 group-hover:fill-neutral-900 dark:group-hover:fill-white" />
       }
-      tooltip="Theme"
     />
   );
 };
