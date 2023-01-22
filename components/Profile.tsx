@@ -30,7 +30,7 @@ const Profile = (): JSX.Element => (
             <FiFileText /> View CV
           </a>
           <a
-            href="https://drive.google.com/file/d/1SYQCLxy7JCt7TJfHK5h1G7VqL4mhM8NM/view"
+            href="mailto:rkatanic96@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-12 items-center gap-3 rounded-xl bg-gray-800 px-8 text-sm font-medium text-white shadow-sm hover:bg-gray-900 hover:shadow-md"
