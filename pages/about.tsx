@@ -46,15 +46,15 @@ const About = (): JSX.Element => (
         <div className="flex-1">
           <h1 className="mb-4 text-2xl font-medium">Technologies</h1>
           <p className="leading-7 text-gray-400">
-            I'm mostly front-end oriented, with main focus on technologies like
-            React, NextJS, TailwindCSS, but not limited to it, because tools are
-            something that come and go.
+            I&apos;m mostly front-end oriented, with main focus on technologies
+            like React, NextJS, TailwindCSS, but not limited to it, because
+            tools are something that come and go.
           </p>
 
           <h1 className="mb-4 mt-8 text-2xl font-medium">Skills</h1>
           <p className="leading-7 text-gray-400">
-            Curiosity is probably my main one. It's what keeps me trying out new
-            things and moving forward.
+            Curiosity is probably my main one. It&apos;s what keeps me trying
+            out new things and moving forward.
           </p>
 
           <h1 className="mb-4 mt-8 text-2xl font-medium">Interests</h1>

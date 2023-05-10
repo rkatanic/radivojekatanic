@@ -1,8 +1,3 @@
-import Footer from "./Footer";
-import Navigation from "./Navigation";
-import Profile from "./Profile";
-import ThemeSwitch from "./ThemeSwitch";
-
 interface Props {
   children: JSX.Element;
 }
