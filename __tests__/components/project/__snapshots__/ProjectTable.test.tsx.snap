@@ -4,36 +4,36 @@ exports[`ProjectTable should render 1`] = `
 <body>
   <div>
     <div
-      class="rounded-md border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md"
+      class="rounded-md border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 dark:shadow-md"
     >
       <div
-        class="flex items-center justify-between gap-3 border-b-2 border-neutral-200 px-4 py-4 dark:border-neutral-800"
+        class="flex items-center justify-between gap-3 border-b-2 border-gray-200 px-4 py-4 dark:border-gray-800"
       >
         <div
           class="flex items-center gap-3 tracking-wide"
         >
           <h3
-            class="text-lg font-medium dark:text-neutral-200"
+            class="text-lg font-medium dark:text-gray-200"
           >
             rkatanic
           </h3>
           <p
-            class="text-neutral-500 dark:text-neutral-300"
+            class="text-gray-500 dark:text-gray-300"
           >
             Update description
           </p>
         </div>
         <p
-          class="float-right text-sm text-neutral-500 dark:text-neutral-400"
+          class="float-right text-sm text-gray-500 dark:text-gray-400"
         >
           Jan 01, 2020
         </p>
       </div>
       <div
-        class="flex h-11 items-center gap-3 border-b px-4 hover:bg-slate-100/50 dark:border-neutral-800 dark:hover:bg-neutral-800/30"
+        class="flex h-11 items-center gap-3 border-b px-4 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
       >
         <svg
-          class="stroke-neutral-400"
+          class="stroke-gray-400"
           fill="none"
           height="1em"
           stroke="currentColor"
@@ -49,16 +49,16 @@ exports[`ProjectTable should render 1`] = `
           />
         </svg>
         <p
-          class="pointer-events-none tracking-wide dark:text-neutral-200"
+          class="pointer-events-none tracking-wide dark:text-gray-200"
         >
           src
         </p>
       </div>
       <div
-        class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-neutral-800 dark:hover:bg-neutral-800/30"
+        class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
       >
         <svg
-          class="stroke-neutral-400"
+          class="stroke-gray-400"
           fill="none"
           height="1em"
           stroke="currentColor"
@@ -74,17 +74,17 @@ exports[`ProjectTable should render 1`] = `
           />
         </svg>
         <a
-          class="border-b cursor-pointer border-neutral-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-neutral-200 dark:text-neutral-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
+          class="border-b cursor-pointer border-gray-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
           href="url-link"
         >
           index.html
         </a>
       </div>
       <div
-        class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-neutral-800 dark:hover:bg-neutral-800/30"
+        class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
       >
         <svg
-          class="stroke-neutral-400"
+          class="stroke-gray-400"
           fill="none"
           height="1em"
           stroke="currentColor"
@@ -113,17 +113,17 @@ exports[`ProjectTable should render 1`] = `
           />
         </svg>
         <a
-          class="border-b cursor-pointer border-neutral-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-neutral-200 dark:text-neutral-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
+          class="border-b cursor-pointer border-gray-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
           href="image-url"
         >
           mockup-01.png
         </a>
       </div>
       <div
-        class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-neutral-800 dark:hover:bg-neutral-800/30"
+        class="flex h-11 items-center gap-3 border-b px-4 last:border-0 hover:bg-slate-100/50 dark:border-gray-800 dark:hover:bg-gray-800/30"
       >
         <svg
-          class="stroke-neutral-400"
+          class="stroke-gray-400"
           fill="none"
           height="1em"
           stroke="currentColor"
@@ -142,7 +142,7 @@ exports[`ProjectTable should render 1`] = `
           />
         </svg>
         <a
-          class="border-b cursor-pointer border-neutral-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-neutral-200 dark:text-neutral-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
+          class="border-b cursor-pointer border-gray-900 leading-tight tracking-wide hover:border-sky-500 hover:text-sky-500 dark:border-gray-200 dark:text-gray-200 dark:hover:border-sky-300 dark:hover:text-sky-300"
           href="#readme"
         >
           README.md

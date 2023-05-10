@@ -10,11 +10,23 @@ links:
       href: "https://rkatanic.github.io/markdown-editor",
       type: "application",
     },
-    { title: "mockup-01.png", href: "", type: "image" },
-    { title: "mockup-02.png", href: "", type: "image" },
-    { title: "mockup-03.png", href: "", type: "image" },
+    {
+      title: "mockup-01.png",
+      href: https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"",
+      type: "image",
+    },
+    {
+      title: "mockup-02.png",
+      href: "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg",
+      type: "image",
+    },
+    {
+      title: "mockup-03.png",
+      href: "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg",
+      type: "image",
+    },
     { title: "todos.json", href: "#todos", type: "file" },
-    { title: "README.md", href: "#markdown-editor", type: "file" },
+    { title: "README.md", href: "#markdown-editor", type: "readme" },
   ]
 ---
 

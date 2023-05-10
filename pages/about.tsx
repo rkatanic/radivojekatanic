@@ -1,103 +1,91 @@
-import ContentBox from "@/components/ContentBox";
-import Profile from "@/components/Profile";
+import { FiFileText, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import Navigation from "@/components/Navigation";
+import IconButon from "@/components/IconButton";
 
-const SKILLS = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "SCSS",
-  "React",
-  "Angular",
-  "Java",
-  "Spring Boot",
-  "MySQL",
-  "MongoDB",
-];
-
-const Home = (): JSX.Element => (
-  <div className="flex flex-col gap-6">
-    <Profile />
-    <ContentBox>
-      <h3 className="mb-4 font-medium text-gray-400">About Me</h3>
-      <p className="text-gray-900">
-        Hey, my name is Radivoje Katanić. I am a software developer based in
-        Bosnia & Herzegovina.
+const About = (): JSX.Element => (
+  <div className="about bg-gray-950 pb-20 text-gray-100">
+    <Navigation />
+    <div className="mx-auto mb-16 h-72 max-w-4xl overflow-hidden rounded-3xl bg-gradient-to-r from-yellow-200 via-emerald-300 to-blue-400">
+      {/* <img
+        src="https://img.freepik.com/free-vector/banner-with-low-poly-wireframe-abstract-design_1048-16123.jpg?w=1380&t=st=1683487219~exp=1683487819~hmac=7803aebd0c72528b98f44e37011796e62d29b8159577f20ec9e4685cfa78c05d"
+        className="h-full w-full bg-cover opacity-50"
+      /> */}
+    </div>
+    <div className="mx-auto max-w-4xl px-8">
+      <h1 className="mb-4 text-3xl font-medium leading-snug">
+        Crafting digital spaces that matter.
         <br />
-        In a free time I like experimenting with different technologies and
-        building small tools for my personal neeeds.
-        <br />
-        <br />
-        Currently working at{" "}
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="https://productdock.com/"
-          className="border-b border-gray-300 px-1 hover:border-gray-400 hover:bg-sky-50"
-        >
-          ProductDock
-        </a>
-        .
+        Step by step, little by little.
+      </h1>
+      <p className="text-lg leading-7 text-gray-400">
+        Hi there, my name is Radivoje Katanic. I am a software developer from
+        Bosnia & Hercegovina. My free time is spent mostly outside doing sports
+        or gardening.
       </p>
 
-      <h3 className="mt-8 mb-4 font-medium text-gray-400">Skills</h3>
-      <div className="flex flex-wrap gap-2">
-        {SKILLS.map((skill) => (
-          <span
-            key={skill}
-            className="rounded-lg bg-gray-50 p-2 px-6 font-medium text-gray-600"
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
-    </ContentBox>
+      <div className="mt-8 flex gap-8">
+        <div className="flex-1">
+          <h1 className="mb-4 text-2xl font-medium">Career</h1>
+          <p className="leading-7 text-gray-400">
+            I started my career in February 2020 when I got first internship
+            opportunity in local software company. Currently building web
+            products at ProductDock.
+          </p>
 
-    <ContentBox>
-      <h3 className="mb-4 font-medium text-gray-400">Experience</h3>
-      <div className="flex gap-6">
-        <img
-          className="mt-1 h-10 w-10 stroke-gray-400"
-          src="https://productdock.com/wp-content/themes/productdock/src/images/product-dock-logo.png"
-        />
-        <div className="w-full">
-          <div className="flex items-baseline justify-between">
-            <h3 className="font-semibold text-gray-900">Software Developer</h3>
-            <p className="text-sm font-medium text-gray-900">
-              Aug 2020 - Present
-            </p>
-          </div>
-          <p className="text-gray-600">ProductDock</p>
-          <p className="mt-4 max-w-xl text-gray-600">
-            After successfull bootcamp I got full time offer, where I&apos;m
-            currently building web products for various clients using modern web
-            technologies.
+          <h1 className="mb-4 mt-8 text-2xl font-medium">Education</h1>
+          <p className="leading-7 text-gray-400">
+            Graduateed as an IT Engineer in 2019 at local university in my
+            hometown.
           </p>
-          <hr className="my-8" />
+
+          <button className="mt-8 flex items-center gap-2 rounded-full border border-gray-100 p-2 px-4 text-sm font-medium tracking-wider hover:bg-gray-100 hover:text-gray-950">
+            <FiFileText /> Download CV
+          </button>
+        </div>
+
+        <div className="flex-1">
+          <h1 className="mb-4 text-2xl font-medium">Technologies</h1>
+          <p className="leading-7 text-gray-400">
+            I'm mostly front-end oriented, with main focus on technologies like
+            React, NextJS, TailwindCSS, but not limited to it, because tools are
+            something that come and go.
+          </p>
+
+          <h1 className="mb-4 mt-8 text-2xl font-medium">Skills</h1>
+          <p className="leading-7 text-gray-400">
+            Curiosity is probably my main one. It's what keeps me trying out new
+            things and moving forward.
+          </p>
+
+          <h1 className="mb-4 mt-8 text-2xl font-medium">Interests</h1>
+          <p className="leading-7 text-gray-400">
+            Learning basic principles of web UX/UI, exploring WebGL, taking care
+            of 10 cats and my garden.
+          </p>
+
+          <h1 className="mb-4 mt-8 text-2xl font-medium">Location</h1>
+          <p className="leading-7 text-gray-400">
+            Doboj, Bosnia and Hercegovina
+          </p>
+
+          <h1 className="mb-4 mt-8 text-2xl font-medium">Contact</h1>
+          <p className="leading-7 text-gray-400">
+            Have a question, or just want to say hello?
+            <br />
+            Reach me out via Github, Linkedin or e-mail.
+          </p>
+          <div className="mt-8 flex gap-4">
+            <IconButon href="https://github.com/rkatanic" icon={<FiGithub />} />
+            <IconButon
+              href="https://github.com/rkatanic"
+              icon={<FiLinkedin />}
+            />
+            <IconButon href="mailto:rkatanic@outlook.com  " icon={<FiMail />} />
+          </div>
         </div>
       </div>
-      <div className="flex gap-6">
-        <img
-          className="mt-1 h-10 w-10 stroke-gray-400"
-          src="https://productdock.com/wp-content/themes/productdock/src/images/product-dock-logo.png"
-        />
-        <div className="w-full">
-          <div className="flex items-baseline justify-between">
-            <h3 className="font-semibold text-gray-900">Intern</h3>
-            <p className="text-sm font-medium text-gray-900">
-              Feb 2020 - May 2020
-            </p>
-          </div>
-          <p className="text-gray-600">ProductDock</p>
-          <p className="mt-4 max-w-xl text-gray-600">
-            Attended 3 month rookie bootcamp where I developed with other
-            attendees employee managment application using Angular, Spring Boot,
-            MySQL.
-          </p>
-          <hr className="my-6 last:hidden" />
-        </div>
-      </div>
-    </ContentBox>
+    </div>
   </div>
 );
 
-export default Home;
+export default About;

@@ -1,4 +1,4 @@
-import Project from "@/components/project/Project";
+import Project from "@/components/Project";
 import { render } from "@testing-library/react";
 
 describe("Project", (): void => {

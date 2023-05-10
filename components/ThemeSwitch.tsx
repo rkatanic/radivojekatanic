@@ -1,6 +1,5 @@
 import { useState, useEffect, EffectCallback } from "react";
-import { RiContrastFill } from "react-icons/ri";
-import IconButon from "./IconButton";
+import { FiSun } from "react-icons/fi";
 
 const ThemeSwitch = (): JSX.Element => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
@@ -24,12 +23,12 @@ const ThemeSwitch = (): JSX.Element => {
   };
 
   return (
-    <IconButon
+    <button
       onClick={hanleThemeToggle}
-      icon={
-        <RiContrastFill className="fill-neutral-400 group-hover:fill-neutral-900 dark:group-hover:fill-white" />
-      }
-    />
+      className="flex items-center justify-center rounded-full px-2 text-sm shadow-sm dark:border-gray-800 dark:text-gray-400 dark:hover:bg-gray-800/10 dark:hover:text-gray-200"
+    >
+      <FiSun />
+    </button>
   );
 };
 export default ThemeSwitch;
