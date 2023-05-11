@@ -19,4 +19,4 @@ export interface ProjectLink {
   type: ProjectLinkType;
 }
 
-export type ProjectLinkType = "application" | "image";
+export type ProjectLinkType = "application" | "image" | "readme";

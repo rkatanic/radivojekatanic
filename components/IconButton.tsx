@@ -1,16 +1,16 @@
 interface Props {
-  onClick: () => void;
+  href: string;
   icon: JSX.Element;
 }
 
-const IconButon = ({ onClick, icon }: Props): JSX.Element => (
-  <button
-    type="button"
-    onClick={onClick}
-    className="group relative flex h-10 w-10 items-center justify-center rounded-full border-2 border-neutral-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
+const IconButon = ({ href, icon }: Props): JSX.Element => (
+  <a
+    target="blank"
+    href={href}
+    className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-100 text-sm font-medium tracking-wider hover:bg-gray-100 hover:text-gray-950"
   >
     {icon}
-  </button>
+  </a>
 );
 
 export default IconButon;

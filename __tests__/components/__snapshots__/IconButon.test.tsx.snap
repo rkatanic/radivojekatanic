@@ -3,14 +3,15 @@
 exports[`IconButon should render 1`] = `
 <body>
   <div>
-    <button
-      class="group relative flex h-10 w-10 items-center justify-center rounded-full border-2 border-neutral-200 bg-slate-50 shadow-sm hover:border-sky-500 hover:bg-sky-500 dark:border-neutral-800 dark:bg-neutral-900 dark:shadow-md dark:hover:border-sky-500 dark:hover:bg-sky-500"
-      type="button"
+    <a
+      class="flex h-10 w-10 items-center justify-center rounded-full border border-gray-100 text-sm font-medium tracking-wider hover:bg-gray-100 hover:text-gray-950"
+      href="link"
+      target="blank"
     >
       <div>
         icon
       </div>
-    </button>
+    </a>
   </div>
 </body>
 `;

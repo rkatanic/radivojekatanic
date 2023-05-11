@@ -1,6 +1,6 @@
 ---
 title: "Color Scale"
-description: "Tool for generating color shade palette. Based on HSL."
+description: "An app for generating different color palettes and combinations. Based on HSL color specification."
 creationDate: "2022-10-21"
 updated: { description: "Update README", date: "2022-12-27" }
 links:
@@ -14,7 +14,7 @@ links:
     { title: "mockup-02.png", href: "", type: "image" },
     { title: "mockup-03.png", href: "", type: "image" },
     { title: "todos.json", href: "#todos", type: "file" },
-    { title: "README.md", href: "#color-scale", type: "file" },
+    { title: "README.md", href: "#color-scale", type: "readme" },
   ]
 ---
 
