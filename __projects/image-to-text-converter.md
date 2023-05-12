@@ -1,6 +1,6 @@
 ---
 title: "Image To Text Converter"
-description: "Simple online character recognition tool. Supports 50+ languages."
+description: "Online character recognition tool. Supports 50+ languages."
 creationDate: "2021-11-06"
 updated: { description: "Update README", date: "2022-12-27" }
 links:

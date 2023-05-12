@@ -1,12 +1,4 @@
 import React from "react";
-
-import {
-  RiLeafFill,
-  RiInformationFill,
-  RiSendPlaneFill,
-  RiSunFill,
-} from "react-icons/ri";
-import Image from "next/image";
 import NavLink from "./NavLink";
 import Logo from "./Logo";
 
@@ -15,6 +7,7 @@ const Navigation = (): JSX.Element => (
     <Logo />
     <div className="flex gap-2">
       <NavLink path="/about" label="About" />
+      <NavLink path="/labs" label="Labs" />
     </div>
   </div>
 );

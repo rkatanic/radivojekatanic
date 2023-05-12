@@ -3,7 +3,42 @@
 exports[`Layout should render 1`] = `
 <body>
   <div>
-    <div>
+    <div
+      class="about min-h-screen bg-gray-950 pb-20 text-gray-100"
+    >
+      <div
+        class="mx-auto mb-4 flex h-28 max-w-4xl items-center justify-between px-8"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <div
+            class="h-3 w-3 rounded-full bg-gray-100"
+          />
+          <span
+            class="text-lxg font-medium"
+          >
+            rkatanic
+          </span>
+        </div>
+        <div
+          class="flex gap-2"
+        >
+          <a
+            href="/about"
+          >
+            About
+          </a>
+          <a
+            href="/labs"
+          >
+            Labs
+          </a>
+        </div>
+      </div>
+      <div
+        class="mx-auto mb-16 hidden h-72 max-w-4xl overflow-hidden rounded-3xl bg-gradient-to-r from-yellow-200 via-emerald-300 to-blue-400 md:block"
+      />
       <div>
         children
       </div>
