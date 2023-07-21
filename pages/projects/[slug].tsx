@@ -45,7 +45,10 @@ const Project = ({ project }: Props): JSX.Element => (
     </p>
     <ul>
       {project.links.map((link) => (
-        <li className="border-b py-3 font-medium text-neutral-800">
+        <li
+          key={link.title}
+          className="border-b py-3 font-medium text-neutral-800"
+        >
           {link.title}
         </li>
       ))}

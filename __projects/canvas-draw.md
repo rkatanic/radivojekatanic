@@ -1,6 +1,6 @@
 ---
 title: "Canvas Draw"
-description: "Drawing tool for making simple sketches on the go."
+description: "Drawing tool for making simple doodles on the go."
 creationDate: "2023-01-27"
 updated: { description: "Update README", date: "2022-12-27" }
 icon: "doodle"
@@ -19,17 +19,11 @@ links:
   ]
 ---
 
-### Color Scale
+### Info
 
-Color Scale is tool made for generating color palette with 10 shades with balanced brightness steps between each shade.\
-It's based on HSL (hue, saturation, brightness) color specification, but also feature Hex color values.
+This creative tool is result of my explorations of HTML canvas.
 
-Application includes options to manipulate with HSL values of whole palette, with same options being present for each shade separately.\
-It also has output window where color values are present in both HSL and Hex color specification as well as different predefined outputs for json, css and scss file.\
-On every initial page load application generates new color palette.
+Many people have spontaneous moments of creativity and want to capture their ideas quickly. Sometimes making a simple sketch is enough to capture certain idea that popped.
 
-It also features Hex to HSL converter and vice versa.
-
-### Todos
-
-- [ ] Update design
+Some scientific researches shown that doodling can be a therapeutic and enjoyable activity.
+I use this tool to relax and express myself creatively in leisure time.

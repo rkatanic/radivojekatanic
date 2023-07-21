@@ -1,6 +1,6 @@
 ---
 title: "Color Scale"
-description: "An app for generating different color palettes and combinations."
+description: "An app for generating different color palettes and variations."
 creationDate: "2022-10-21"
 updated: { description: "Update README", date: "2022-12-27" }
 icon: "color-palette"
@@ -19,16 +19,18 @@ links:
   ]
 ---
 
-### Color Scale
+### Info
 
-Color Scale is tool made for generating color palette with 10 shades with balanced brightness steps between each shade.\
-It's based on HSL (hue, saturation, brightness) color specification, but also feature Hex color values.
+When building different web interfaces I often time struggle to find the right color palette. One thing I learned over time is that maintaining consistency in color choices is essential for building visually appealing user interfaces.
 
-Application includes options to manipulate with HSL values of whole palette, with same options being present for each shade separately.\
-It also has output window where color values are present in both HSL and Hex color specification as well as different predefined outputs for json, css and scss file.\
-On every initial page load application generates new color palette.
+Presence of this app is a response to the demand and struggle of myself with seeking a practical and efficient way of working with color variations.
 
-It also features Hex to HSL converter and vice versa.
+This tool is mostly based on HSL color specification, but also features HEX color values.
+I find HSL approach much more readable and intuinitive to work with as of its straightforward color interpretation.
+
+On every initial page load app generates new color palette.
+
+It also features HEX to HSL converter and vice versa.
 
 ### Todos
 

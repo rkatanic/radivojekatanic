@@ -1,5 +1,6 @@
 import { FiExternalLink, FiFileText } from "react-icons/fi";
 import Link from "../components/Link";
+import Image from "next/image";
 
 const About = (): JSX.Element => (
   <div>
@@ -7,10 +8,12 @@ const About = (): JSX.Element => (
       Crafting digital spaces and <br /> exploring web interfaces.
     </h3>
     <br />
-    <img
-      src="https://assets.website-files.com/5e149ad7cf3b9366a98c912e/5e1771dae2aa6405d69ff4ae_person-3.jpg"
+    <Image
+      width={1024}
+      height={1024}
+      src="/fuji.jpg"
       className="h-full w-full"
-      alt=""
+      alt="me"
     />
     <br />
     <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
@@ -60,9 +63,9 @@ const About = (): JSX.Element => (
           Skills
         </h3>
         <p className="leading-relaxed text-neutral-600">
-          I'm mostly front-end oriented, with main focus on technologies like
-          React, NextJS, TailwindCSS, but not limited to it, because tools are
-          something that come and go.
+          I`&apos;m mostly front-end oriented, with main focus on technologies
+          like React, NextJS, TailwindCSS, but not limited to it, because tools
+          are something that come and go.
         </p>
         <br />
         <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">

@@ -17,10 +17,12 @@ links:
 
 ### Blueprint UI
 
-Blueprint UI is design system made out of need for consistent design in all of my small projects & experiments.\
-As name already reveals it's inspired by blueprint paper featuring 8px grid background and components with sharp edges inspired by technical drawings.
+This component library is made out of need for consistent design in all of my tiny side-projects & experiments.
+It's a collection of pre-built and reusable HTML blocks created using Tailwind's utility classes.
 
-[IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) is typeface choice for this design system.
+It eliminates the need to recreate common UI elements from scratch every time, yet leaving a space to add specific functionalities and interactions tailored to different application's requirements.
+
+I started this project as an opportunity to learn more about utility-first CSS. Now it's hard to imagine myself working without it.
 
 ### Todos
 
