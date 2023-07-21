@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { FiCircle, FiSquare, FiTriangle } from "react-icons/fi";
 
 interface Props {
   path: string;
@@ -8,17 +9,23 @@ interface Props {
 
 const NavLink = ({ path, label }: Props): JSX.Element => {
   const { asPath } = useRouter();
-  const isActiveLink = asPath === path;
+  const isActiveLink = asPath.includes(path);
 
   return (
     <Link
       href={path}
-      className={`${
-        isActiveLink
-          ? "bg-gray-100 text-gray-900"
-          : "hover:bg-gray-800 hover:text-gray-200"
-      } rounded-full p-0.5 px-3 text-sm font-semibold text-gray-400`}
+      className={`
+      text-alt relative max-w-min text-lg font-semibold tracking-wide
+       ${
+         isActiveLink
+           ? "text-neutral-800"
+           : "text-neutral-500 hover:text-neutral-800"
+       }
+      `}
     >
+      {isActiveLink && (
+        <FiCircle className="absolute -left-4 top-1/2 -translate-y-1/2 fill-neutral-400 stroke-neutral-800 stroke-[5] text-[0.5rem]" />
+      )}
       {label}
     </Link>
   );

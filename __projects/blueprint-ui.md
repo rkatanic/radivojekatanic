@@ -3,6 +3,7 @@ title: "Blueprint UI"
 description: "Collection of components built with Tailwind CSS."
 creationDate: "2022-08-02"
 updated: { description: "Update README", date: "2022-12-27" }
+icon: "leatherman"
 links:
   [
     { title: "index.html", href: "", type: "application" },

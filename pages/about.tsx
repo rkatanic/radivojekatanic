@@ -1,76 +1,101 @@
-import { FiFileText, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import Navigation from "@/components/Navigation";
-import IconButon from "@/components/IconButton";
+import { FiExternalLink, FiFileText } from "react-icons/fi";
+import Link from "../components/Link";
 
 const About = (): JSX.Element => (
-  <div className="mx-auto max-w-4xl px-8">
-    <h1 className="mb-4 text-3xl font-medium leading-snug">
-      Crafting digital spaces that matter.
-      <br />
-      Step by step, little by little.
-    </h1>
-    <p className="text-lg leading-7 text-gray-400">
+  <div>
+    <h3 className="text-alt text-4xl font-bold leading-tight">
+      Crafting digital spaces and <br /> exploring web interfaces.
+    </h3>
+    <br />
+    <img
+      src="https://assets.website-files.com/5e149ad7cf3b9366a98c912e/5e1771dae2aa6405d69ff4ae_person-3.jpg"
+      className="h-full w-full"
+      alt=""
+    />
+    <br />
+    <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
+      Hello World
+    </h3>
+    <p className="leading-relaxed text-neutral-600">
       Hi there, my name is Radivoje Katanic. I am a software developer from
       Bosnia & Hercegovina. My free time is spent mostly outside doing sports or
       gardening.
     </p>
-
-    <div className="mt-8 flex flex-col gap-8 md:flex-row">
+    <br />
+    <div className="flex gap-8">
       <div className="flex-1">
-        <h1 className="mb-4 text-2xl font-medium">Career</h1>
-        <p className="leading-7 text-gray-400">
+        <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
+          Career
+        </h3>
+        <p className="leading-relaxed text-neutral-600">
           I started my career in February 2020 when I got first internship
           opportunity in local software company. Currently building web products
-          at ProductDock.
+          at <Link href="https://productdock.com/" label="ProductDock" />.
         </p>
-
-        <h1 className="mb-4 mt-8 text-2xl font-medium">Education</h1>
-        <p className="leading-7 text-gray-400">
-          Graduateed as an IT Engineer in 2019 at local university in my
-          hometown.
+        <br />
+        <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
+          Education
+        </h3>
+        <p className="leading-relaxed text-neutral-600">
+          Graduateed as an IT Engineer in 2019 at university. Also graduated
+          from high school as Computer Technician.
         </p>
+        <br />
 
-        <button className="mt-8 flex items-center gap-2 rounded-full border border-gray-100 p-2 px-4 text-sm font-medium tracking-wider hover:bg-gray-100 hover:text-gray-950">
-          <FiFileText /> Download CV
-        </button>
-      </div>
-
-      <div className="flex-1">
-        <h1 className="mb-4 text-2xl font-medium">Technologies</h1>
-        <p className="leading-7 text-gray-400">
-          I&apos;m mostly front-end oriented, with main focus on technologies
-          like React, NextJS, TailwindCSS, but not limited to it, because tools
-          are something that come and go.
-        </p>
-
-        <h1 className="mb-4 mt-8 text-2xl font-medium">Skills</h1>
-        <p className="leading-7 text-gray-400">
-          Curiosity is probably my main one. It&apos;s what keeps me trying out
-          new things and moving forward.
-        </p>
-
-        <h1 className="mb-4 mt-8 text-2xl font-medium">Interests</h1>
-        <p className="leading-7 text-gray-400">
-          Learning basic principles of web UX/UI, exploring WebGL, taking care
-          of 10 cats and my garden.
-        </p>
-
-        <h1 className="mb-4 mt-8 text-2xl font-medium">Location</h1>
-        <p className="leading-7 text-gray-400">Doboj, Bosnia and Hercegovina</p>
-
-        <h1 className="mb-4 mt-8 text-2xl font-medium">Contact</h1>
-        <p className="leading-7 text-gray-400">
-          Have a question, or just want to say hello?
-          <br />
-          Reach me out via Github, Linkedin or e-mail.
-        </p>
-        <div className="mt-8 flex gap-4">
-          <IconButon href="https://github.com/rkatanic" icon={<FiGithub />} />
-          <IconButon href="https://github.com/rkatanic" icon={<FiLinkedin />} />
-          <IconButon href="mailto:rkatanic@outlook.com  " icon={<FiMail />} />
+        <div className="group flex cursor-pointer justify-between rounded border-2 border-neutral-100 px-4 py-2 transition-[border] hover:border-neutral-800">
+          <div className="flex items-center gap-4">
+            <FiFileText size="1.25rem" className="stroke-neutral-600" />
+            <div>
+              <p className="text-alt font-semibold">Resume.pdf</p>
+              <p className="text-sm text-neutral-500">4.3 kB</p>
+            </div>
+          </div>
+          <div className="invisible flex items-center gap-2 text-sm text-neutral-400 transition-all group-hover:visible">
+            <FiExternalLink size="1.125rem" />
+          </div>
         </div>
       </div>
+      <div className="flex-1">
+        <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
+          Skills
+        </h3>
+        <p className="leading-relaxed text-neutral-600">
+          I'm mostly front-end oriented, with main focus on technologies like
+          React, NextJS, TailwindCSS, but not limited to it, because tools are
+          something that come and go.
+        </p>
+        <br />
+        <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
+          Interests
+        </h3>
+        <p className="leading-relaxed text-neutral-600">
+          Besides of exploring web technologies, I like to do some sports,
+          gardening and taking care of my cats.
+        </p>
+        <br />
+        <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
+          Location
+        </h3>
+        <p className="leading-relaxed text-neutral-600">
+          Doboj, Bosnia & Herzegovina
+        </p>
+        <br />
+        <h3 className="text-alt mb-3 text-xl font-semibold tracking-wide">
+          Contact
+        </h3>
+        <p className="leading-relaxed leading-relaxed text-neutral-600">
+          Write me via{" "}
+          <Link href="mailto:rkatanic@outlook.com" label="E-mail" /> or reach me
+          out on{" "}
+          <Link
+            href="https://www.linkedin.com/in/radivoje-katanic/"
+            label="LinkedIn"
+          />{" "}
+          or <Link href="https://github.com/rkatanic" label="GitHub" />.
+        </p>
+      </div>
     </div>
+    <br />
   </div>
 );
 

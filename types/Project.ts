@@ -6,6 +6,7 @@ export interface ProjectType {
   content: string;
   updated: ProjectUpdated;
   links: ProjectLink[];
+  icon?: string;
 }
 
 export interface ProjectUpdated {

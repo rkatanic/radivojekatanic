@@ -3,6 +3,7 @@ title: "Markdown Editor"
 description: "Simple markdown editor for personal needs."
 creationDate: "2022-02-28"
 updated: { description: "Update README", date: "2022-12-27" }
+icon: "paper"
 links:
   [
     {

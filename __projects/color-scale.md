@@ -3,6 +3,7 @@ title: "Color Scale"
 description: "An app for generating different color palettes and combinations."
 creationDate: "2022-10-21"
 updated: { description: "Update README", date: "2022-12-27" }
+icon: "color-palette"
 links:
   [
     {

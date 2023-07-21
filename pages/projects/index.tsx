@@ -1,40 +1,45 @@
-import Project from "@/components/Project";
-import { FiLink2 } from "react-icons/fi";
 import { getAllProjects } from "../../lib/api";
 import { ProjectType } from "../../types/Project";
+import Link from "next/link";
 
 type Props = {
   projects: ProjectType[];
 };
 
 const Projects = ({ projects }: Props): JSX.Element => (
-  <div className="mb-12 mt-4">
-    <h3 className="text-3xl font-semibold leading-10 text-gray-900">
-      Playground
+  <div>
+    <h3 className="text-alt text-4xl font-bold leading-tight">
+      Collection of small <br /> personal tools & experiments.
     </h3>
-    <p className="mb-12 leading-6 text-gray-600">
-      Collection of small personal tools & experiments
+    <br />
+    <p className="leading-relaxed text-neutral-600">
+      I enjoy working on small side-projects mainly for learning different
+      techonologies and development principles. These small personal tools are
+      results of that experimentation.
     </p>
-    <div className="grid grid-cols-2 gap-6">
-      {projects.map((project, i) => (
-        <Project key={i} project={project} />
+    <br />
+
+    <ul className="grid grid-cols-2 gap-4">
+      {projects.map((p) => (
+        <Link
+          href={`/projects/${p.slug}`}
+          className="group flex w-full cursor-pointer flex-col items-center justify-between rounded-sm border-2 border-neutral-100 p-6 text-center transition-all hover:border-neutral-800"
+        >
+          <div className="flex w-full justify-between text-sm tracking-wide text-neutral-400">
+            <p className="group-hover:text-neutral-800">{p.creationDate}</p>
+            <p className="rounded-full border-2 p-0.5 px-1.5 text-xs font-medium uppercase tracking-wide group-hover:border-neutral-800 group-hover:text-neutral-800">
+              wip
+            </p>
+          </div>
+          <br />
+          <img src={`/${p.icon}.svg`} />
+          <div className="text-centexr mt-4">
+            <h3 className="text-alt mb-2 text-xl font-semibold">{p.title}</h3>
+            <p className="text-neutral-600">{p.description}</p>
+          </div>
+        </Link>
       ))}
-    </div>
-    <div className="overlow-hidden rounded-md border dark:border-gray-800">
-      <div className="h-40 w-full dark:bg-gray-900/50"></div>
-      <div className="p-4">
-        <h3 className="mb-2 text-lg font-medium dark:text-gray-200">
-          Color Scale
-        </h3>
-        <p className="max-w-xs dark:text-gray-400">
-          Color shade generator based on HSL.
-        </p>
-        <div className="mt-4 flex items-center justify-between">
-          <p className="text-sm dark:text-gray-500">Mar 07,2020</p>
-          <FiLink2 className="dark:stroke-gray-700" />
-        </div>
-      </div>
-    </div>
+    </ul>
   </div>
 );
 
@@ -46,6 +51,7 @@ export const getStaticProps = async () => {
     "title",
     "description",
     "creationDate",
+    "icon",
   ]);
 
   return {

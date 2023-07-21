@@ -1,4 +1,13 @@
-import { FiZap } from "react-icons/fi";
+import {
+  FiCommand,
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiMoon,
+  FiSearch,
+  FiUser,
+  FiZap,
+} from "react-icons/fi";
 import { getAllProjects } from "lib/api";
 import { ProjectType } from "types/Project";
 import { DATE_FORMAT } from "utils/dateTimeUtils";
@@ -8,36 +17,17 @@ interface Props {
 }
 
 const Labs = ({ projects }: Props): JSX.Element => (
-  <div className="mx-auto max-w-4xl px-8">
-    <h1 className="mb-4 text-3xl font-medium leading-snug">
-      This is my playground.
-    </h1>
-    <p className="text-lg leading-7 text-gray-400">
-      These projects are set of small tools that I built over time. Most of them
-      are result of experimentation and for personal use.
-    </p>
-
-    <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-y-12">
-      {projects.map((project) => (
-        <div
-          key={project.title}
-          className="border-bx 6 flex items-start gap-6 border-gray-800 last:border-0"
-        >
-          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gray-900">
-            <FiZap className="fill-gray-400 stroke-none" size="1.125rem" />
-          </div>
-          <div className="flex-1">
-            <h3 className="mb-2 text-2xl font-medium">{project.title}</h3>
-            <p className="mb-4 text-sm">
-              {DATE_FORMAT.format(new Date(project.creationDate))}
-            </p>
-            <p className="mb-4 text-gray-400">{project.description}</p>
-            <span className="rounded-full bg-gray-800 p-0.5 px-3 text-sm font-medium tracking-wide text-gray-400">
-              WIP
-            </span>
-          </div>
+  <div className="mx-auto min-h-screen max-w-2xl py-16">
+    <div className="max-w-xs rounded-md border border-gray-800">
+      <div className="p-6">
+        <div className="flex items-baseline justify-between">
+          <p className="mb-44 text-sm text-gray-400">Aug 20, 2020</p>
         </div>
-      ))}
+        <h3 className="text-2xl">Project Title</h3>
+      </div>
+      <p className="border-t border-gray-900 p-6 text-gray-400">
+        Lorem ipsum dolor sit amet consectetur adi pisicing elit.
+      </p>
     </div>
   </div>
 );

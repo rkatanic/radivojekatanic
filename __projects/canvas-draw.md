@@ -3,6 +3,7 @@ title: "Canvas Draw"
 description: "Drawing tool for making simple sketches on the go."
 creationDate: "2023-01-27"
 updated: { description: "Update README", date: "2022-12-27" }
+icon: "doodle"
 links:
   [
     {
