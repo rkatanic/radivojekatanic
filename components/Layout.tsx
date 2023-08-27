@@ -1,32 +1,35 @@
-import { FiMoon } from "react-icons/fi";
-import Navigation from "./Navigation";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { TbArrowBackUp } from "react-icons/tb";
+import LanguageSwitch from "./LanguageSwitch";
+import { useTranslation } from "next-i18next";
+import Image from "next/image";
 
 interface Props {
   children: JSX.Element;
+  locale: string;
 }
 
-const Layout = ({ children }: Props): JSX.Element => {
-  const { asPath } = useRouter();
+const Layout = ({ children, locale }: Props): JSX.Element => {
+  const { t } = useTranslation();
 
   return (
-    <div className="relative flex justify-center gap-12">
-      <Navigation />
-      <div className="w-full max-w-2xl pb-12 pt-16">{children}</div>
-      <div className="sticky top-0 flex h-screen w-full max-w-min flex-col items-start justify-between p-10 pt-16">
-        <div className="flex w-8 flex-col items-center gap-4 text-lg text-neutral-400">
-          <FiMoon />
-          {asPath.includes("/projects/") && (
-            <Link
-              href="/projects"
-              className="flex items-center justify-center rounded-full bg-neutral-700 p-2.5 text-white"
-            >
-              <TbArrowBackUp />
-            </Link>
-          )}
+    <div className="relative mx-auto flex min-h-screen flex-col justify-center gap-8 px-6">
+      <div className="mx-auto flex w-full max-w-2xl items-center justify-between pb-8 pt-16">
+        <div className="flex items-center gap-4">
+          <Image
+            src="/me.png"
+            alt="my-photo"
+            className="h-14 w-14 rounded-full bg-slate-200"
+            width={256}
+            height={256}
+          />
+          <div>
+            <h3 className="text-lg font-semibold">{t("fullName")}</h3>
+            <p className="text-slate-600">{t("role")}</p>
+          </div>
         </div>
+        <LanguageSwitch initiallocale={locale} />
+      </div>
+      <div className="mx-auto w-full max-w-2xl flex-1 border-slate-100 pb-16">
+        {children}
       </div>
     </div>
   );

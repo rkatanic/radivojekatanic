@@ -6,13 +6,24 @@ jest.mock("next/config", () => () => ({
     lastModifiedDate: "01-10-2020",
   },
 }));
-const useRouter = jest.spyOn(require("next/router"), "useRouter");
+jest.mock("next/image", () => ({ src, alt }: any) => (
+  <img src={src} alt={alt} />
+));
+jest.mock("next/router", () => ({
+  useRouter: () => ({
+    locale: "en",
+  }),
+}));
+
+jest.mock("next-i18next", () => ({
+  ...jest.requireActual("next-i18next"),
+  useTranslation: () => ({ t: (key: any) => key }),
+}));
 
 describe("Layout", (): void => {
   it("should render", (): void => {
-    (useRouter as jest.Mock).mockReturnValue({ asPath: "/", pathname: "/" });
     const { baseElement } = render(
-      <Layout>
+      <Layout locale="en">
         <div>children</div>
       </Layout>
     );

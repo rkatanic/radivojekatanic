@@ -4,43 +4,66 @@ exports[`Layout should render 1`] = `
 <body>
   <div>
     <div
-      class="about min-h-screen bg-gray-950 pb-20 text-gray-100"
+      class="relative mx-auto flex min-h-screen flex-col justify-center gap-8 px-6"
     >
       <div
-        class="mx-auto mb-4 flex h-28 max-w-4xl items-center justify-between px-8"
+        class="mx-auto flex w-full max-w-2xl items-center justify-between pb-8 pt-16"
       >
         <div
-          class="flex items-center gap-2"
+          class="flex items-center gap-4"
         >
-          <div
-            class="h-3 w-3 rounded-full bg-gray-100"
+          <img
+            alt="my-photo"
+            src="/me.png"
           />
-          <span
-            class="text-lxg font-medium"
-          >
-            rkatanic
-          </span>
+          <div>
+            <h3
+              class="text-lg font-semibold"
+            >
+              fullName
+            </h3>
+            <p
+              class="text-slate-600"
+            >
+              role
+            </p>
+          </div>
         </div>
         <div
-          class="flex gap-2"
+          class="relative cursor-pointer"
         >
-          <a
-            href="/about"
+          <div
+            class="flex items-center gap-2 rounded-md border border-slate-300 p-1 px-2 text-sm text-slate-600"
           >
-            About
-          </a>
-          <a
-            href="/labs"
-          >
-            Labs
-          </a>
+            <img
+              alt="en-flag"
+              src="/english-flag.png"
+            />
+            ENG
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 9 12 15 18 9"
+              />
+            </svg>
+          </div>
         </div>
       </div>
       <div
-        class="mx-auto mb-16 hidden h-72 max-w-4xl overflow-hidden rounded-3xl bg-gradient-to-r from-yellow-200 via-emerald-300 to-blue-400 md:block"
-      />
-      <div>
-        children
+        class="mx-auto w-full max-w-2xl flex-1 border-slate-100 pb-16"
+      >
+        <div>
+          children
+        </div>
       </div>
     </div>
   </div>

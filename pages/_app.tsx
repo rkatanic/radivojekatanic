@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "../components/Layout";
+import { appWithTranslation, useTranslation } from "next-i18next";
 
 import "../styles/globals.css";
 
@@ -18,20 +19,24 @@ const isDarkModeActiveScript = `
 })();
 `;
 
-const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
-  <>
-    <Head>
-      <title>Radivoje Katanic</title>
-      <meta name="description" content="Software Developer" />
-    </Head>
-    <script
-      key="theme-script"
-      dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
-    />
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  </>
-);
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  const { t } = useTranslation();
 
-export default MyApp;
+  return (
+    <>
+      <Head>
+        <title>{`${t("fullName")} | ${t("role")}`}</title>
+        <meta name="description" content={t("role")} />
+      </Head>
+      {/* <script
+              key="theme-script"
+              dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
+            /> */}
+      <Layout locale={pageProps?._nextI18Next?.initialLocale}>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
+};
+
+export default appWithTranslation(MyApp);

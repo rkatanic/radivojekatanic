@@ -25,7 +25,7 @@ const ThemeSwitch = (): JSX.Element => {
   return (
     <button
       onClick={hanleThemeToggle}
-      className="flex items-center justify-center rounded-full px-2 text-sm shadow-sm dark:border-gray-800 dark:text-gray-400 dark:hover:bg-gray-800/10 dark:hover:text-gray-200"
+      className="flex items-center justify-center rounded-full px-2 text-sm shadow-sm dark:border-slate-800 dark:text-slate-400 dark:hover:bg-slate-800/10 dark:hover:text-slate-200"
     >
       <FiSun />
     </button>

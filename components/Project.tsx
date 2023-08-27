@@ -10,15 +10,15 @@ interface Props {
 const Project = ({
   project: { title, description, creationDate },
 }: Props): JSX.Element => (
-  <div className="flex gap-4 border-b border-gray-800 pb-8">
-    <div className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-800 bg-gradient-to-t from-gray-800/70 to-gray-800/10">
+  <div className="flex gap-4 border-b border-slate-800 pb-8">
+    <div className="flex h-14 w-14 items-center justify-center rounded-full border border-slate-800 bg-gradient-to-t from-slate-800/70 to-slate-800/10">
       <TbSeeding size="1.25rem" className="stroke-sky-500" />
     </div>
     <div className="flex-1">
-      <p className="mb-1 text-sm text-gray-500">
+      <p className="mb-1 text-sm text-slate-500">
         {DATE_FORMAT.format(new Date(creationDate))}
       </p>
-      <h3 className="font-serif text-lg font-semibold tracking-wide text-gray-200">
+      <h3 className="font-serif text-lg font-semibold tracking-wide text-slate-200">
         {title}
       </h3>
       <p className="mt-2">{description}</p>

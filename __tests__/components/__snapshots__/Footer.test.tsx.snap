@@ -7,7 +7,7 @@ exports[`Footer should render 1`] = `
       class="mt-12 w-full border-t py-6 text-sm"
     >
       <div
-        class="m-auto flex max-w-4xl items-center justify-between text-gray-400"
+        class="m-auto flex max-w-4xl items-center justify-between text-slate-400"
       >
         <span>
           © 
