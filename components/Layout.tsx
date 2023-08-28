@@ -29,7 +29,7 @@ const Layout = ({ children, locale }: Props): JSX.Element => {
           </div>
         </div>
         <div className="flex items-center gap-2">
-          {/* <ThemeSwitch /> */}
+          <ThemeSwitch />
           <LanguageSwitch initiallocale={locale} />
         </div>
       </div>

@@ -29,7 +29,7 @@ const LanguageSwitch = ({ initiallocale }: any): JSX.Element => {
   return (
     <div className="relative cursor-pointer" ref={dropdownRef}>
       <div
-        className="flex h-8 items-center gap-2 rounded-lg bg-slate-50 p-1 px-3 text-sm text-slate-600 hover:text-slate-800 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700/50 dark:hover:text-neutral-200"
+        className="flex h-9 items-center gap-2 rounded-xl border border-slate-300 p-1 px-3 text-sm text-slate-600 shadow-sm hover:text-slate-800 dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700/50 dark:hover:text-neutral-200"
         onClick={handleDropdownToggle}
       >
         {selectedLanguage.name}
@@ -40,7 +40,7 @@ const LanguageSwitch = ({ initiallocale }: any): JSX.Element => {
       </div>
 
       {isDropdownOpen && (
-        <ul className="absolute top-10 w-full overflow-hidden rounded-lg bg-white py-1 text-sm tracking-wide text-slate-600 shadow-md dark:bg-neutral-800 dark:text-neutral-400">
+        <ul className="absolute top-10 w-full overflow-hidden rounded-xl bg-white py-1 text-sm tracking-wide text-slate-600 shadow-lg dark:bg-neutral-800 dark:text-neutral-400">
           {LANGUAGES.map((language) => (
             <li
               onClick={() => handleLanguageChange(language)}

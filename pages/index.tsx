@@ -1,19 +1,14 @@
 import {
   FiBook,
-  FiBookOpen,
   FiBriefcase,
   FiCalendar,
-  FiFile,
   FiFileText,
-  FiImage,
-  FiMap,
+  FiMail,
   FiMapPin,
-  FiSend,
 } from "react-icons/fi";
 import { FaLeaf, FaBiking, FaVideo, FaLaptop } from "react-icons/fa";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Trans, useTranslation } from "next-i18next";
-import { MdOutlineSchool } from "react-icons/md";
 
 const INTERESTS = [
   {
@@ -74,14 +69,14 @@ const About = (): JSX.Element => {
           {t("technologiesDescription")}
         </p>
         <div className="mt-4 flex gap-3 text-sm font-medium">
-          <button className="flex items-center gap-2 rounded-lg bg-slate-800 p-1.5 px-3 text-white shadow-sm hover:bg-slate-900 hover:shadow-md dark:bg-neutral-200 dark:text-neutral-950 dark:hover:bg-neutral-100">
+          <button className="flex h-9 items-center gap-2 rounded-lg bg-slate-800 p-1.5 px-4 text-white shadow-sm hover:bg-slate-900 hover:shadow-md dark:bg-neutral-200 dark:text-neutral-950 dark:hover:bg-neutral-100">
             <FiFileText /> {t("downloadCV")}
           </button>
           <a
             href="mailto:rkatanic@outlook.com"
-            className="flex items-center gap-2 rounded-lg border border-slate-300 bg-white p-1.5 px-3 shadow-sm hover:shadow-md dark:border-neutral-700/30 dark:bg-neutral-700/30 dark:hover:bg-neutral-700/50"
+            className="flex h-9 items-center gap-2 rounded-lg border border-slate-300 bg-white p-1.5 px-4 shadow-sm hover:shadow-md dark:border-neutral-700/30 dark:bg-neutral-700/30 dark:hover:bg-neutral-700/50"
           >
-            <FiSend />
+            <FiMail />
             {t("letsTalk")}
           </a>
         </div>

@@ -47,7 +47,7 @@
     },
     "interests": {
       "title": "Interests",
-      "sport": "Sport",
+      "sport": "Sports",
       "gardening": "Gardening",
       "freelancing": "Freelancing",
       "movies": "Movies"
@@ -63,5 +63,6 @@
     "pdf": "PDF",
     "image": "Image",
     "viewFile": "View file"
-  }
+  },
+  "theme": "Theme"
 }
