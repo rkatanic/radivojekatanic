@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import { appWithTranslation, useTranslation } from "next-i18next";
 
-import "../styles/globals.css";
+import "../globals.css";
 
 const isDarkModeActiveScript = `
 (() => {
@@ -28,10 +28,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         <title>{`${t("fullName")} | ${t("role")}`}</title>
         <meta name="description" content={t("role")} />
       </Head>
-      {/* <script
-              key="theme-script"
-              dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
-            /> */}
+      <script
+        key="theme-script"
+        dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
+      />
       <Layout locale={pageProps?._nextI18Next?.initialLocale}>
         <Component {...pageProps} />
       </Layout>

@@ -1,5 +1,6 @@
 import { useState, useEffect, EffectCallback } from "react";
 import { FiSun } from "react-icons/fi";
+import { ImContrast } from "react-icons/im";
 
 const ThemeSwitch = (): JSX.Element => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
@@ -25,9 +26,9 @@ const ThemeSwitch = (): JSX.Element => {
   return (
     <button
       onClick={hanleThemeToggle}
-      className="flex items-center justify-center rounded-full px-2 text-sm shadow-sm dark:border-slate-800 dark:text-slate-400 dark:hover:bg-slate-800/10 dark:hover:text-slate-200"
+      className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-50 px-2 text-sm text-slate-600 shadow-sm hover:text-slate-800 dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-500 dark:hover:bg-neutral-700/50 dark:hover:text-neutral-200"
     >
-      <FiSun />
+      <ImContrast />
     </button>
   );
 };

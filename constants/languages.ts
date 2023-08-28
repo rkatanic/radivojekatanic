@@ -1,4 +1,4 @@
 export const LANGUAGES = [
-  { locale: "en", name: "ENG", flag: "/english-flag.png" },
-  { locale: "sr", name: "SRB", flag: "/serbian-flag.png" },
+  { locale: "en", name: "English" },
+  { locale: "sr", name: "Српски" },
 ];

@@ -3,12 +3,12 @@
   "role": "Web Developer",
   "about": {
     "mainHeading": "Hey there, I'm Radivoje.",
-    "mainDescription": "I am a web developer with a passion for crafting digital experiences. Besides of coding, you'll find me enjoying sports, tending to my garden, or relaxing with a good movie.",
+    "mainDescription": "I am a web developer from Doboj, Bosnia & Herzegovina, with a passion for crafting digital experiences. Besides of coding, you'll find me enjoying sports, tending to my garden, or relaxing with a good movie.",
     "currentJob": "Currently working as a Software Developer in <0>ProductDock</0>.",
-    "technologies": "Technologies",
+    "technologies": "Technologies I use",
     "technologiesDescription": "Although I work as a full-stack developer, I am mainly front-end oriented. I mostly use technologies like React, NextJS and TailwindCSS.",
     "downloadCV": "Download CV",
-    "letsTalk": "Lets Talk",
+    "letsTalk": "Let's Talk",
     "career": {
       "title": "Career",
       "entries": [
@@ -16,13 +16,15 @@
           "role": "Software Developer",
           "company": "ProductDock",
           "from": "Aug 2020",
-          "to": "Present"
+          "to": "Present",
+          "description": "Аfter successful boot camp I got full time job offer, where I started my career as a Software Developer."
         },
         {
           "role": "Intern",
           "company": "ProductDock",
           "from": "Feb 2020",
-          "to": "May 2020"
+          "to": "May 2020",
+          "description": "Attended 3 month boot camp program where I built an internal application with other interns. Tech stack used was Angular, Spring Boot, MySQL."
         }
       ]
     },
@@ -47,7 +49,6 @@
       "title": "Interests",
       "sport": "Sport",
       "gardening": "Gardening",
-      "animals": "Animals",
       "freelancing": "Freelancing",
       "movies": "Movies"
     },
