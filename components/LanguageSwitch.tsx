@@ -27,15 +27,15 @@ const LanguageSwitch = ({ initiallocale }: any): JSX.Element => {
   useClickOutside(dropdownRef, (): void => setIsDropdownOpen(false));
 
   return (
-    <div className="relative cursor-pointer" ref={dropdownRef}>
+    <div className="relative cursor-pointer select-none" ref={dropdownRef}>
       <div
-        className="flex h-9 items-center gap-2 rounded-xl border border-slate-300 p-1 px-3 text-sm text-slate-600 shadow-sm hover:text-slate-800 dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700/50 dark:hover:text-neutral-200"
+        className="group flex h-9 items-center gap-2 rounded-xl border border-slate-300 p-1 px-3 text-sm text-slate-600 shadow-sm hover:text-slate-800 dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700/50 dark:hover:text-neutral-200"
         onClick={handleDropdownToggle}
       >
         {selectedLanguage.name}
         <div className="flex h-5 flex-col">
-          <FiChevronUp className="pointer-events-none dark:stroke-neutral-500" />
-          <FiChevronDown className="pointer-events-none -mt-0.5 dark:stroke-neutral-500" />
+          <FiChevronUp className="pointer-events-none dark:stroke-neutral-500 dark:group-hover:stroke-neutral-400" />
+          <FiChevronDown className="pointer-events-none -mt-0.5 dark:stroke-neutral-500 dark:group-hover:stroke-neutral-400" />
         </div>
       </div>
 
