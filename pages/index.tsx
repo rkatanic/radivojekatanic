@@ -1,12 +1,10 @@
 import {
-  FiArrowRight,
   FiBook,
   FiBriefcase,
   FiCalendar,
   FiFileText,
   FiMail,
   FiMapPin,
-  FiSend,
 } from "react-icons/fi";
 import { FaLeaf, FaBiking, FaVideo, FaLaptop } from "react-icons/fa";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -43,7 +41,7 @@ const About = (): JSX.Element => {
   return (
     <div className="flex flex-col gap-12 text-slate-800 dark:text-neutral-200">
       <div>
-        <h3 className="mb-4 text-3xl font-semibold">{t("mainHeading")}</h3>
+        <h3 className="mb-6 text-3xl font-semibold">{t("mainHeading")}</h3>
         <p className="leading-relaxed text-slate-600 dark:text-neutral-300">
           {t("mainDescription")}
         </p>

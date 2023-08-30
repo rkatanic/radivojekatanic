@@ -67,5 +67,8 @@
   "home": "Home",
   "theme": "Theme",
   "github": "GitHub",
-  "linkedin": "LinkedIn"
+  "linkedin": "LinkedIn",
+  "pageNotFoundTitle": "Page not found",
+  "pageNotFoundDescription": "Whoops! Page you are looking for could not be found. Please check the URL or navigate back to home page.",
+  "backToHome": "Back to home"
 }
