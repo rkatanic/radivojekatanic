@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
+* {
   font-family: "Inter";
-  font-feature-settings: "cv11" on;
+  font-feature-settings: "cv11", "ss01" on;
 }
 
 @font-face {

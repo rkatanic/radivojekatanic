@@ -19,7 +19,7 @@ const Layout = ({ children, locale }: Props): JSX.Element => {
     <div className="relative mx-auto flex min-h-screen flex-col justify-center gap-8 px-6 text-slate-900 dark:bg-neutral-900 dark:text-neutral-200">
       <div className="mx-auto flex w-full max-w-2xl items-baseline justify-between">
         <div className="flex gap-6 pb-8 pt-16 font-medium">
-          <Link href="/">About</Link>
+          <Link href="/">{t("home")}</Link>
         </div>
         <div className="flex items-center gap-2">
           <ThemeSwitch />

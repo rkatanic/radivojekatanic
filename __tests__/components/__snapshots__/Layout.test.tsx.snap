@@ -15,7 +15,7 @@ exports[`Layout should render 1`] = `
           <a
             href="/"
           >
-            About
+            home
           </a>
         </div>
         <div

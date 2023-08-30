@@ -32,7 +32,7 @@ const INTERESTS = [
 ];
 
 const About = (): JSX.Element => {
-  const { t } = useTranslation("", { keyPrefix: "about" });
+  const { t } = useTranslation("", { keyPrefix: "aboutPage" });
   const careerEntries = t("career.entries", {
     returnObjects: true,
   }) as Array<any>;
@@ -65,14 +65,14 @@ const About = (): JSX.Element => {
         </p>
       </div>
 
-      <div className="rounded-xl bg-slate-50 p-6 dark:bg-neutral-800/40">
+      <div className="rounded-2xl bg-slate-50 p-6 dark:bg-neutral-800/40">
         <h3 className="mb-4 text-xl font-semibold tracking-wide">
           {t("technologies")}
         </h3>
         <p className="leading-relaxed text-slate-600 dark:text-neutral-300">
           {t("technologiesDescription")}
         </p>
-        <div className="mt-4 flex gap-3 text-sm font-medium">
+        <div className="mt-6 flex gap-3 text-sm font-medium">
           <button className="flex h-9 items-center gap-2 rounded-xl bg-slate-800 p-1.5 px-4 text-white shadow-sm hover:bg-slate-900 hover:shadow-md dark:bg-neutral-200 dark:text-neutral-950 dark:hover:bg-neutral-100">
             <FiFileText /> {t("downloadCV")}
           </button>
