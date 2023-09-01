@@ -63,7 +63,7 @@ const About = (): JSX.Element => {
         </p>
       </div>
 
-      <div className="rounded-2xl bg-slate-50 p-6 dark:bg-neutral-800/40">
+      <div className="rounded-2xl bg-slate-50 p-6 dark:bg-neutral-800/50">
         <h3 className="mb-4 text-xl font-semibold tracking-wide">
           {t("technologies")}
         </h3>
@@ -71,12 +71,12 @@ const About = (): JSX.Element => {
           {t("technologiesDescription")}
         </p>
         <div className="mt-6 flex gap-3 text-sm font-medium">
-          <button className="flex h-9 items-center gap-2 rounded-xl bg-slate-800 p-1.5 px-4 text-white shadow-sm hover:bg-slate-900 hover:shadow-md dark:bg-neutral-200 dark:text-neutral-950 dark:hover:bg-neutral-100">
+          <button className="flex h-9 items-center gap-2 rounded-full bg-slate-800 p-1.5 px-5 text-white shadow-sm hover:bg-slate-900 hover:shadow-md dark:bg-neutral-200 dark:text-neutral-950 dark:hover:bg-neutral-100">
             <FiFileText /> {t("downloadCV")}
           </button>
           <a
             href="mailto:rkatanic@outlook.com"
-            className="flex h-9 items-center gap-2 rounded-xl border border-slate-300 bg-white p-1.5 px-4 shadow-sm hover:shadow-md dark:border-neutral-700/30 dark:bg-neutral-700/50 dark:hover:bg-neutral-700/70"
+            className="flex h-9 items-center gap-2 rounded-full border border-slate-300 bg-white p-1.5 px-5 shadow-sm hover:shadow-md dark:border-neutral-200 dark:bg-transparent"
           >
             <FiMail />
             {t("letsTalk")}
@@ -159,7 +159,7 @@ const About = (): JSX.Element => {
           {INTERESTS.map((interest) => (
             <span
               key={interest.key}
-              className="flex h-10 max-w-min items-center gap-3 rounded-xl border p-1 px-4 font-medium text-slate-800 shadow-sm dark:border-0 dark:bg-neutral-800/70 dark:text-neutral-300"
+              className="flex h-9 max-w-min items-center gap-3 rounded-full border p-1 px-4 font-medium text-slate-800 dark:border-neutral-700 dark:bg-neutral-900/70 dark:text-neutral-300"
             >
               {interest.icon}
               {t(`interests.${interest.key}`)}

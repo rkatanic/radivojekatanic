@@ -4,13 +4,13 @@ exports[`Layout should render 1`] = `
 <body>
   <div>
     <div
-      class="relative mx-auto flex min-h-screen flex-col justify-center gap-8 px-6 text-slate-900 dark:bg-neutral-900 dark:text-neutral-200"
+      class="relative mx-auto flex min-h-screen flex-col justify-center gap-16 px-6 py-16 text-slate-900 dark:bg-neutral-900 dark:text-neutral-200"
     >
       <div
         class="mx-auto flex w-full max-w-2xl items-baseline justify-between"
       >
         <div
-          class="flex gap-6 pb-8 pt-16 font-medium"
+          class="flex gap-6 font-medium"
         >
           <a
             href="/"
@@ -19,40 +19,17 @@ exports[`Layout should render 1`] = `
           </a>
         </div>
         <div
-          class="flex items-center gap-2"
+          class="flex items-center gap-3"
         >
-          <button
-            class="group relative flex h-9 w-9 items-center justify-center rounded-xl border border-slate-300 px-2 text-sm text-slate-500 shadow-sm transition hover:text-slate-800 dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-500 dark:hover:bg-neutral-700/50 dark:hover:text-neutral-200"
-          >
-            <div
-              class="invisible absolute right-[calc(100%+12px)] translate-y-1 rounded-lg p-1 px-2 text-sm font-medium opacity-0 transition-[transform,opacity] before:absolute before:-right-[6px] before:top-1/2 before:h-0 before:w-0 before:-translate-y-1/2 before:border-b-[7px] before:border-l-[7px] before:border-t-[7px] before:border-b-transparent before:border-t-transparent group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 bg-slate-800 text-slate-50 before:border-l-slate-800 dark:bg-neutral-200 dark:text-neutral-900 dark:before:border-l-neutral-200"
-            >
-              theme
-            </div>
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM2 8c0-3.314 2.686-6 6-6v12c-3.314 0-6-2.686-6-6z"
-              />
-            </svg>
-          </button>
           <div
             class="relative cursor-pointer select-none"
           >
             <div
-              class="group flex h-9 items-center gap-2 rounded-xl border border-slate-300 p-1 px-3 text-sm text-slate-600 shadow-sm hover:text-slate-800 dark:border-neutral-800 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700/50 dark:hover:text-neutral-200"
+              class="group flex h-10 items-center gap-2 rounded-full border border-slate-300 p-1 px-5 text-sm text-slate-600 shadow-sm hover:text-slate-800 dark:border-neutral-600  dark:text-neutral-400 dark:hover:border-neutral-500 dark:hover:text-neutral-200"
             >
               English
               <div
-                class="flex h-5 flex-col"
+                class="-mr-1 flex h-5 flex-col"
               >
                 <svg
                   class="pointer-events-none dark:stroke-neutral-500 dark:group-hover:stroke-neutral-400"
@@ -89,10 +66,33 @@ exports[`Layout should render 1`] = `
               </div>
             </div>
           </div>
+          <button
+            class="group relative flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 px-2 text-sm text-slate-500 shadow-sm transition hover:border-slate-400 hover:text-slate-800 dark:border-neutral-600 dark:text-neutral-500 dark:hover:border-neutral-500 dark:hover:text-neutral-200"
+          >
+            <div
+              class="invisible absolute left-12 translate-y-1 rounded-lg p-1 px-2 text-sm font-medium opacity-0 transition-[transform,opacity] before:absolute before:-left-1 before:top-1/2 before:h-0 before:w-0 before:-translate-y-1/2 before:border-b-[6px] before:border-r-[6px] before:border-t-[6px] before:border-b-transparent before:border-t-transparent group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 bg-slate-800 text-slate-50 before:border-r-slate-800 dark:bg-neutral-200 dark:text-neutral-900 dark:before:border-r-neutral-200"
+            >
+              theme
+            </div>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM2 8c0-3.314 2.686-6 6-6v12c-3.314 0-6-2.686-6-6z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
-        class="mx-auto flex w-full max-w-2xl items-center justify-between pb-8"
+        class="mx-auto flex w-full max-w-2xl items-center justify-between"
       >
         <div
           class="flex items-center gap-4"
@@ -209,7 +209,7 @@ exports[`Layout should render 1`] = `
         </div>
       </div>
       <div
-        class="mx-auto w-full max-w-2xl flex-1 pb-16"
+        class="mx-auto w-full max-w-2xl flex-1"
       >
         <div>
           children
