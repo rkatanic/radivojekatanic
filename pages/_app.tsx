@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import { appWithTranslation, useTranslation } from "next-i18next";
 
 import "../globals.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const isDarkModeActiveScript = `
 (() => {
@@ -19,11 +20,13 @@ const isDarkModeActiveScript = `
 })();
 `;
 
+const queryClient = new QueryClient();
+
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <Head>
         <title>{`${t("fullName")} | ${t("role")}`}</title>
         <meta name="description" content={t("role")} />
@@ -35,7 +38,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       <Layout locale={pageProps?._nextI18Next?.initialLocale}>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </QueryClientProvider>
   );
 };
 
