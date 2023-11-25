@@ -1,4 +1,10 @@
-import { FiSend } from "react-icons/fi";
+import {
+  FiFileText,
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiSend,
+} from "react-icons/fi";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import classNames from "classnames";
@@ -30,86 +36,43 @@ const About = (): JSX.Element => {
   };
 
   return (
-    <div className="flex flex-col gap-12 text-slate-800 dark:text-neutral-200">
+    <div className="flex flex-col gap-12 text-slate-800 dark:text-zinc-200">
       <div>
-        <h3 className="mb-6 text-3xl font-semibold">{t("contactMe")}</h3>
-        <p className="leading-relaxed text-slate-600 dark:text-neutral-300">
+        <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+          {t("contactMe")}
+        </h1>
+        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           {t("contactMeDescription")}
         </p>
       </div>
-      <form
-        action=""
-        className="flex flex-col gap-8"
-        onSubmit={handleFormSubmit}
-      >
-        <div className="relative">
+      <div className="flex gap-6">
+        <form
+          className="flex w-full flex-col gap-6"
+          onSubmit={handleFormSubmit}
+        >
           <input
-            required
-            type="text"
-            id="name"
-            name="name"
-            className="border-1 peer block h-12 w-full appearance-none rounded-full border-neutral-300 bg-transparent px-4 text-neutral-900 focus:border-slate-600 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-white dark:focus:border-neutral-300"
-            placeholder=" "
+            placeholder="Name"
+            className="w-full min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+            type="email"
           />
-          <label
-            htmlFor="name"
-            className={classNames(
-              "absolute left-1 top-2 z-10 ml-2 origin-[0] -translate-y-4 scale-75 bg-white px-2 text-sm text-slate-500 transition-[transform,scale] duration-300 ease-out",
-              "peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:text-slate-900 peer-focus:dark:text-neutral-300",
-              "peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100",
-              "dark:bg-neutral-900 dark:text-neutral-400"
-            )}
-          >
-            {t("yourName")}
-          </label>
-        </div>
-        <div className="relative">
           <input
-            required
-            type="text"
-            id="email"
-            name="email"
-            className="border-1 peer block h-12 w-full appearance-none rounded-full border-neutral-300 bg-transparent px-4 text-neutral-900 focus:border-slate-600 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-white dark:focus:border-neutral-300"
-            placeholder=" "
+            placeholder="E-mail"
+            className="w-full min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+            type="email"
           />
-          <label
-            htmlFor="email"
-            className={classNames(
-              "absolute left-1 top-2 z-10 ml-2 origin-[0] -translate-y-4 scale-75 bg-white px-2 text-sm text-slate-500 transition-[transform,scale] duration-300 ease-out",
-              "peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:text-slate-900 peer-focus:dark:text-neutral-300",
-              "peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100",
-              "dark:bg-neutral-900 dark:text-neutral-400"
-            )}
-          >
-            {t("yourEmail")}
-          </label>
-        </div>
-        <div className="relative">
           <textarea
-            required
-            rows={7}
-            id="message"
-            name="message"
-            className="border-1 peer block min-h-[12rem] w-full appearance-none rounded-3xl border-neutral-300 bg-transparent p-4 text-neutral-900 focus:border-slate-600 focus:outline-none focus:ring-0 dark:border-neutral-600 dark:text-white dark:focus:border-neutral-300"
-            placeholder=" "
+            rows={6}
+            placeholder="Message"
+            className="w-full min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
           />
-          <label
-            htmlFor="message"
-            className={classNames(
-              "absolute left-1 top-2 z-10 ml-2 origin-[0] -translate-y-4 scale-75 bg-white px-2 text-sm text-slate-500 transition-[transform,scale] duration-300 ease-out",
-              "peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:text-slate-900 peer-focus:dark:text-neutral-300",
-              "peer-placeholder-shown:top-8 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100",
-              "dark:bg-neutral-900 dark:text-neutral-400"
-            )}
+          <button
+            className="inline-flex max-w-min flex-none items-center justify-center gap-2 rounded-md bg-zinc-800 px-3 py-2 text-sm font-semibold text-zinc-100 outline-offset-2 transition hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 active:transition-none dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70"
+            type="submit"
           >
-            {t("yourMessage")}
-          </label>
-        </div>
-        <button className="flex items-center gap-2 self-start rounded-full bg-slate-800 p-2.5 px-6 font-medium tracking-wide text-slate-50 dark:bg-neutral-200 dark:text-neutral-900">
-          <FiSend />
-          {t("send")}
-        </button>
-      </form>
+            <FiSend /> Send
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

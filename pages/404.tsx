@@ -26,19 +26,20 @@ const PageNotFound = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-6">
-      <h1 className="text-3xl font-semibold text-slate-900 dark:text-neutral-200">
-        404 - {t("pageNotFoundTitle")}
+    <div className="flex flex-col">
+      <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+        {t("pageNotFoundTitle")}
         <span className="ml-2">
           {randomNumber !== undefined && EMOJIS[randomNumber]}
         </span>
       </h1>
-      <h3 className="leading-relaxed text-slate-600 dark:text-neutral-300">
+      <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
         {t("pageNotFoundDescription")}
-      </h3>
+      </p>
       <Link
-        className="flex items-center gap-1 font-medium hover:underline"
         href="/"
+        className="inline-flex max-w-min flex-none items-center justify-center gap-2 whitespace-nowrap rounded-md bg-zinc-800 px-3 py-2 text-sm font-semibold text-zinc-100 outline-offset-2 transition hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 active:transition-none dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70"
+        type="submit"
       >
         <FiArrowLeft /> {t("backToHome")}
       </Link>

@@ -1,182 +1,76 @@
-import {
-  FiBook,
-  FiBriefcase,
-  FiCalendar,
-  FiFileText,
-  FiMail,
-  FiMapPin,
-} from "react-icons/fi";
-import { FaLeaf, FaBiking, FaVideo, FaLaptop } from "react-icons/fa";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Trans, useTranslation } from "next-i18next";
+import { serialize } from "next-mdx-remote/serialize";
+import fs from "fs/promises";
+import path from "path";
+import Markdown from "@/components/Markdown";
 
-const INTERESTS = [
-  {
-    icon: <FaBiking className="fill-slate-400 dark:fill-neutral-500" />,
-    key: "sport",
-  },
-  {
-    icon: <FaLeaf className="fill-slate-400 dark:fill-neutral-500" />,
-    key: "gardening",
-  },
-  {
-    icon: <FaVideo className="fill-slate-400 dark:fill-neutral-500" />,
-    key: "movies",
-  },
-  {
-    icon: <FaLaptop className="fill-slate-400 dark:fill-neutral-500" />,
-    key: "freelancing",
-  },
-];
-
-const About = (): JSX.Element => {
-  const { t } = useTranslation("", { keyPrefix: "aboutPage" });
-  const careerEntries = t("career.entries", {
-    returnObjects: true,
-  }) as Array<any>;
-  const educationEntries = t("education.entries", {
-    returnObjects: true,
-  }) as Array<any>;
-
-  return (
-    <div className="flex flex-col gap-12 text-slate-800 dark:text-neutral-200">
-      <div>
-        <h3 className="mb-6 text-3xl font-semibold">{t("mainHeading")}</h3>
-        <p className="leading-relaxed text-slate-600 dark:text-neutral-300">
-          {t("mainDescription")}
-        </p>
-        <br />
-        <p className="leading-relaxed text-slate-600 dark:text-neutral-300">
-          <Trans
-            i18nKey="currentJob"
-            t={t}
-            components={[
-              <a
-                key="company-link"
-                className="border-b border-b-slate-400 font-medium hover:border-b-2 dark:border-neutral-400 dark:text-neutral-200"
-                href="https://productdock.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              />,
-            ]}
-          />
-        </p>
-      </div>
-
-      <div className="rounded-2xl bg-slate-50 p-6 dark:bg-neutral-800/50">
-        <h3 className="mb-4 text-xl font-semibold tracking-wide">
-          {t("technologies")}
-        </h3>
-        <p className="leading-relaxed text-slate-600 dark:text-neutral-300">
-          {t("technologiesDescription")}
-        </p>
-        <div className="mt-6 flex gap-3 text-sm font-medium">
-          <button className="flex h-9 items-center gap-2 rounded-full bg-slate-800 p-1.5 px-5 text-white shadow-sm hover:bg-slate-900 hover:shadow-md dark:bg-neutral-200 dark:text-neutral-950 dark:hover:bg-neutral-100">
-            <FiFileText /> {t("downloadCV")}
-          </button>
-          <a
-            href="mailto:rkatanic@outlook.com"
-            className="flex h-9 items-center gap-2 rounded-full border border-slate-300 bg-white p-1.5 px-5 shadow-sm hover:shadow-md dark:border-neutral-200 dark:bg-transparent"
-          >
-            <FiMail />
-            {t("letsTalk")}
-          </a>
+const Home = ({ mdxSource }: any): JSX.Element => (
+  <div>
+    <h2 className="mb-6 text-4xl font-bold">Hey, I{"'"}m Radivoje Katanic.</h2>
+    <div>
+      <div className="grid gap-4">
+        <div className="relative flex justify-center rounded-2xl bg-neutral-200">
+          <img className="h-autox h-96 rounded-2xl" src="/me.png" alt="" />
+          <div className="absolute bottom-4 right-4 rounded-full bg-white p-1 px-3 text-xs font-medium shadow-sm">
+            2022, Doboj BA
+          </div>
         </div>
-      </div>
-      <div>
-        <h3 className="mb-6 text-xl font-semibold tracking-wide">
-          {t("career.title")}
-        </h3>
-        <div className="flex flex-col gap-6">
-          {careerEntries.map((entry, i) => (
-            <div className="flex gap-4" key={i}>
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-100 dark:bg-neutral-800/70 dark:text-neutral-400">
-                <FiBriefcase />
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-col gap-1">
-                  <h3 className="text-lg font-medium">{entry.role}</h3>
-                  <div className="flex items-end justify-between gap-4">
-                    <div className="flex gap-4 text-slate-500  dark:text-neutral-400">
-                      <p className="flex items-center gap-2">{entry.company}</p>
-                      <p className="flex items-center gap-2">
-                        <FiMapPin />
-                        {t("location.city")}
-                      </p>
-                    </div>
-                    <p className="flex items-center gap-2 text-slate-500  dark:text-neutral-400">
-                      <FiCalendar />
-                      {entry.from} - {entry.to}
-                    </p>
-                  </div>
-                </div>
-                <p className="mt-4 leading-relaxed dark:text-neutral-300">
-                  {entry.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div>
-        <h3 className="mb-6 text-xl font-semibold tracking-wide">
-          {t("education.title")}
-        </h3>
-        <div className="flex flex-col gap-6">
-          {educationEntries.map((entry, i) => (
-            <div className="flex gap-4" key={i}>
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-100 dark:bg-neutral-800/70 dark:text-neutral-400">
-                <FiBook />
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-col gap-1">
-                  <h3 className="text-lg font-medium">{entry.role}</h3>
-                  <div className="flex items-end justify-between gap-4">
-                    <div className="flex gap-4 text-slate-500 dark:text-neutral-400">
-                      <p className="flex items-center gap-2">{entry.company}</p>
-                      <p className="flex items-center gap-2">
-                        <FiMapPin />
-                        {t("location.city")}
-                      </p>
-                    </div>
-                    <p className="flex items-center gap-2 text-slate-500 dark:text-neutral-400">
-                      <FiCalendar />
-                      {entry.from} - {entry.to}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h3 className="mb-6 text-xl font-semibold tracking-wide">
-          {t("interests.title")}
-        </h3>
-        <div className="flex flex-wrap gap-2">
-          {INTERESTS.map((interest) => (
-            <span
-              key={interest.key}
-              className="flex h-9 max-w-min items-center gap-3 rounded-full border p-1 px-4 font-medium text-slate-800 dark:border-neutral-700 dark:bg-neutral-900/70 dark:text-neutral-300"
-            >
-              {interest.icon}
-              {t(`interests.${interest.key}`)}
-            </span>
-          ))}
+        <div className="grid grid-cols-5 gap-4">
+          <div className="h-20 overflow-hidden rounded-xl border-2 border-blue-300 bg-neutral-200">
+            <img className="h-20 max-w-full" src="/me.png" alt="" />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-20 max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-20 max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-20 max-w-full rounded-xl"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
-  );
-};
+    <Markdown mdxSource={mdxSource} />
+  </div>
+);
 
-export default About;
+export default Home;
 
-export async function getStaticProps({ locale }: any) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), "__projects/notes-vault.mdx");
+
+  try {
+    const mdxText = await fs.readFile(filePath, "utf-8");
+    const mdxSource = await serialize(mdxText);
+
+    return {
+      props: {
+        mdxSource,
+      },
+    };
+  } catch (error) {
+    console.error("Error reading MDX file:", error);
+    return {
+      notFound: true,
+    };
+  }
 }

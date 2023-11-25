@@ -2,25 +2,18 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { appWithTranslation, useTranslation } from "next-i18next";
-
-import "../globals.css";
+import { ThemeProvider } from "next-themes";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
-const isDarkModeActiveScript = `
-(() => {
-  const isDarkModeActive =
-    localStorage.getItem("isDarkMode") === "false" ? false : true;
-  localStorage.setItem("isDarkMode", isDarkModeActive);
-
-  if (isDarkModeActive) {
-    document.body.classList.add("dark");
-  } else {
-    document.body.classList.remove("dark");
-  }
-})();
-`;
+import "../globals.css";
 
 const queryClient = new QueryClient();
+
+const getDefaultThemeFromSystem = () => {
+  if (typeof window !== "undefined") {
+    const { matches } = window.matchMedia("(prefers-color-scheme: dark)");
+    return matches ? "dark" : "light";
+  }
+};
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   const { t } = useTranslation();
@@ -31,13 +24,14 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         <title>{`${t("fullName")} | ${t("role")}`}</title>
         <meta name="description" content={t("role")} />
       </Head>
-      <script
-        key="theme-script"
-        dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
-      />
-      <Layout locale={pageProps?._nextI18Next?.initialLocale}>
-        <Component {...pageProps} />
-      </Layout>
+      <ThemeProvider
+        defaultTheme={getDefaultThemeFromSystem()}
+        attribute="class"
+      >
+        <Layout locale={pageProps?._nextI18Next?.initialLocale}>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 };

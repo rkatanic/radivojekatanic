@@ -10,11 +10,9 @@ const Footer = (): JSX.Element => {
   );
 
   return (
-    <div className="mt-12 w-full border-t py-6 text-sm">
-      <div className="m-auto flex max-w-4xl items-center justify-between text-slate-400">
-        <span>© {currentYear} Radivoje Katanic</span>
-        <span>Last updated on {lastModifiedDate}</span>
-      </div>
+    <div className="border-tx m-auto flex max-w-xl items-center justify-between py-12 text-sm text-neutral-500">
+      <span>© {currentYear} Radivoje Katanic</span>
+      <span className="">Last modified on {lastModifiedDate}</span>
     </div>
   );
 };

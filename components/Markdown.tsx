@@ -1,67 +1,134 @@
-import { FiCheck } from "react-icons/fi";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { toKebabLowerCase } from "utils/stringUtils";
+import MySkills from "./MySkills";
+import LinkButton from "./LinkButton";
+import Note from "./Note";
+import { MDXRemote } from "next-mdx-remote";
+import HistoryItem from "./HistoryItem";
+import ContactButtons from "./ContactButtonts";
+import classNames from "classnames";
 
 interface Props {
-  markdown: string;
+  mdxSource: any;
 }
 
-const Markdown = ({ markdown }: Props): JSX.Element => (
+const Markdown = ({ mdxSource }: Props): JSX.Element => (
   <div className="my-8">
-    <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
+    <MDXRemote
+      {...mdxSource}
       components={{
-        p,
-        h3,
-        li,
-        a,
+        ...{
+          MySkills,
+          LinkButton,
+          Note,
+          HistoryItem,
+          ContactButtons,
+          h1,
+          h2,
+          h3,
+          h4,
+          li,
+          p,
+          a: Link,
+          blockquote,
+          hr,
+          strong,
+        },
       }}
-    >
-      {markdown}
-    </ReactMarkdown>
+    />
   </div>
 );
 
 export default Markdown;
 
-const h3 = ({ children }: any): JSX.Element => {
-  const hrefId = toKebabLowerCase(children[0] as string);
+const h1 = ({ children }: any): JSX.Element => {
+  const hrefId = toKebabLowerCase(children as string);
   return (
     <a
       href={`#${hrefId}`}
       id={hrefId}
-      className="text-alt relative mb-4 block text-xl font-semibold before:absolute before:-left-6 before:text-neutral-300 before:opacity-0 before:transition-opacity before:duration-300 before:content-['#'] hover:before:opacity-100"
+      className={classNames(
+        "relative mb-4 block text-4xl font-bold",
+        "hover:before:visible",
+        "before:invisible before:absolute before:right-full before:pr-1.5 before:text-neutral-200 before:content-['#']"
+      )}
     >
       {children}
     </a>
   );
 };
 
+const h2 = ({ children }: any): JSX.Element => {
+  const hrefId = toKebabLowerCase(children as string);
+  return (
+    <a
+      href={`#${hrefId}`}
+      id={hrefId}
+      className={classNames(
+        "relative mb-4 block text-2xl font-bold",
+        "hover:before:visible",
+        "before:invisible before:absolute before:right-full before:pr-1.5 before:text-neutral-200 before:content-['#']"
+      )}
+    >
+      {children}
+    </a>
+  );
+};
+
+const h3 = ({ children }: any): JSX.Element => {
+  const hrefId = toKebabLowerCase(children as string);
+  return (
+    <a
+      href={`#${hrefId}`}
+      id={hrefId}
+      className={classNames(
+        "relative mb-4 block text-xl font-bold",
+        "hover:before:visible",
+        "before:invisible before:absolute before:right-full before:pr-1.5 before:text-neutral-200 before:content-['#']"
+      )}
+    >
+      {children}
+    </a>
+  );
+};
+
+const h4 = ({ children }: any): JSX.Element => {
+  const hrefId = toKebabLowerCase(children as string);
+  return (
+    <a href={`#${hrefId}`} id={hrefId} className="mb-2 block font-bold">
+      {children}
+    </a>
+  );
+};
+
 const p = ({ children }: any) => (
-  <p className="mb-4 leading-relaxed text-neutral-600">{children}</p>
+  <p className="mb-6 block leading-7">{children}</p>
 );
 
-const a = ({ children, node }: any) => (
+const strong = ({ children }: any) => (
+  <strong className="font-bolt text-gray-900">{children}</strong>
+);
+
+const blockquote = ({ children }: any) => (
+  <blockquote className="mb-12 mt-12 block border-l-2 border-amber-400 bg-amber-50/50 px-6 py-6 pb-px">
+    {children}
+  </blockquote>
+);
+
+const hr = () => <hr className="my-10" />;
+
+const li = ({ children }: any): JSX.Element => (
+  <li className="mb-0.5 ml-8 list-disc pl-1.5 leading-7 text-gray-600 marker:text-gray-600">
+    {children}
+  </li>
+);
+
+export const Link = ({ children, href }: any) => (
   <a
-    href={node?.properties?.href}
+    href={href}
     target="_blank"
     rel="noreferrer"
-    className="border-b border-neutral-800 text-neutral-800"
+    className="cursor-pointer font-medium underline"
   >
     {children}
   </a>
-);
-
-const li = ({ checked, children }: any): JSX.Element => (
-  <li className="flex items-center gap-3 leading-8 text-neutral-600">
-    {checked ? (
-      <div className="flex h-4 w-4 items-center justify-center border-2">
-        <FiCheck className="stroke-neutral-600 stroke-[3px]" size="0.75rem" />
-      </div>
-    ) : (
-      <div className="h-4 w-4 border-2"></div>
-    )}
-    {children[2]}
-  </li>
 );
