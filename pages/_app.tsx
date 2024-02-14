@@ -1,39 +1,25 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "../components/Layout";
-import { appWithTranslation, useTranslation } from "next-i18next";
-import { ThemeProvider } from "next-themes";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "../globals.css";
+import { Inter } from "next/font/google";
 
-const queryClient = new QueryClient();
-
-const getDefaultThemeFromSystem = () => {
-  if (typeof window !== "undefined") {
-    const { matches } = window.matchMedia("(prefers-color-scheme: dark)");
-    return matches ? "dark" : "light";
-  }
-};
+const font = Inter({ subsets: ["latin"] });
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
-  const { t } = useTranslation();
-
   return (
-    <QueryClientProvider client={queryClient}>
+    <div className={font.className}>
       <Head>
-        <title>{`${t("fullName")} | ${t("role")}`}</title>
-        <meta name="description" content={t("role")} />
+        <title>Radivoje Katanic</title>
+        <meta name="description" content="Software Developer" />
       </Head>
-      <ThemeProvider
-        defaultTheme={getDefaultThemeFromSystem()}
-        attribute="class"
-      >
-        <Layout locale={pageProps?._nextI18Next?.initialLocale}>
-          <Component {...pageProps} />
-        </Layout>
-      </ThemeProvider>
-    </QueryClientProvider>
+      {/* <ThemeProvider defaultTheme={"light"} attribute="class"> */}
+      <Layout locale={pageProps?._nextI18Next?.initialLocale}>
+        <Component {...pageProps} />
+      </Layout>
+      {/* </ThemeProvider> */}
+    </div>
   );
 };
 
-export default appWithTranslation(MyApp);
+export default MyApp;
