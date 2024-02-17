@@ -1,42 +1,25 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "../components/Layout";
-import { appWithTranslation, useTranslation } from "next-i18next";
-
 import "../globals.css";
+import { Inter } from "next/font/google";
 
-const isDarkModeActiveScript = `
-(() => {
-  const isDarkModeActive =
-    localStorage.getItem("isDarkMode") === "false" ? false : true;
-  localStorage.setItem("isDarkMode", isDarkModeActive);
-
-  if (isDarkModeActive) {
-    document.body.classList.add("dark");
-  } else {
-    document.body.classList.remove("dark");
-  }
-})();
-`;
+const font = Inter({ subsets: ["latin"] });
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
-  const { t } = useTranslation();
-
   return (
-    <>
+    <div className={font.className}>
       <Head>
-        <title>{`${t("fullName")} | ${t("role")}`}</title>
-        <meta name="description" content={t("role")} />
+        <title>Radivoje Katanic</title>
+        <meta name="description" content="Software Developer" />
       </Head>
-      <script
-        key="theme-script"
-        dangerouslySetInnerHTML={{ __html: isDarkModeActiveScript }}
-      />
+      {/* <ThemeProvider defaultTheme={"light"} attribute="class"> */}
       <Layout locale={pageProps?._nextI18Next?.initialLocale}>
         <Component {...pageProps} />
       </Layout>
-    </>
+      {/* </ThemeProvider> */}
+    </div>
   );
 };
 
-export default appWithTranslation(MyApp);
+export default MyApp;

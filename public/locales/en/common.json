@@ -70,5 +70,12 @@
   "linkedin": "LinkedIn",
   "pageNotFoundTitle": "Page not found",
   "pageNotFoundDescription": "Whoops! Page you are looking for could not be found. Please check the URL or navigate back to home page.",
-  "backToHome": "Back to home"
+  "backToHome": "Back to home",
+  "contact": "Contact",
+  "contactMe": "Get In Touch",
+  "contactMeDescription": "Have a question, or just want to say hello? Fill in form below. I will give my best to reply as soon as possible.",
+  "yourName": "Your name",
+  "yourEmail": "Your e-mail",
+  "yourMessage": "Your message",
+  "send": "Send"
 }
