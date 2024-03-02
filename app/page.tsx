@@ -18,11 +18,11 @@ const SKILLS = [
   "Mongo",
   "MySQL",
 ];
-const Home = (): JSX.Element => (
-  <div className="flex h-full min-h-screen flex-1 flex-col justify-between relative z-10">
-    <div className="w-full max-w-2xl px-4 mx-auto my-8 sm:mt-16 sm:mb-8 flex items-center justify-between">
+const Home = () => (
+  <div className="relative z-10 flex h-full min-h-screen flex-1 flex-col justify-between">
+    <div className="mx-auto my-8 flex w-full max-w-2xl items-center justify-between px-4 sm:mb-8 sm:mt-16">
       <div className="flex gap-6 font-medium">
-        <div className="text-zinc-200 font-medium">About</div>
+        <div className="font-medium text-zinc-200">About</div>
       </div>
       {/* <a
         href="mailto:"
@@ -34,14 +34,14 @@ const Home = (): JSX.Element => (
         Let{"'"}s talk
       </a> */}
     </div>
-    <div className="max-w-2xl px-4 mx-auto flex flex-col gap-12 py-8 sm:py-16">
-      <div className="grid sm:grid-cols-5 gap-6 sm:gap-12 -mb-6">
-        <div className="text-4xl sm:text-5xl text-zinc-200 font-bold tracking-tight col-span-5">
+    <div className="mx-auto flex max-w-2xl flex-col gap-12 px-4 py-8 sm:py-16">
+      <div className="-mb-6 grid gap-6 sm:grid-cols-5 sm:gap-12">
+        <div className="col-span-5 text-4xl font-bold tracking-tight text-zinc-200 sm:text-5xl">
           Building functional and performant digital spaces.
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-5 gap-6 sm:gap-12">
+      <div className="grid gap-6 sm:grid-cols-5 sm:gap-12">
         <div className="col-span-5">
           <div className="leading-relaxed">
             Born in 1996, Radivoje Katanic is Software Developer based in Doboj,
@@ -53,7 +53,7 @@ const Home = (): JSX.Element => (
             href="https://drive.google.com/file/d/1SYQCLxy7JCt7TJfHK5h1G7VqL4mhM8NM/view"
             target="blank"
             rel="noopener noreferrer"
-            className="gap-2 mt-4 whitespace-nowrap inline-flex items-center text-sm font-medium text-teal-500 hover:text-teal-400 cursor-pointer"
+            className="mt-4 inline-flex cursor-pointer items-center gap-2 whitespace-nowrap text-sm font-medium text-teal-500 hover:text-teal-400"
           >
             View full resume
             <IoMdArrowForward />
@@ -61,14 +61,14 @@ const Home = (): JSX.Element => (
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-5 gap-6 sm:gap-12">
+      <div className="grid gap-6 sm:grid-cols-5 sm:gap-12">
         <div className="font-medium text-zinc-200">Experience</div>
         <div className="col-span-4">
-          <div className="text-base text-zinc-200 mb-2 font-semibold">
+          <div className="mb-2 text-base font-semibold text-zinc-200">
             Software Developer
-            <span className="text-zinc-400 mx-2">•</span>
+            <span className="mx-2 text-zinc-400">•</span>
             ProductDock
-            <span className="text-zinc-400 mx-2">•</span>
+            <span className="mx-2 text-zinc-400">•</span>
             Aug 2020 - Now
           </div>
           <div className="leading-relaxed">
@@ -76,11 +76,11 @@ const Home = (): JSX.Element => (
             full-stack developer. Currently mostly front-end oriented, mainly
             building software with React and Next.js.
           </div>
-          <div className="text-base text-zinc-200 mb-2 font-semibold mt-8">
+          <div className="mb-2 mt-8 text-base font-semibold text-zinc-200">
             Intern
-            <span className="text-zinc-400 mx-2">•</span>
+            <span className="mx-2 text-zinc-400">•</span>
             ProductDock
-            <span className="text-zinc-400 mx-2">•</span>
+            <span className="mx-2 text-zinc-400">•</span>
             Feb 2020 - May 2020
           </div>
           <div className="leading-relaxed">
@@ -91,32 +91,32 @@ const Home = (): JSX.Element => (
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-5 gap-6 sm:gap-12">
+      <div className="grid gap-6 sm:grid-cols-5 sm:gap-12">
         <div className="font-medium text-zinc-200">Education</div>
         <div className="col-span-4">
-          <div className="font-medium text-zinc-200 mb-2">
+          <div className="mb-2 font-medium text-zinc-200">
             IT Engineer
-            <span className="text-zinc-400 mx-2">•</span>
+            <span className="mx-2 text-zinc-400">•</span>
             Slobomir P University
           </div>
           <div className="leading-relaxed"> 2015 - 2019, Doboj BA</div>
-          <div className="font-medium text-zinc-200 mb-2 mt-8">
+          <div className="mb-2 mt-8 font-medium text-zinc-200">
             Computer Technician
-            <span className="text-zinc-400 mx-2">•</span>
+            <span className="mx-2 text-zinc-400">•</span>
             Electro-Technical High School
           </div>
           <div className="leading-relaxed">2011 - 2015, Doboj BA</div>
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-5 gap-6 sm:gap-12">
+      <div className="grid gap-6 sm:grid-cols-5 sm:gap-12">
         <div className="font-medium text-zinc-200">Skills</div>
         <div className="col-span-4">
-          <div className="text-lg font-medium text-zinc-300 mb-2 flex flex-wrap gap-2 text-x">
+          <div className="text-x mb-2 flex flex-wrap gap-2 text-lg font-medium text-zinc-300">
             {SKILLS.map((skill) => (
               <div
                 key={skill}
-                className="gap-2 bg-zinc-900 text-sm h-9 px-5 flex items-center justify-center rounded-full border border-zinc-700 max-w-min whitespace-nowrap"
+                className="flex h-9 max-w-min items-center justify-center gap-2 whitespace-nowrap rounded-full border border-zinc-700 bg-zinc-900 px-5 text-sm"
               >
                 {skill}
               </div>
@@ -125,7 +125,7 @@ const Home = (): JSX.Element => (
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-5 gap-6 sm:gap-12">
+      <div className="grid gap-6 sm:grid-cols-5 sm:gap-12">
         <div className="font-medium text-zinc-200">Interests</div>
         <div className="col-span-4">
           <div className="leading-relaxed">
@@ -135,34 +135,34 @@ const Home = (): JSX.Element => (
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-5 gap-6 sm:gap-12">
+      <div className="grid gap-6 sm:grid-cols-5 sm:gap-12">
         <div className="font-medium text-zinc-200">Contact</div>
-        <div className="col-span-4 gap-4 flex flex-col text-zinc-200">
+        <div className="col-span-4 flex flex-col gap-4 text-zinc-200">
           <a
             target="blank"
             rel="noopener noreferrer"
             href="https://github.com/rkatanic"
-            className="leading-relaxed flex items-center gap-4 hover:text-teal-500 cursor-pointer group text-sm font-medium"
+            className="group flex cursor-pointer items-center gap-4 text-sm font-medium leading-relaxed hover:text-teal-500"
           >
-            <IoLogoGithub className="text-zinc-500 group-hover:text-teal-500 text-xl" />
+            <IoLogoGithub className="text-xl text-zinc-500 group-hover:text-teal-500" />
             Follow on GitHub
           </a>
           <a
             target="blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/radivoje-katanic/"
-            className="leading-relaxed flex items-center gap-4 hover:text-teal-500 cursor-pointer group text-sm font-medium"
+            className="group flex cursor-pointer items-center gap-4 text-sm font-medium leading-relaxed hover:text-teal-500"
           >
-            <IoLogoLinkedin className="text-zinc-500 group-hover:text-teal-500 text-xl" />
+            <IoLogoLinkedin className="text-xl text-zinc-500 group-hover:text-teal-500" />
             Follow on LinkedIn
           </a>
           <a
             target="blank"
             rel="noopener noreferrer"
             href="mailto:rkatanic@outlook.com"
-            className="leading-relaxed flex items-center gap-4 hover:text-teal-500 cursor-pointer group text-sm font-medium"
+            className="group flex cursor-pointer items-center gap-4 text-sm font-medium leading-relaxed hover:text-teal-500"
           >
-            <IoMdMail className="text-zinc-500 group-hover:text-teal-500 text-xl" />
+            <IoMdMail className="text-xl text-zinc-500 group-hover:text-teal-500" />
             rkatanic@outlook.com
           </a>
         </div>
