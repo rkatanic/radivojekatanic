@@ -10,7 +10,7 @@ const Layout = ({ children }: Props): JSX.Element => {
   const { asPath } = useRouter();
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-zinc-300">{children}</div>
+    <div className="min-h-screen bg-zinc-900 text-zinc-400">{children}</div>
   );
 };
 
