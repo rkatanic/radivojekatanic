@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import {
   IoLogoGithub,
   IoLogoLinkedin,
@@ -18,22 +19,8 @@ const SKILLS = [
   "Mongo",
   "MySQL",
 ];
-const Home = () => (
-  <div className="relative z-10 flex h-full min-h-screen flex-1 flex-col justify-between">
-    <div className="mx-auto my-8 flex w-full max-w-2xl items-center justify-between px-4 sm:mb-8 sm:mt-16">
-      <div className="flex gap-6 font-medium">
-        <div className="font-medium text-zinc-200">About</div>
-      </div>
-      {/* <a
-        href="mailto:"
-        target="blank"
-        rel="noopener noreferrer"
-        className="flex gap-6 items-center"
-      >
-        <IoMdSunny className="text-xl" />
-        Let{"'"}s talk
-      </a> */}
-    </div>
+const Home = (): ReactElement => (
+  <div className="relative z-10 flex flex-1 flex-col justify-between">
     <div className="mx-auto flex max-w-2xl flex-col gap-12 px-4 py-8 sm:py-16">
       <div className="-mb-6 grid gap-6 sm:grid-cols-5 sm:gap-12">
         <div className="col-span-5 text-4xl font-bold tracking-tight text-zinc-200 sm:text-5xl">
@@ -46,8 +33,8 @@ const Home = () => (
           <div className="leading-relaxed">
             Born in 1996, Radivoje Katanic is Software Developer based in Doboj,
             Bosnia & Herzegovina, where he builds digital solutions for various
-            clients at ProductDock. Away from work, he spends free time doing
-            sports activities and cultivating his garden.
+            clients at ProductDock. Away from work, he spends his free time by
+            doing sports or cultivating his garden.
           </div>
           <a
             href="https://drive.google.com/file/d/1SYQCLxy7JCt7TJfHK5h1G7VqL4mhM8NM/view"
