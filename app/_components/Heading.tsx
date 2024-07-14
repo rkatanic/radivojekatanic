@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactElement } from "react";
 
 const Heading = ({ children }: PropsWithChildren): ReactElement => (
-  <h2 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl">
+  <h2 className="text-3xl font-bold tracking-tighter text-zinc-800 sm:text-5xl">
     {children}
   </h2>
 );
