@@ -29,7 +29,7 @@ export default function DetailsSection() {
           <Heading>Have a question, or just want to say hi?</Heading>
 
           <DescriptionText>
-            Feel free to reach out to me. Best way to reach me out is via
+            Feel free to reach out to me. Best way to contact me would be via
             e-mail, but you can also find me on Github and Linkedin.
           </DescriptionText>
 

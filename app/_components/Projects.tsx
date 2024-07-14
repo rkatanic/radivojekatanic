@@ -1,13 +1,13 @@
 import classNames from "classnames";
 import { twMerge } from "tailwind-merge";
 import { Carousel, CarouselContent, CarouselItem } from "./Carousel";
-
+import { FiImage } from "react-icons/fi";
 const posts = [
   {
     title: "Way To Fly",
     href: "https://www.waytofly.com/en",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Way To Fly is online booking platform specialized in booking flights and providing travel arrangements.",
     date: "Sep 2020",
     category: "Client",
   },
@@ -15,7 +15,7 @@ const posts = [
     title: "Color Scale",
     href: "https://color-scale.vercel.app/",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Tool made for generating color shade palettes. Based on HSL color standard, also supporting HEX color values.",
     date: "Mar 16, 2020",
     category: "Personal",
   },
@@ -23,7 +23,7 @@ const posts = [
     title: "Markdown Editor",
     href: "https://rkatanic.github.io/markdown-editor",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Online text editor for quick notes. Based on markdown syntax, built for personal needs.",
     date: "Mar 16, 2020",
     category: "Personal",
   },
@@ -39,14 +39,12 @@ export default function Projects() {
               target="_blank"
               rel="noopener referrer"
               href={post.href}
-              className="flex cursor-pointer flex-col items-start justify-between rounded-2xl border p-6 hover:border-indigo-600"
+              className="flex cursor-pointer flex-col items-start justify-between gap-3 rounded-3xl border p-6 hover:border-indigo-600"
             >
-              <img
-                className="mb-4 h-40 rounded-xl"
-                src="https://tailwindui.com/img/category-thumbnails/marketing/content-sections.png"
-                alt="image"
-              />
-              <div className="flex items-center gap-x-4 text-xs">
+              <div className="mb-3 flex h-40 w-full items-center justify-center rounded-3xl bg-zinc-50">
+                <FiImage className="text-3xl text-zinc-300" />
+              </div>
+              <div className="flex items-center gap-3 text-xs">
                 <time className="text-zinc-500">{post.date}</time>
                 <div
                   className={twMerge(
@@ -62,17 +60,12 @@ export default function Projects() {
                   {post.category}
                 </div>
               </div>
-              <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-zinc-900 group-hover:text-zinc-600">
-                  <div>
-                    <span className="absolute inset-0" />
-                    {post.title}
-                  </div>
-                </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-zinc-600">
-                  {post.description}
-                </p>
-              </div>
+              <h3 className="mt-1 text-lg font-semibold leading-6 text-zinc-900 group-hover:text-zinc-600">
+                {post.title}
+              </h3>
+              <p className="line-clamp-3 text-sm leading-6 text-zinc-600">
+                {post.description}
+              </p>
             </a>
           </CarouselItem>
         ))}

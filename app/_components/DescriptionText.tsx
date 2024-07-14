@@ -1,7 +1,7 @@
 import { PropsWithChildren, ReactElement } from "react";
 
 const DescriptionText = ({ children }: PropsWithChildren): ReactElement => (
-  <p className="text-lg leading-8 text-zinc-600">{children}</p>
+  <p className="leading-7 text-zinc-600 sm:text-lg sm:leading-8">{children}</p>
 );
 
 export default DescriptionText;
