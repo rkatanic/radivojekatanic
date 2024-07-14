@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "./_components/ThemeProvider";
 
 import "../globals.css";
 
@@ -17,8 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={font.className}>
-      <body>{children}</body>
+    <html lang="en" className={font.className} suppressHydrationWarning>
+      <body className="dark:bg-zinc-900">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
