@@ -34,7 +34,7 @@ export default function DetailsSection() {
             These are projects I work on in my free time. Most of them are
             result of experimentation with new frameworks and libraries.
           </DescriptionText>
-          <div className="relative flex h-8 max-w-min items-center justify-center gap-2 whitespace-nowrap rounded-full px-3 text-sm font-medium leading-6 text-zinc-600 ring-1 ring-zinc-200 dark:text-zinc-400 dark:ring-zinc-700">
+          <div className="relative flex h-8 max-w-min items-center justify-center gap-2 whitespace-nowrap rounded-full px-3 text-sm font-medium leading-6 text-slate-600 ring-1 ring-slate-200 dark:text-slate-400 dark:ring-slate-700">
             <GrStatusGood className="text-indigo-700 dark:text-teal-400" /> Last
             modified on{" "}
             {dayjs(config.publicRuntimeConfig.lastModifiedDate).format(
@@ -47,7 +47,7 @@ export default function DetailsSection() {
 
         <HeroSection>
           <Heading>
-            Have a question, <br /> or just{" "}
+            Have a question, or just <br />
             <span className="relative z-10">
               want to say hi?
               <svg
@@ -75,7 +75,7 @@ export default function DetailsSection() {
               href="mailto:rkatanic@outlook.com"
               target="_blank"
               rel="noopener referrer"
-              className="relative flex h-8 max-w-min cursor-pointer items-center justify-center whitespace-nowrap rounded-full px-3 text-sm font-medium leading-6 text-zinc-600 ring-1 ring-zinc-200  hover:text-indigo-600 hover:ring-indigo-200 dark:text-zinc-400 dark:ring-zinc-700 dark:hover:text-teal-400 dark:hover:ring-teal-600"
+              className="relative flex h-8 max-w-min cursor-pointer items-center justify-center whitespace-nowrap rounded-full px-3 text-sm font-medium leading-6 text-slate-600 ring-1 ring-slate-200  hover:text-indigo-600 hover:ring-indigo-200 dark:text-slate-400 dark:ring-slate-700 dark:hover:text-teal-400 dark:hover:ring-teal-600"
             >
               rkatanic@outlook.com
             </a>
@@ -83,7 +83,7 @@ export default function DetailsSection() {
               href="https://github.com/rkatanic"
               target="_blank"
               rel="noopener referrer"
-              className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-sm text-zinc-600 ring-1 ring-zinc-200 hover:text-indigo-600  hover:ring-indigo-200  dark:text-zinc-400 dark:ring-zinc-700 dark:hover:text-teal-400 dark:hover:ring-teal-600"
+              className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-sm text-slate-600 ring-1 ring-slate-200 hover:text-indigo-600  hover:ring-indigo-200  dark:text-slate-400 dark:ring-slate-700 dark:hover:text-teal-400 dark:hover:ring-teal-600"
             >
               <FaGithub />
             </a>
@@ -91,7 +91,7 @@ export default function DetailsSection() {
               href="https://www.linkedin.com/in/radivoje-katanic/"
               target="_blank"
               rel="noopener referrer"
-              className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-sm text-zinc-600 ring-1 ring-zinc-200  hover:text-indigo-600 hover:ring-indigo-200 dark:text-zinc-400 dark:ring-zinc-700 dark:hover:text-teal-400 dark:hover:ring-teal-600"
+              className="relative flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-sm text-slate-600 ring-1 ring-slate-200  hover:text-indigo-600 hover:ring-indigo-200 dark:text-slate-400 dark:ring-slate-700 dark:hover:text-teal-400 dark:hover:ring-teal-600"
             >
               <FaLinkedin />
             </a>

@@ -7,7 +7,7 @@ export default function Navigation() {
       <div className="flex items-center">
         <a
           href="#"
-          className="flex items-center gap-2 text-zinc-800 dark:text-zinc-200"
+          className="flex items-center gap-2 text-slate-800 dark:text-slate-200"
         >
           <FaRegUserCircle />
           <span className="text-lg font-semibold">rkatanic</span>
