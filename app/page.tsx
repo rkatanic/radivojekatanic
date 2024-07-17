@@ -7,160 +7,182 @@ const Home = () => {
   const config = getConfig();
 
   return (
-    <div className="mx-auto min-h-screen max-w-2xl space-y-10 px-6 py-10 text-slate-600 dark:text-slate-400">
-      <div className="flex items-center">
-        <div className="flex-1 text-xl font-semibold text-slate-700 dark:text-slate-300">
-          rkatanic
-        </div>
-
-        <div className="flex-none">
-          <ul className="menu menu-horizontal">
-            <li>
-              <ThemeSwitch />
-            </li>
-          </ul>
+    <div className="mx-auto max-w-2xl space-y-16 px-4 py-16 pt-40 dark:text-zinc-400 md:px-0">
+      <div className="x">
+        <h1 className="mb-6 hidden text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+          Hello World
+        </h1>
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+          Software developer, <br className="hidden sm:inline" />
+          sport enthusiast and animal lover.
+        </h1>
+        <div className="mt-6 space-y-7 text-base leading-7 text-zinc-600 dark:text-zinc-400">
+          <p>
+            Hi, my name is Radivoje. I live in Doboj, Bosnia & Herzegovina,
+            where I build digital solutions for various clients at ProductDock.
+            Even though I work as a full-stack developer, I am mostly front-end
+            oriented, mainly building web apps with React and Next.js these
+            days.
+          </p>
+          <p>
+            Besides computer work, I like doing sports, or spending time in
+            nature.
+          </p>
         </div>
       </div>
-      <div className="flex items-center gap-4">
-        <Image
-          alt="my-photo"
-          width={512}
-          height={512}
-          className="h-20 w-20  rounded-full bg-slate-200 dark:bg-slate-300"
-          src="/me.png"
-        />
-        <div className="">
-          <h2 className="text-2xl font-bold tracking-tight text-slate-700 dark:text-slate-300">
-            Radivoje Katanic
+
+      <section className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+        <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+          <h2 className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+            Experience
           </h2>
-          <p className="mt-0.5 text-slate-600 dark:text-slate-400">
-            Software Developer at ProductDock
-          </p>
-          <div className="hidden space-x-1">
-            <button className="btn btn-ghost btn-active btn-xs">E-mail</button>
-            <button className="btn btn-ghost btn-active btn-xs">GitHub</button>
-            <button className="btn btn-ghost btn-active btn-xs">
-              LinkedIn
-            </button>
+          <div className="md:col-span-3">
+            <div className="space-y-16">
+              <article className="group relative flex flex-col items-start">
+                <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                  <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                  <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                  <span className="relative z-10">
+                    Software Developer, ProductDock
+                  </span>
+                </h3>
+                <p className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
+                  Aug 2020 - Present, Doboj BA
+                </p>
+                <p className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  Building digital solutions for various clients using modern
+                  technologies. Currently focused on frontend, with my main
+                  frameworks being React and Next.js.
+                </p>
+              </article>
+              <article className="group relative flex flex-col items-start">
+                <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                  <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                  <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                  <span className="relative z-10">Intern, ProductDock</span>
+                </h3>
+                <p className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
+                  Feb 2020 - May 2020, Doboj BA
+                </p>
+                <p className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  Attended 3 month rookie boot camp program where I developed
+                  with other candidates internal application for employee
+                  managment. Main tech stack was Angular, Spring Boot and MySQL.
+                </p>
+              </article>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="prose prose-slate">
-        <h3 className="max-w-mdx mb-4 tracking-tight text-slate-700 dark:text-slate-300">
-          Hello world
-        </h3>
-        <p className="text-slate-600 dark:text-slate-400">
-          Hi, my name is Radivoje. I live in Doboj, Bosnia & Herzegovina, where
-          I build digital solutions for various clients at ProductDock.
-        </p>
-        <p className="text-slate-600 dark:text-slate-400">
-          Even though I work as a full-stack developer, I am mostly front-end
-          oriented, mainly building web apps with React and Next.js these days.
-        </p>
-        <p className="text-slate-600 dark:text-slate-400">
-          Away from work, I spend my free time by doing sports.
-        </p>
-      </div>
-      <div
-        role="alert"
-        className="flex items-center gap-4 rounded-2xl bg-slate-50 p-4 text-slate-700 dark:bg-slate-900 dark:text-slate-400"
+      </section>
+      <section
+        aria-labelledby=":S1:"
+        className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          className="h-6 w-6 stroke-slate-700 dark:stroke-slate-300"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
-        </svg>
-        <span>
-          Interested in more? You can view my full resume{" "}
-          <a
-            href="#"
-            className="underline hover:text-slate-800 dark:hover:text-slate-300"
+        <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+          <h2
+            id=":S1:"
+            className="text-sm font-semibold text-zinc-800 dark:text-zinc-100"
           >
-            here
-          </a>
-          .
-        </span>
-      </div>
-
-      <div className="overflow-x-auto">
-        <div className="prose">
-          <h3 className="mb-4 tracking-tight text-slate-700 dark:text-slate-300">
-            Work history
-          </h3>
+            Education
+          </h2>
+          <div className="md:col-span-3">
+            <div className="space-y-16">
+              <article className="group relative flex flex-col items-start">
+                <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                  <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                  <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                  <span className="relative z-10">
+                    IT Engineer, Slobomir P University
+                  </span>
+                </h3>
+                <p className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
+                  2015 - 2019, Doboj BA
+                </p>
+                <p className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400"></p>
+              </article>
+              <article className="group relative flex flex-col items-start">
+                <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                  <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
+                  <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                  <span className="relative z-10">
+                    Computer Technician, Electro-Technical High School
+                  </span>
+                </h3>
+                <p className="relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
+                  Feb 2020 - May 2020, Doboj BA
+                </p>
+              </article>
+            </div>
+          </div>
         </div>
-        <table className="w-full table-auto">
-          <thead className="rounded-xl bg-slate-50 text-sm dark:bg-slate-900">
-            <tr>
-              <th className="h-12 rounded-s-2xl pl-4 text-start  font-medium text-slate-500 dark:text-slate-400">
-                Company
-              </th>
-              <th className="text-start font-medium text-slate-500 dark:text-slate-400">
-                Role
-              </th>
-              <th className="text-start font-medium text-slate-500 dark:text-slate-400">
-                Date
-              </th>
-              <th className="rounded-e-2xl pr-4 text-end font-medium text-slate-500 dark:text-slate-400 ">
-                Location
-              </th>
-            </tr>
-          </thead>
-          <tbody className="text-sm">
-            <tr className="border-b border-b-slate-200 dark:border-b-slate-700">
-              <td className="h-16 pl-4 font-semibold">ProductDock</td>
-              <td>
-                <span className="badge badge-ghost">Software Developer</span>
-              </td>
-              <td className="text-sm">08 / 2020 - Now</td>
-              <td className="pr-4 text-end text-sm">Doboj, BA</td>
-            </tr>
-            <tr>
-              <td className="h-16 pl-4 font-semibold">ProductDock</td>
-              <td>
-                <span className="badge badge-ghost">Intern</span>
-              </td>
-              <td className="text-sm">02 /2020 - 05 / 2020</td>
-              <td className="pr-4 text-end text-sm">Doboj, BA</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      </section>
 
-      <div className="text-neutral-content flex flex-col items-center gap-4 rounded-3xl bg-slate-700 p-8 text-center text-slate-300">
-        <h2 className="card-title text-2xl font-semibold tracking-tight text-slate-300">
-          Get In Touch
-        </h2>
-        <p>
-          Have a question, or just want to say hello?
-          <br />
-          Feel free to reach me out.
-        </p>
-        <button className="h-12 w-40 rounded-xl bg-blue-400 font-medium text-slate-800">
-          Let{"'"}s talk!
-        </button>
-      </div>
-
-      <footer className="flex items-center justify-center gap-3 p-4 text-sm">
-        <div>© {new Date().getFullYear()} Radivoje Katanic</div>
-        <div className="h-1 w-1 rounded-full bg-slate-400 dark:bg-slate-600"></div>
-        <div>Made with Next.js</div>
-        <div className="h-1 w-1 rounded-full bg-slate-400 dark:bg-slate-600"></div>
-        <div>
-          Latest build:{" "}
-          {dayjs(config.publicRuntimeConfig.lastModifiedDate).format(
-            "D MMM, YYYY",
-          )}
+      <section
+        aria-labelledby=":S1:"
+        className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40"
+      >
+        <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+          <h2 className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+            Skills
+          </h2>
+          <div className="grid grid-cols-3 md:col-span-3">
+            <div className="col-span-1">
+              <span className="relative z-10 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                Languages
+              </span>
+              <ul>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  HTML
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  CSS
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  JavaScript
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  Java
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <span className="relative z-10 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                Frameworks
+              </span>
+              <ul>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  React
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  Next.js
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  Tailwind
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  Angular
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  Spring Boot
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <span className="relative z-10 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                Databases
+              </span>
+              <ul>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  MongoDB
+                </li>
+                <li className="relative z-10 mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                  MySQL
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 };
