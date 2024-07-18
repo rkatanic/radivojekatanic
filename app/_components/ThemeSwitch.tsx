@@ -13,7 +13,7 @@ const ThemeSwitch = (): ReactElement => {
   return (
     <button
       onClick={theme === "dark" ? setThemeToLight : setThemeToDark}
-      className="ml-4 h-5 w-5 flex-shrink-0 text-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-300"
+      className="ml-4 h-5 w-5 flex-shrink-0 text-xl text-zinc-400 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300"
     >
       <CgEditContrast />
     </button>
