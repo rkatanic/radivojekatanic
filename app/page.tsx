@@ -1,4 +1,5 @@
 import getConfig from "next/config";
+import { HiBookmark } from "react-icons/hi2";
 
 const Home = () => {
   const config = getConfig();
@@ -9,34 +10,12 @@ const Home = () => {
         <div className="font-medium text-zinc-100">About</div>
       </div>
 
-      <div className="relative mx-auto grow overflow-hidden" id="content-area">
+      <div className="relative mx-auto grow overflow-hidden">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-6 xl:hidden [&:not(:empty)]:mt-8" />
         </div>
         <div className="prose prose-zinc relative mt-8 dark:prose-invert prose-headings:text-zinc-100 prose-a:border-b prose-a:border-b-red-500 prose-a:no-underline prose-a:dark:text-zinc-100">
-          <h2 className="group flex whitespace-pre-wrap" id="preference-center">
-            <div className="absolute">
-              <a
-                href="#preference-center"
-                className="-ml-10 flex items-center border-0 opacity-0 group-hover:opacity-100"
-                aria-label="Navigate to header"
-              >
-                ​
-                <div className="zinc-box flex h-6 w-6 items-center justify-center rounded-md  text-zinc-400 ring-1 ring-zinc-400/30 hover:ring-zinc-400/60 dark:ring-zinc-700/25 dark:hover:ring-white/20">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="zinc"
-                    height="12px"
-                    viewBox="0 0 576 512"
-                  >
-                    <path d="M0 256C0 167.6 71.6 96 160 96h72c13.3 0 24 10.7 24 24s-10.7 24-24 24H160C98.1 144 48 194.1 48 256s50.1 112 112 112h72c13.3 0 24 10.7 24 24s-10.7 24-24 24H160C71.6 416 0 344.4 0 256zm576 0c0 88.4-71.6 160-160 160H344c-13.3 0-24-10.7-24-24s10.7-24 24-24h72c61.9 0 112-50.1 112-112s-50.1-112-112-112H344c-13.3 0-24-10.7-24-24s10.7-24 24-24h72c88.4 0 160 71.6 160 160zM184 232H392c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <span className="">Hello World</span>
-          </h2>
-
+          <h2 className="group flex whitespace-pre-wrap">Hello World</h2>
           <p>
             Hi, I{"'"}m Radivoje Katanic, a Software Developer from Doboj,
             Bosnia & Herzegovina. <br className="hidden md:block" /> I currently
@@ -53,28 +32,7 @@ const Home = () => {
             nature.
           </p>
 
-          <h3 className="group flex whitespace-pre-wrap" id="utilizing-lists">
-            <div className="absolute">
-              <a
-                href="#utilizing-lists"
-                className="-ml-10 flex items-center border-0 opacity-0 group-hover:opacity-100"
-                aria-label="Navigate to header"
-              >
-                ​
-                <div className="zinc-box flex h-6 w-6 items-center justify-center rounded-md  text-zinc-400 ring-1 ring-zinc-400/30 hover:ring-zinc-400/60 dark:ring-zinc-700/25 dark:hover:ring-white/20">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="zinc"
-                    height="12px"
-                    viewBox="0 0 576 512"
-                  >
-                    <path d="M0 256C0 167.6 71.6 96 160 96h72c13.3 0 24 10.7 24 24s-10.7 24-24 24H160C98.1 144 48 194.1 48 256s50.1 112 112 112h72c13.3 0 24 10.7 24 24s-10.7 24-24 24H160C71.6 416 0 344.4 0 256zm576 0c0 88.4-71.6 160-160 160H344c-13.3 0-24-10.7-24-24s10.7-24 24-24h72c61.9 0 112-50.1 112-112s-50.1-112-112-112H344c-13.3 0-24-10.7-24-24s10.7-24 24-24h72c88.4 0 160 71.6 160 160zM184 232H392c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <span className="">What I Do</span>
-          </h3>
+          <h3 className="group flex whitespace-pre-wrap">What I Do</h3>
           <div className="not-prose grid gap-x-4 sm:grid-cols-2">
             <div className="card not-prose dark:bg-background-dark hover:!border-primary dark:hover:!border-primary-light group relative my-2 block w-full  overflow-hidden rounded-xl border border-gray-950/10 font-normal ring-2 ring-transparent dark:border-white/10">
               <div className="px-6 py-5">
@@ -139,49 +97,14 @@ const Home = () => {
             </div>
           </div>
 
-          <h3
-            className="group flex whitespace-pre-wrap"
-            id="trigger-a-loop-when-a-contact-is-added-to-a-list"
-          >
-            <div className="absolute">
-              <a
-                href="#trigger-a-loop-when-a-contact-is-added-to-a-list"
-                className="-ml-10 flex items-center border-0 opacity-0 group-hover:opacity-100"
-                aria-label="Navigate to header"
-              >
-                ​
-                <div className="zinc-box flex h-6 w-6 items-center justify-center rounded-md  text-zinc-400 ring-1 ring-zinc-400/30 hover:ring-zinc-400/60 dark:ring-zinc-700/25 dark:hover:ring-white/20">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="zinc"
-                    height="12px"
-                    viewBox="0 0 576 512"
-                  >
-                    <path d="M0 256C0 167.6 71.6 96 160 96h72c13.3 0 24 10.7 24 24s-10.7 24-24 24H160C98.1 144 48 194.1 48 256s50.1 112 112 112h72c13.3 0 24 10.7 24 24s-10.7 24-24 24H160C71.6 416 0 344.4 0 256zm576 0c0 88.4-71.6 160-160 160H344c-13.3 0-24-10.7-24-24s10.7-24 24-24h72c61.9 0 112-50.1 112-112s-50.1-112-112-112H344c-13.3 0-24-10.7-24-24s10.7-24 24-24h72c88.4 0 160 71.6 160 160zM184 232H392c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <span className="">Short Bio</span>
-          </h3>
+          <h3 className="group flex whitespace-pre-wrap">Short Bio</h3>
           <p>Few main time periods in my career and life.</p>
-          <div role="list" className="mb-6 ml-3.5 mt-10">
-            <div role="listitem" className="relative flex items-start pb-2">
+          <div className="mb-6 ml-3.5 mt-10">
+            <div className="relative flex items-start pb-2">
               <div className="absolute top-[2.75rem] h-[calc(100%-2.75rem)] w-px dark:bg-zinc-800" />
               <div className="absolute ml-[-14px] py-2">
                 <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-sm font-semibold text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="size-3 dark:fill-zinc-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  <HiBookmark className="size-3 dark:fill-zinc-400" />
                 </div>
               </div>
               <div className="w-full overflow-hidden pl-12 pr-px">
@@ -216,22 +139,11 @@ const Home = () => {
               </div>
             </div>
 
-            <div role="listitem" className="relative flex items-start pb-2">
+            <div className="relative flex items-start pb-2">
               <div className="absolute top-[2.75rem] h-[calc(100%-2.75rem)] w-px dark:bg-zinc-800" />
               <div className="absolute ml-[-14px] py-2">
                 <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-sm font-semibold text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="size-3 dark:fill-zinc-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  <HiBookmark className="size-3 dark:fill-zinc-400" />
                 </div>
               </div>
               <div className="w-full overflow-hidden pl-12 pr-px">
@@ -248,22 +160,11 @@ const Home = () => {
               </div>
             </div>
 
-            <div role="listitem" className="relative flex items-start pb-2">
+            <div className="relative flex items-start pb-2">
               <div className="absolute top-[2.75rem] h-[calc(100%-2.75rem)] w-px dark:bg-zinc-800" />
               <div className="absolute ml-[-14px] py-2">
                 <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-sm font-semibold text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="size-3 dark:fill-zinc-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  <HiBookmark className="size-3 dark:fill-zinc-400" />
                 </div>
               </div>
               <div className="w-full overflow-hidden pl-12 pr-px">
@@ -277,22 +178,11 @@ const Home = () => {
               </div>
             </div>
 
-            <div role="listitem" className="relative flex items-start pb-2">
+            <div className="relative flex items-start pb-2">
               <div className="absolute top-[2.75rem] h-[calc(100%-2.75rem)] w-px dark:bg-zinc-800" />
               <div className="absolute ml-[-14px] py-2">
                 <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-sm font-semibold text-zinc-800 dark:bg-zinc-800 dark:text-zinc-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="size-3 dark:fill-zinc-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  <HiBookmark className="size-3 dark:fill-zinc-400" />
                 </div>
               </div>
               <div className="w-full overflow-hidden pl-12 pr-px">
