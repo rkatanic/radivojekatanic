@@ -1,6 +1,7 @@
 import { HiBookmark } from "react-icons/hi2";
 import ListItem from "./_components/ListItem";
 import Card from "./_components/Card";
+import Footer from "./_components/Footer";
 
 const Home = () => (
   <div className="relative mx-auto max-w-2xl px-4 py-16">
@@ -137,6 +138,8 @@ const Home = () => (
         </div>
       </div>
     </div>
+
+    <Footer />
   </div>
 );
 export default Home;
