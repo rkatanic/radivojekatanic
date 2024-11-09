@@ -20,15 +20,15 @@ export default function ThreeJs() {
   );
 }
 
-function Model({ url, ...props }) {
+function Model({ url }: { url: string }): React.JSX.Element {
   // useGLTF suspends the component, it literally stops processing
-  const { scene } = useGLTF(url);
+  const { scene } = useGLTF(url) as any;
   // By the time we're here the model is gueranteed to be available
-  return <primitive object={scene} {...props} />;
+  return <primitive object={scene} />;
 }
 
-function Rotate(props) {
-  const ref = useRef();
+function Rotate(props: any) {
+  const ref = useRef<any>();
   useFrame((state) => (ref.current.rotation.y = state.clock.elapsedTime * 0.1));
   return <group ref={ref} {...props} />;
 }
