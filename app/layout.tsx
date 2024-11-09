@@ -19,15 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className="dark:bg-neutral-900/10">
+      <body className="dark:bg-neutral-900">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <div className="relative mx-auto max-w-2xl px-4 py-16">
-            {children}
-          </div>
+          <div className="relative mx-auto max-w-2xl px-4 py-6">{children}</div>
         </ThemeProvider>
       </body>
     </html>
