@@ -1,5 +1,10 @@
+import Navigation from "./_components/Navigation";
+import ThreeJs from "./_components/ThreeJs";
+
 const Home = () => (
-  <div className="prose prose-neutral relative mt-16 dark:prose-invert prose-headings:tracking-tight">
+  <div className="prose prose-neutral relative dark:prose-invert prose-headings:tracking-tight">
+    <ThreeJs />
+
     <h1>Building highly performant and functional digital spaces.</h1>
     <p>
       Hello world, My name is Radivoje Katanic. I’m a web developer from Doboj,

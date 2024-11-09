@@ -25,7 +25,9 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <div className="relative mx-auto max-w-2xl px-4 py-6">{children}</div>
+          <div className="relative mx-auto max-w-2xl px-4 py-5 pb-10">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
