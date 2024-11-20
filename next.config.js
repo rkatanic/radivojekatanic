@@ -4,6 +4,9 @@ const nextConfig = {
   publicRuntimeConfig: {
     lastModifiedDate: new Date().toISOString(),
   },
+  experimental: {
+    optimizePackageImports: ["@chakra-ui/react"],
+  },
 };
 
 module.exports = nextConfig;

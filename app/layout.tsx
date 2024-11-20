@@ -19,13 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className="dark:bg-neutral-900">
+      <body className="dark:bg-neutral-950">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <div className="relative mx-auto max-w-2xl px-4 py-5 pb-10">
+          <div className="relative min-h-screen overflow-hidden">
+            <div className="absolute left-1/2 top-[-60%] -z-10 h-[2000px] w-[2000px] -translate-x-1/2 bg-[radial-gradient(#5EEAD4_0%,rgba(94,234,212,0)_60%)] opacity-5"></div>
             {children}
           </div>
         </ThemeProvider>

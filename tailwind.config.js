@@ -7,4 +7,9 @@ module.exports = {
   ],
   darkMode: "class",
   plugins: [require("@tailwindcss/typography")],
+  theme: {
+    backgroundImage: {
+      "radial-gradient": "radial-gradient(circle, var(--tw-gradient-stops))",
+    },
+  },
 };
