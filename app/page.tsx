@@ -1,18 +1,21 @@
 const Home = () => (
   <div className="prose mx-auto my-24 max-w-2xl px-4 dark:prose-invert prose-headings:font-semibold prose-headings:tracking-tight md:px-0">
-    <h1 className="text-3xl leading-snug sm:text-4xl">
-      Building digital spaces that are <br />
-      highly performant and{" "}
-      <span className="rounded-lg bg-teal-950/70 px-2 text-teal-500">
-        functional
-      </span>
-    </h1>
-    <p>
-      Hello world, My name is Radivoje Katanic. I’m a web developer from Doboj,
-      Bosnia and Herzegovina. That’s where I live and work developing software
-      at ProductDock. Besides computer work, I like doing sports, or spending
-      time in nature.
-    </p>
+    <div>
+      <h1 className="text-3xl leading-snug sm:text-4xl">
+        Building digital spaces that are <br />
+        highly performant and{" "}
+        <span className="rounded-lg bg-teal-950/70 px-2 text-teal-500">
+          functional
+        </span>
+      </h1>
+      <p>
+        Hello world, My name is Radivoje Katanic. I’m a web developer from
+        Doboj, Bosnia and Herzegovina. That’s where I live and work developing
+        software at ProductDock. Besides computer work, I like doing sports, or
+        spending time in nature.
+      </p>
+    </div>
+
     <div className="grid grid-cols-4">
       <div className="col-span-1">
         <h3>Experience</h3>
@@ -39,6 +42,7 @@ const Home = () => (
         </div>
       </div>
     </div>
+
     <div className="grid grid-cols-4">
       <div className="col-span-1">
         <h3>Education</h3>
@@ -60,14 +64,40 @@ const Home = () => (
         </div>
       </div>
     </div>
+
     <div className="grid grid-cols-4">
       <div className="col-span-1">
-        <h3>Tech stack</h3>
+        <h3>Tech Stack</h3>
       </div>
       <div className="col-span-3">
-        <p className="pt-4">
-          HTML, CSS, TypeScript, React, Next.js, Tailwind CSS, Angular, Java,
-          Spring Boot
+        <p className="grid grid-cols-3 pt-4">
+          <div>
+            <div className="mb-1">
+              <b className="dark:text-neutral-200">Frontend </b>
+            </div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>TypeScript</div>
+            <div>React</div>
+            <div>Next.js</div>
+            <div>Tailwind CSS</div>
+            <div>Angular</div>
+          </div>
+          <div>
+            <div className="mb-1">
+              <b className="dark:text-neutral-200">Backend</b>
+            </div>
+            <div>Java</div>
+            <div>Spring Boot</div>
+            <div>Node.js</div>
+          </div>
+          <div>
+            <div className="mb-1">
+              <b className="dark:text-neutral-200">Databases </b>
+            </div>
+            <div>MongoDB</div>
+            <div>MySQL</div>
+          </div>
         </p>
       </div>
     </div>
