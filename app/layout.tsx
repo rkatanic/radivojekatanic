@@ -1,10 +1,15 @@
-import { Inter } from "next/font/google";
+import { Inter, Red_Hat_Display } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
 
 import "../globals.css";
 
 const font = Inter({
   subsets: ["latin"],
+});
+
+const headingFont = Red_Hat_Display({
+  subsets: ["latin"],
+  variable: "--font-red-hat-display",
 });
 
 export const metadata = {
@@ -18,17 +23,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className="dark:bg-neutral-950">
+    <html
+      lang="en"
+      className={`${font.className} ${headingFont.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="bg-neutral-900 text-neutral-200">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           disableTransitionOnChange
         >
-          <div className="relative min-h-screen overflow-hidden">
-            <div className="absolute left-1/2 top-[-60%] -z-10 h-[2000px] w-[2000px] -translate-x-1/2 bg-[radial-gradient(#5EEAD4_0%,rgba(94,234,212,0)_60%)] opacity-5"></div>
-            {children}
-          </div>
+          <div className="">{children}</div>
         </ThemeProvider>
       </body>
     </html>
