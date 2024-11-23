@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Home = () => (
   <div>
-    <div className="xpx-6 mx-auto max-w-4xl gap-12 pb-16 pt-32 lg:grid lg:grid-cols-3">
-      <div className="mx-auto w-full max-w-3xl lg:order-2 lg:col-span-1 lg:mx-0">
+    <div className="mx-auto max-w-2xl gap-12 px-4 pb-16 pt-32 lg:grid lg:max-w-4xl lg:grid-cols-3 lg:px-0">
+      <div className="w-full max-w-3xl lg:order-2 lg:col-span-1 lg:mx-0">
         <Image
           width={1000}
           height={1000}
@@ -12,10 +12,10 @@ const Home = () => (
           src="/me.png"
           alt="photo-of-radivoje-katanic"
         />
-        <ul role="list">
+        <ul role="list" className="hidden lg:block">
           <li className="mt-4 flex">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+              className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-600 dark:text-zinc-200 dark:hover:text-teal-500"
               href="https://www.linkedin.com/in/radivoje-katanic/"
               target="_blank"
               rel="noreferrer noopener"
@@ -32,7 +32,7 @@ const Home = () => (
           </li>
           <li className="mt-4 flex">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+              className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-600 dark:text-zinc-200 dark:hover:text-teal-500"
               href="https://github.com/rkatanic"
               target="_blank"
               rel="noreferrer noopener"
@@ -53,7 +53,7 @@ const Home = () => (
           </li>
           <li className="mb-8 mt-4 flex border-b border-zinc-100 pb-8 dark:border-zinc-700/40">
             <a
-              className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+              className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-600 dark:text-zinc-200 dark:hover:text-teal-500"
               href="mailto:rkatanic@outlook.com"
             >
               <svg
@@ -91,13 +91,13 @@ const Home = () => (
         </ul>
       </div>
       <div className="col-span-2">
-        <section className="mx-auto max-w-3xl">
-          <h1 className="mb-6 font-redHatDisplay text-4xl font-black sm:text-5xl">
+        <section className="max-w-3xl">
+          <h1 className="mb-6 font-redHatDisplay text-4xl font-black text-zinc-800 dark:text-zinc-200 sm:text-5xl">
             Building digital spaces
           </h1>
         </section>
 
-        <div className="prose prose-teal mx-auto max-w-3xl dark:prose-invert prose-headings:font-redHatDisplay prose-p:text-zinc-600 prose-a:font-medium prose-a:transition prose-blockquote:border-zinc-700 dark:prose-p:text-zinc-400 dark:prose-a:text-teal-400 dark:prose-a:decoration-teal-900 dark:hover:prose-a:decoration-teal-400 ">
+        <div className="3x-auto prose prose-teal max-w-3xl dark:prose-invert prose-headings:font-redHatDisplay prose-a:font-medium prose-a:decoration-1 prose-a:underline-offset-2 prose-a:transition hover:prose-a:decoration-[1.5px] prose-blockquote:border-zinc-700 dark:prose-p:text-zinc-400 dark:prose-a:text-zinc-200  dark:prose-a:decoration-teal-500">
           <blockquote className="lead relative not-italic">
             My name is Radivoje Katanic. I am a web developer from Doboj,
             Bosnia. That’s where I live and work building functional and high
@@ -136,7 +136,7 @@ const Home = () => (
       </div>
     </div>
 
-    <div className="mx-auto mb-12 max-w-4xl text-sm text-zinc-600 dark:text-zinc-400">
+    <div className="mx-auto mb-12 max-w-4xl px-4 text-sm lg:px-0">
       <hr className="mb-12 dark:border-zinc-800" />
       <div>
         Last modified on{" "}
