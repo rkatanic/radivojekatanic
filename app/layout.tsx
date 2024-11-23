@@ -25,13 +25,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${font.className} ${headingFont.variable}`}
+      className={`${headingFont.variable}`}
       suppressHydrationWarning
     >
-      <body className="bg-neutral-900 text-neutral-200">
+      <body className="bg-white dark:bg-zinc-900 dark:text-zinc-200">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           disableTransitionOnChange
         >
           <div className="">{children}</div>
