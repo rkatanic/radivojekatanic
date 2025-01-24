@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const experience = [
   {
     id: 0,
@@ -32,10 +34,12 @@ const Home = () => (
       <div className="mx-auto flex max-w-2xl flex-col justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
         <div className="top-32 flex h-full w-full flex-col justify-between lg:sticky lg:max-w-lg">
           <div className="flex-1">
-            <img
-              alt=""
+            <Image
+              width={256}
+              height={256}
+              alt="photo-of-radivoje-katanic"
               src="/me.png"
-              className="aspect-6/5 mb-6 h-28 w-28 w-full rounded-full bg-gray-100 object-cover lg:aspect-auto"
+              className="mb-6 h-28 w-28 rounded-full bg-gray-100 object-cover lg:aspect-auto"
             />
             <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
               Radivoje Katanic
