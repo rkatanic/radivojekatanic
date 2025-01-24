@@ -1,15 +1,10 @@
-import { Inter, Red_Hat_Display } from "next/font/google";
+import { Inter } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
 
 import "../globals.css";
 
 const font = Inter({
   subsets: ["latin"],
-});
-
-const headingFont = Red_Hat_Display({
-  subsets: ["latin"],
-  variable: "--font-red-hat-display",
 });
 
 export const metadata = {
@@ -23,15 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${headingFont.variable}`}
-      suppressHydrationWarning
-    >
-      <body className="bg-white text-zinc-600 dark:bg-zinc-900 dark:text-zinc-400">
+    <html lang="en" className={`${font.className}`} suppressHydrationWarning>
+      <body className="">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <div className="">{children}</div>
