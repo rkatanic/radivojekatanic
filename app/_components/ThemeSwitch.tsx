@@ -2,7 +2,6 @@
 
 import { useTheme } from "next-themes";
 import { ReactElement, useEffect, useState } from "react";
-import { CgEditContrast } from "react-icons/cg";
 
 const ThemeSwitch = (): ReactElement | null => {
   const [mounted, setMounted] = useState(false);

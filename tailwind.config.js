@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        redHatDisplay: ["var(--font-red-hat-display)"],
+        inter: ["var(--font-inter)"],
       },
     },
   },

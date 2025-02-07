@@ -1,266 +1,238 @@
-import Image from "next/image";
-
-const experience = [
-  {
-    id: 0,
-    role: "Software Developer at ProductDock",
-    description:
-      "In February 2020, I joined a three-month rookie boot camp program at ProductDock, where I worked alongside other rookies to create an internal employee management app. Upon completing the program successfully, I was offered a full-time position at the company, where I currently work on building software solutions and continue to grow as a web developer.",
-    date: "2020 - Now",
-    location: "Doboj, BA",
-  },
-];
-
-const education = [
-  {
-    id: 0,
-    role: "Bachelor of Information Technology",
-    description: "Slobomir P University",
-    date: "2015 -2019",
-    location: "Doboj, BA",
-  },
-  {
-    id: 1,
-    role: "Computer Technician",
-    description: "Electro-Technical High School",
-    date: "2015 -2019",
-    location: "Doboj, BA",
-  },
-];
+import { Card, CardItem } from "./_components/Card";
+import ExpandableText from "./_components/ExpandableText";
+import Footer from "./_components/Footer";
 
 const Home = () => (
-  <div className="min-h-screen bg-white py-32">
-    <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <div className="mx-auto flex max-w-2xl flex-col justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
-        <div className="top-32 flex h-full w-full flex-col justify-between lg:sticky lg:max-w-lg">
-          <div className="flex-1">
-            <Image
-              width={256}
-              height={256}
-              alt="photo-of-radivoje-katanic"
-              src="/me.png"
-              className="mb-6 h-28 w-28 rounded-full bg-gray-100 object-cover lg:aspect-auto"
+  <div className="prose-headings:font-inter prose-zinc mx-auto max-w-5xl space-y-8 dark:prose-invert prose-p:text-zinc-600 dark:prose-p:text-zinc-400">
+    <main className="max-w-2xl py-12 pt-12">
+      <img
+        src="/me.png"
+        alt=""
+        className="mb-6 h-20 w-20 rounded-full bg-zinc-200 dark:bg-zinc-300"
+      />
+      <h1 className="max-w-2xl pr-4 text-5xl font-bold leading-[1.15] tracking-tight">
+        Building functional and performant web apps.
+      </h1>
+      <p className="mt-6 text-base leading-8">
+        I am Radivoje, a software developer from Doboj, Bosnia & Herzegovina.
+        Thats where I build functional and performant digital solutions at
+        company called ProductDock. Away from work, I enjoy doing sports or
+        spending time outdoors.
+      </p>
+    </main>
+
+    <section className="mt-16 grid grid-cols-2 pb-16">
+      <section className="order-2 col-span-1 flex flex-col gap-4 pl-24">
+        <Card
+          title="Experience"
+          icon={
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="h-6 w-6 flex-none"
+            >
+              <path
+                d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+                className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+              />
+              <path
+                d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
+                className="stroke-zinc-400 dark:stroke-zinc-500"
+              />
+            </svg>
+          }
+        >
+          <div className="mt-6 space-y-4">
+            <CardItem
+              title="Software Developer"
+              description="ProductDock"
+              from="2020"
+              to="Present"
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-7 text-indigo-300"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              }
             />
-            <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-              Radivoje Katanic
-            </h2>
-            <p className="mt-6 text-xl/8 text-gray-600">
-              I am a web developer from Doboj, BA. Building digital solutions at
-              ProductDock. Away from work, I enjoy doing sports or spending time
-              outdoors.
-            </p>
-
-            <div className="border-tx xpt-8 mt-8 flex gap-6 border-gray-100">
-              <div className="flex items-center gap-6">
-                <a
-                  href="mailto:rkatanic@outlook.com"
-                  className="rounded-full bg-gray-800 px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-900"
-                >
-                  Say hello
-                </a>
-
-                <a
-                  href=""
-                  className="text-sm font-semibold text-gray-800 hover:text-gray-900"
-                >
-                  Download CV
-                  <span aria-hidden="true" className="pl-1.5">
-                    →
-                  </span>
-                </a>
-              </div>
-            </div>
           </div>
-
-          <div className="mt-full mt-auto flex hidden gap-x-6">
-            <a
-              href="https://github.com/rkatanic"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-500"
+        </Card>
+        <Card
+          title="Education"
+          icon={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
             >
-              <span className="sr-only">GitHub</span>
-              <svg
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                className="size-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/radivoje-katanic/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-500"
-            >
-              <span className="sr-only">LinkedIn</span>
-              <svg
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                className="size-6"
-              >
-                <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z" />
-              </svg>
-            </a>
-
-            <a
-              href="mailto:rkatanic@outlook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-500"
-            >
-              <span className="sr-only">E-mail</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="size-6"
-              >
-                <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-                <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-              </svg>
-            </a>
+              <path
+                className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+              />
+            </svg>
+          }
+        >
+          <div className="mt-6 space-y-4">
+            <CardItem
+              title="IT Engineer"
+              description="Slobomir P University"
+              from="2015"
+              to="2019"
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-6 text-indigo-300"
+                >
+                  <path d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
+                  <path
+                    fillRule="evenodd"
+                    d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              }
+            />
+            <CardItem
+              title="Computer Technician"
+              description="Electro-technical High School"
+              from="2011"
+              to="2015"
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-6 text-indigo-300"
+                >
+                  <path d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
+                  <path
+                    fillRule="evenodd"
+                    d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              }
+            />
           </div>
-        </div>
-        <div className="w-full space-y-12 lg:max-w-xl lg:flex-auto">
-          <section>
-            <h3 className="mb-6 text-sm/6 font-semibold text-indigo-600">
-              Experience
-            </h3>
-            <ul className="-my-8 divide-y divide-gray-100">
-              {experience.map((item) => (
-                <li key={item.id} className="py-8">
-                  <dl className="relative flex flex-wrap gap-x-3">
-                    <div className="sr-only">Role</div>
-                    <div className="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                      {item.role}
-                    </div>
-                    <div className="sr-only">Description</div>
-                    <div className="mt-2 w-full flex-none text-base/7 text-gray-600">
-                      {item.description}
-                    </div>
-                    <div className="sr-only">Salary</div>
-                    <div className="mt-4 text-base/7 font-medium text-gray-900">
-                      {item.date}
-                    </div>
-                    <div className="sr-only">Location</div>
-                    <div className="mt-4 flex items-center gap-x-3 text-base/7 text-gray-500">
-                      <svg
-                        viewBox="0 0 2 2"
-                        aria-hidden="true"
-                        className="size-0.5 flex-none fill-gray-300"
-                      >
-                        <circle r={1} cx={1} cy={1} />
-                      </svg>
-                      {item.location}
-                    </div>
-                  </dl>
-                </li>
-              ))}
-            </ul>
-          </section>
-          <section>
-            <h3 className="mb-6 text-sm/6 font-semibold text-indigo-600">
-              Education
-            </h3>
-            <ul className="-my-8 divide-y divide-gray-100">
-              {education.map((item) => (
-                <li key={item.id} className="py-8">
-                  <dl className="relative flex flex-wrap gap-x-3">
-                    <div className="sr-only">Role</div>
-                    <div className="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                      {item.role}
-                    </div>
-                    <div className="mt-2 w-full flex-none text-base/7 text-gray-600">
-                      {item.description}
-                    </div>
-                    <div className="sr-only">Date</div>
-                    <div className="mt-4 text-base/7 font-medium text-gray-900">
-                      {item.date}
-                    </div>
-                    <div className="sr-only">Location</div>
-                    <div className="mt-4 flex items-center gap-x-3 text-base/7 text-gray-500">
-                      <svg
-                        viewBox="0 0 2 2"
-                        aria-hidden="true"
-                        className="size-0.5 flex-none fill-gray-300"
-                      >
-                        <circle r={1} cx={1} cy={1} />
-                      </svg>
-                      {item.location}
-                    </div>
-                  </dl>
-                </li>
-              ))}
-            </ul>
-          </section>
-          <section>
-            <h3 className="mb-6 text-sm/6 font-semibold text-indigo-600">
-              Technical Skills
-            </h3>
-            <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-              {[
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "Next.js",
-                "Tailwind CSS",
-                "Angular",
-                "Java",
-                "Spring Boot",
-              ].map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
-          </section>
-          <section>
-            <h3 className="mb-6 text-sm/6 font-semibold text-indigo-600">
-              Contact
-            </h3>
-            <div className="flex flex-col space-y-4">
-              <a
-                href="https://github.com/rkatanic"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer underline-offset-2 hover:underline"
-              >
-                Follow on Github
-              </a>
-              <a
-                href="https://www.linkedin.com/in/radivoje-katanic/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer underline-offset-2 hover:underline"
-              >
-                Follow on LinkedIn
-              </a>
-              <a
-                href="mailto:rkatanic@outlook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer underline-offset-2 hover:underline"
-              >
-                E-mail to rkatanic@outlook.com
-              </a>
-            </div>
-          </section>
-          <section>
-            <h3 className="mb-6 text-sm/6 font-semibold text-indigo-600">
-              Location
-            </h3>
-            <p>Doboj, Bosnia & Herzegovina</p>
-          </section>
-        </div>
+        </Card>
+
+        <Card
+          title="Want to know more?"
+          icon={
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="h-6 w-6 flex-none"
+            >
+              <path
+                d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+                className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+              />
+              <path
+                d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
+                className="stroke-zinc-400 dark:stroke-zinc-500"
+              />
+            </svg>
+          }
+        >
+          <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            Have a question, or just want to say hello? Feel free to reach me
+            out via email.
+          </p>
+          <a
+            className="active:text-zinc-white/60 group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-800 px-3 py-2 text-sm font-medium text-white outline-offset-2 transition hover:bg-zinc-900 active:bg-zinc-900 active:transition-none dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70"
+            href="mailto:rkatanic@outlook.com"
+          >
+            Contact me
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="size-3"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </a>
+        </Card>
+      </section>
+
+      <div className="prose-headings:font-inter prose prose-zinc col-span-1 dark:prose-invert prose-p:leading-7 prose-p:text-zinc-600 prose-ul:text-zinc-600 dark:prose-p:text-zinc-400 dark:prose-ul:text-zinc-400">
+        <h3>Work history</h3>
+        <ExpandableText>
+          <p>
+            In late February 2020, I joined a three-month rookie boot camp
+            program at ProductDock, where I worked alongside other rookies to
+            create an internal employee management app. Upon completing the
+            program successfully, I was offered a full-time position at the
+            company.
+          </p>
+          <p>
+            Thats where I currently work on building software solutions and
+            continuing to grow as a web developer.
+          </p>
+        </ExpandableText>
+
+        <h3>Technologies</h3>
+        <ExpandableText>
+          <p>
+            Mainly focused on frontend technologies, but I do work on backend
+            stuff too. Current tech stack I use is:
+          </p>
+          <ul>
+            <li>
+              <b>Languages -</b> HTML, CSS, JavaScript, Java.
+            </li>
+            <li>
+              <b>Frameworks -</b> React, Next.js, Tailwind CSS, Spring Boot.
+            </li>
+            <li>
+              <b>Databases -</b> Mongo, MySQL.
+            </li>
+          </ul>
+          <p>
+            Lately I am mostly working with Next.js on frontend along with
+            Spring Boot on backend services, but I like trying out new
+            technologies, because tools come and go.
+          </p>
+        </ExpandableText>
+
+        <h3>Interests</h3>
+        <p className="">
+          Away from work, I enjoy doing sports or spending time outdoors. Also
+          interested in movies, technology, literature, architecture, and more.
+        </p>
       </div>
-    </div>
+    </section>
+    <Footer />
   </div>
 );
 
