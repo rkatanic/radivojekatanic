@@ -1,10 +1,11 @@
-import { Inter, Nunito } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
 
 import "../globals.css";
 
-const font = Nunito({
+const font = Poppins({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata = {
@@ -28,7 +29,7 @@ export default function RootLayout({
       className={`${font.className} ${interFont.variable}`}
       suppressHydrationWarning
     >
-      <body className="bg-white antialiased dark:bg-zinc-900">
+      <body className=" bg-[hsl(214,8%,9%)]">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
