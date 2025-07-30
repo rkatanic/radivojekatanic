@@ -6,12 +6,4 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
-  plugins: [require("@tailwindcss/typography")],
-  theme: {
-    extend: {
-      fontFamily: {
-        inter: ["var(--font-inter)"],
-      },
-    },
-  },
 };

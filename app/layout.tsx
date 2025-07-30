@@ -1,22 +1,12 @@
-import { Inter, Poppins } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
+import { GeistSans } from "geist/font/sans";
 
 import "../globals.css";
-
-const font = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
 
 export const metadata = {
   title: "Radivoje Katanic",
   description: "Software Developer",
 };
-
-const interFont = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 
 export default function RootLayout({
   children,
@@ -26,16 +16,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${font.className} ${interFont.variable}`}
       suppressHydrationWarning
+      className={`${GeistSans.className} [font-feature-settings:"ss02"]`}
     >
-      <body className=" bg-[hsl(214,8%,9%)]">
+      <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           disableTransitionOnChange
         >
-          <div className="min-h-screen">{children}</div>
+          {children}
         </ThemeProvider>
       </body>
     </html>
