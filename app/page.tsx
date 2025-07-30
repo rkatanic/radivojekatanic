@@ -1,5 +1,4 @@
 import Header from "./_components/Header";
-import { BackgroundLines } from "@/components/ui/background-lines";
 import HeroSection from "@/components/components/HeroSection";
 import StatsSection from "@/components/components/StatsSection";
 import ServicesSection from "@/components/components/ServicesSection";

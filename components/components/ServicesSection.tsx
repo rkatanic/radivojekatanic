@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ChartPieDonutText from "./PieChart";
 
 const ServicesSection = () => (
@@ -14,7 +15,7 @@ const ServicesSection = () => (
         </h2>
         <div className="mt-4 max-w-[31rem] flex-auto lg:mt-0">
           <div className="text-muted-foreground space-y-4 text-center text-base/relaxed sm:text-start">
-            Whether you're starting from scratch or improving an existing
+            Whether you are starting from scratch or improving an existing
             product, I focus on performance, scalability, and usability — so
             your app works beautifully, everywhere.
           </div>
@@ -79,10 +80,12 @@ const ServicesSection = () => (
                 data-slot="avatar"
                 className="relative flex size-10 shrink-0 overflow-hidden rounded-full"
               >
-                <img
-                  data-slot="avatar-image"
+                <Image
+                  alt="My photo"
                   className="bg-muted dark:bg-primary aspect-square size-full"
                   src="/me.png"
+                  width={40}
+                  height={40}
                 />
               </span>
               <div className="flex flex-col text-sm">
@@ -272,11 +275,12 @@ const ServicesSection = () => (
                 data-slot="avatar"
                 className="relative flex size-8 shrink-0 overflow-hidden rounded-full border"
               >
-                <img
-                  data-slot="avatar-image"
+                <Image
                   className="bg-muted dark:bg-primary aspect-square size-full"
-                  alt="Photo of Radivoje Katanic"
+                  alt="My photo"
                   src="/me.png"
+                  width={32}
+                  height={32}
                 />
               </span>
               <div className="flex flex-col gap-0.5">
@@ -317,10 +321,10 @@ const ServicesSection = () => (
                 Hi, how can I help you today?
               </div>
               <div className="bg-primary text-primary-foreground ml-auto flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
-                Hey, I'd like to improve my website.
+                Hey, I&apos;d like to improve my website.
               </div>
               <div className="bg-muted flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
-                Let's make a call and see what we can do!
+                Let&apos;s make a call and see what we can do!
               </div>
             </div>
           </div>
