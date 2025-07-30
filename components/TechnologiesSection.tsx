@@ -2,7 +2,7 @@ import PixelCard from "./ui/PixelCard/PixelCard";
 
 const TechnologiesSection = () => (
   <section>
-    <div className="flex flex-col items-center justify-center gap-4 border border-t-0 px-16 py-20 text-center">
+    <div className="flex flex-col items-center justify-center gap-4 border border-t-0 px-6 py-16 text-center sm:px-16 sm:py-20">
       <h2 className="max-w-md flex-auto text-3xl font-semibold tracking-[-0.015em] text-balance">
         Most frequent technologies and frameworks I use.
       </h2>
@@ -13,7 +13,7 @@ const TechnologiesSection = () => (
         </div>
       </div>
     </div>
-    <div className="grid grid-cols-2 divide-x divide-y border-l md:grid-cols-3 lg:grid-cols-5">
+    <div className="grid grid-cols-2 divide-x divide-y border-l md:grid-cols-5">
       <PixelCard variant="blue" className="group/canvas-card">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg

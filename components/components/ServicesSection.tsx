@@ -1,10 +1,11 @@
+import Link from "next/link";
 import ChartPieDonutText from "./PieChart";
 
 const ServicesSection = () => (
   <section className="mx-auto divide-y border border-t-0">
-    <div className="px-16 py-20">
+    <div className="px-6 py-16 sm:px-16 sm:py-20">
       <div className="lg:flex lg:justify-between lg:gap-x-16">
-        <h2 className="max-w-md flex-auto text-3xl font-semibold tracking-[-0.015em] text-balance">
+        <h2 className="max-w-md flex-auto text-center text-3xl font-semibold tracking-tight text-balance sm:text-start">
           Helping you build{" "}
           <span className="text-secondary bg-primary mt-1 mr-1 inline-block rounded-lg px-2.5 py-0.5 font-mono tracking-tight">
             functional
@@ -12,18 +13,16 @@ const ServicesSection = () => (
           web apps.
         </h2>
         <div className="mt-4 max-w-[31rem] flex-auto lg:mt-0">
-          <div className="text-muted-foreground space-y-4 text-base/relaxed">
-            <p>
-              Whether you're starting from scratch or improving an existing
-              product, I focus on performance, scalability, and usability — so
-              your app works beautifully, everywhere.
-            </p>
+          <div className="text-muted-foreground space-y-4 text-center text-base/relaxed sm:text-start">
+            Whether you're starting from scratch or improving an existing
+            product, I focus on performance, scalability, and usability — so
+            your app works beautifully, everywhere.
           </div>
         </div>
       </div>
     </div>
     <div className="grid grid-cols-1 items-center md:grid-cols-2">
-      <div className="relative col-span-1 flex h-full items-end justify-center overflow-hidden border-r">
+      <div className="relative col-span-1 flex h-full items-end justify-center overflow-hidden border-b px-6 pt-16 md:border-r md:border-b-0">
         <div
           className="absolute inset-0 -z-10"
           style={{
@@ -34,7 +33,7 @@ const ServicesSection = () => (
           }}
         />
 
-        <div className="bg-background ring-border absolute top-56 right-6 z-10 flex gap-3 rounded-full p-2 text-sm font-medium shadow-md ring-1">
+        <div className="bg-background ring-border absolute top-52 right-6 z-10 flex gap-3 rounded-full p-2 text-sm font-medium shadow-md ring-1">
           <div className="flex items-center gap-2">
             <svg
               width={24}
@@ -70,9 +69,9 @@ const ServicesSection = () => (
           </div>
         </div>
 
-        <main className="absolute bottom-12 z-10 flex w-full flex-col justify-center gap-10 overflow-x-auto px-2 py-10 md:items-center">
+        <main className="absolute bottom-12 z-10 flex flex-col justify-center gap-10 overflow-x-auto px-2 py-10 md:items-center">
           <div
-            className="bg-background ring-border flex w-full items-center justify-between rounded-xl font-medium shadow-md ring-1 sm:w-96"
+            className="bg-background ring-border flex w-full items-center justify-between rounded-xl font-medium shadow-md ring-1 sm:max-w-96"
             aria-live="assertive"
           >
             <div className="flex flex-1 gap-4 px-4 py-3">
@@ -110,7 +109,7 @@ const ServicesSection = () => (
           </div>
         </main>
 
-        <div className="bg-background absolute top-14 left-14 z-10 space-y-3 rounded-xl border p-3 px-3 shadow-md">
+        <div className="bg-background absolute top-6 left-14 z-10 space-y-3 rounded-xl border p-3 px-3 shadow-md sm:top-14">
           <div className="flex gap-1">
             <div className="bg-input size-2 rounded-full"></div>
             <div className="bg-input size-2 rounded-full"></div>
@@ -132,7 +131,7 @@ const ServicesSection = () => (
         </div>
       </div>
 
-      <div className="col-span-1 p-20 px-16">
+      <div className="col-span-1 px-6 py-16 sm:p-20 sm:px-16">
         <h3 className="mb-2 text-xl font-semibold">Web Development</h3>
         <p className="text-muted-foreground">
           I can help you build modern, reliable web applications tailored to
@@ -145,15 +144,17 @@ const ServicesSection = () => (
               height={24}
               fill="none"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="mr-2 inline-block size-4 text-emerald-500"
             >
-              <path d="m6 13.626 1.606 1.722c.886.95 1.329 1.424 1.825 1.574.436.131.9.096 1.315-.1.473-.224.852-.761 1.612-1.836L18 7" />
+              <path d="M20.5 15.8V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8" />
+              <path d="m8.667 12.633 1.505 1.721a1 1 0 0 0 1.564-.073L15.333 9.3" />
             </svg>
+
             <span>Web app and website development</span>
           </li>
           <li>
@@ -162,15 +163,17 @@ const ServicesSection = () => (
               height={24}
               fill="none"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="mr-2 inline-block size-4 text-emerald-500"
             >
-              <path d="m6 13.626 1.606 1.722c.886.95 1.329 1.424 1.825 1.574.436.131.9.096 1.315-.1.473-.224.852-.761 1.612-1.836L18 7" />
+              <path d="M20.5 15.8V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8" />
+              <path d="m8.667 12.633 1.505 1.721a1 1 0 0 0 1.564-.073L15.333 9.3" />
             </svg>
+
             <span>Bug fixes, performance optimizations</span>
           </li>
           <li>
@@ -179,20 +182,22 @@ const ServicesSection = () => (
               height={24}
               fill="none"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="mr-2 inline-block size-4 text-emerald-500"
             >
-              <path d="m6 13.626 1.606 1.722c.886.95 1.329 1.424 1.825 1.574.436.131.9.096 1.315-.1.473-.224.852-.761 1.612-1.836L18 7" />
+              <path d="M20.5 15.8V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8" />
+              <path d="m8.667 12.633 1.505 1.721a1 1 0 0 0 1.564-.073L15.333 9.3" />
             </svg>
+
             <span>Feature enhancements and custom integrations</span>
           </li>
         </ul>
-        <a
-          href="#"
+        <Link
+          href="mailto:rkatanic@outlook.com"
           className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-9 shrink-0 items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 has-[>svg]:px-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
         >
           <span>Lets connect</span>
@@ -210,12 +215,12 @@ const ServicesSection = () => (
           >
             <path d="M4.5 12h15m0 0-5.625-6m5.625 6-5.625 6" />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
 
     <div className="grid grid-cols-1 items-center md:grid-cols-2">
-      <div className="relative flex h-full items-end justify-center border-l md:order-last">
+      <div className="relative flex h-full items-end justify-center border-b px-6 pt-16 md:order-last md:border-b-0 md:border-l">
         <div
           className="absolute inset-0 -z-10"
           style={{
@@ -230,7 +235,7 @@ const ServicesSection = () => (
           data-slot="card"
           className="bg-card text-card-foreground relative flex flex-col gap-6 rounded-t-3xl border border-b-0 py-6"
         >
-          <div className="absolute top-36 -left-10 z-10 flex flex-col items-end">
+          <div className="absolute top-36 -left-2 z-10 flex flex-col items-end sm:-left-10">
             <svg fill="none" height={18} viewBox="0 0 17 18" width={17}>
               <path
                 d="M15.5036 3.11002L12.5357 15.4055C12.2666 16.5204 10.7637 16.7146 10.22 15.7049L7.4763 10.6094L2.00376 8.65488C0.915938 8.26638 0.891983 6.73663 1.96711 6.31426L13.8314 1.65328C14.7729 1.28341 15.741 2.12672 15.5036 3.11002ZM7.56678 10.6417L7.56645 10.6416C7.56656 10.6416 7.56667 10.6416 7.56678 10.6417L7.65087 10.4062L7.56678 10.6417Z"
@@ -244,7 +249,7 @@ const ServicesSection = () => (
               Radivoje
             </div>
           </div>
-          <div className="absolute -right-10 bottom-32 z-10">
+          <div className="absolute -right-2 bottom-32 z-10 sm:-right-10">
             <svg fill="none" height={18} viewBox="0 0 17 18" width={17}>
               <path
                 d="M1.4964 3.11002L4.46428 15.4055C4.73338 16.5204 6.23625 16.7146 6.77997 15.7049L9.5237 10.6094L14.9962 8.65488C16.0841 8.26638 16.108 6.73663 15.0329 6.31426L3.16856 1.65328C2.22708 1.28341 1.25905 2.12672 1.4964 3.11002ZM9.43322 10.6417L9.43355 10.6416C9.43344 10.6416 9.43333 10.6416 9.43322 10.6417L9.34913 10.4062L9.43322 10.6417Z"
@@ -315,7 +320,7 @@ const ServicesSection = () => (
                 Hey, I'd like to improve my website.
               </div>
               <div className="bg-muted flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
-                Let's make a call and see how I can help!
+                Let's make a call and see what we can do!
               </div>
             </div>
           </div>
@@ -335,7 +340,7 @@ const ServicesSection = () => (
               <button
                 data-slot="button"
                 className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 absolute top-1/2 right-2 inline-flex size-6 shrink-0 -translate-y-1/2 items-center justify-center gap-2 rounded-full text-sm font-medium whitespace-nowrap shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
-                type="submit"
+                type="button"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -358,7 +363,7 @@ const ServicesSection = () => (
           </div>
         </div>
       </div>
-      <div className="px-16 py-20">
+      <div className="px-6 py-16 sm:px-16 sm:py-20">
         <h3 className="mb-2 text-xl font-semibold">IT Consulting</h3>
         <p className="text-muted-foreground">
           I provide guidance to help you make the best decisions aligned with
@@ -371,15 +376,17 @@ const ServicesSection = () => (
               height={24}
               fill="none"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="mr-2 inline-block size-4 text-emerald-500"
             >
-              <path d="m6 13.626 1.606 1.722c.886.95 1.329 1.424 1.825 1.574.436.131.9.096 1.315-.1.473-.224.852-.761 1.612-1.836L18 7" />
+              <path d="M20.5 15.8V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8" />
+              <path d="m8.667 12.633 1.505 1.721a1 1 0 0 0 1.564-.073L15.333 9.3" />
             </svg>
+
             <span>Technology strategy and planning</span>
           </li>
           <li>
@@ -388,15 +395,17 @@ const ServicesSection = () => (
               height={24}
               fill="none"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="mr-2 inline-block size-4 text-emerald-500"
             >
-              <path d="m6 13.626 1.606 1.722c.886.95 1.329 1.424 1.825 1.574.436.131.9.096 1.315-.1.473-.224.852-.761 1.612-1.836L18 7" />
+              <path d="M20.5 15.8V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8" />
+              <path d="m8.667 12.633 1.505 1.721a1 1 0 0 0 1.564-.073L15.333 9.3" />
             </svg>
+
             <span>Process improvement and automation</span>
           </li>
           <li>
@@ -405,20 +414,22 @@ const ServicesSection = () => (
               height={24}
               fill="none"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth="1.5"
               viewBox="0 0 24 24"
               strokeLinecap="round"
               strokeLinejoin="round"
               xmlns="http://www.w3.org/2000/svg"
               className="mr-2 inline-block size-4 text-emerald-500"
             >
-              <path d="m6 13.626 1.606 1.722c.886.95 1.329 1.424 1.825 1.574.436.131.9.096 1.315-.1.473-.224.852-.761 1.612-1.836L18 7" />
+              <path d="M20.5 15.8V8.2a1.91 1.91 0 0 0-.944-1.645l-6.612-3.8a1.88 1.88 0 0 0-1.888 0l-6.612 3.8A1.9 1.9 0 0 0 3.5 8.2v7.602a1.91 1.91 0 0 0 .944 1.644l6.612 3.8a1.88 1.88 0 0 0 1.888 0l6.612-3.8A1.9 1.9 0 0 0 20.5 15.8" />
+              <path d="m8.667 12.633 1.505 1.721a1 1 0 0 0 1.564-.073L15.333 9.3" />
             </svg>
+
             <span>System evaluation</span>
           </li>
         </ul>
-        <a
-          href="#"
+        <Link
+          href="mailto:rkatanic@outlook.com"
           className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-9 shrink-0 items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 has-[>svg]:px-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
         >
           <span>Lets connect</span>
@@ -436,7 +447,7 @@ const ServicesSection = () => (
           >
             <path d="M4.5 12h15m0 0-5.625-6m5.625 6-5.625 6" />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   </section>
