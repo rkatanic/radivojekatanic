@@ -28,7 +28,7 @@ const Home = () => (
     <HeroSection
       className="border-t-0"
       title=" Lets build something cool together."
-      description="Have a question, or just want to say hello? Feel free to send me an email."
+      description="If you have any questions or just want to say hello, feel free to reach me out by email, github or linkedin."
     />
   </div>
 );

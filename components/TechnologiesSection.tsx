@@ -14,8 +14,8 @@ const TechnologiesSection = () => (
       </div>
     </div>
     <div className="grid grid-cols-2 divide-x divide-y border-l md:grid-cols-5">
-      <PixelCard variant="blue" className="group/canvas-card">
-        <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
+      <PixelCard variant="blue" className="group/canvas-card" colors="#ef652a">
+        <div className="absolute inset-0 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -44,7 +44,7 @@ const TechnologiesSection = () => (
           </h2>
         </div>
       </PixelCard>
-      <PixelCard variant="blue" className="group/canvas-card">
+      <PixelCard variant="blue" colors="#1b73ba" className="group/canvas-card">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const TechnologiesSection = () => (
           </h2>
         </div>
       </PixelCard>
-      <PixelCard variant="blue" className="group/canvas-card">
+      <PixelCard variant="blue" className="group/canvas-card" colors="#007acc">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ const TechnologiesSection = () => (
         </div>
       </PixelCard>
 
-      <PixelCard variant="blue" className="group/canvas-card">
+      <PixelCard variant="blue" className="group/canvas-card" colors="#61DAFB">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@ const TechnologiesSection = () => (
         </div>
       </PixelCard>
 
-      <PixelCard variant="blue" className="group/canvas-card">
+      <PixelCard variant="blue" className="group/canvas-card" colors="#00bcff">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             width="42"
@@ -197,7 +197,7 @@ const TechnologiesSection = () => (
           </h2>
         </div>
       </PixelCard>
-      <PixelCard variant="blue" className="group/canvas-card">
+      <PixelCard variant="blue" className="group/canvas-card" colors="#f58219">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +222,7 @@ const TechnologiesSection = () => (
           </h2>
         </div>
       </PixelCard>
-      <PixelCard variant="blue" className="group/canvas-card">
+      <PixelCard variant="blue" className="group/canvas-card" colors="#6DB33F">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +242,7 @@ const TechnologiesSection = () => (
           </h2>
         </div>
       </PixelCard>
-      <PixelCard variant="blue" className="group/canvas-card">
+      <PixelCard variant="blue" className="group/canvas-card" colors="#46A037">
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +264,11 @@ const TechnologiesSection = () => (
           </h2>
         </div>
       </PixelCard>
-      <PixelCard variant="blue" className="group/canvas-card border-r border-b">
+      <PixelCard
+        variant="blue"
+        className="group/canvas-card border-r border-b"
+        colors="#00678c"
+      >
         <div className="absolute inset-0 z-20 mx-auto flex w-full flex-col items-center justify-center text-center transition duration-200 group-hover/canvas-card:-translate-y-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"

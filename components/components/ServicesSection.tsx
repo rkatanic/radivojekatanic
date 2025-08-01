@@ -1,17 +1,16 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import ChartPieDonutText from "./PieChart";
+import RotatingText from "./RotatingText";
+import { AnimatePresence, motion } from "framer-motion";
 
 const ServicesSection = () => (
   <section className="mx-auto divide-y border border-t-0">
     <div className="px-6 py-16 sm:px-16 sm:py-20">
       <div className="lg:flex lg:justify-between lg:gap-x-16">
-        <h2 className="max-w-md flex-auto text-center text-3xl font-semibold tracking-tight text-balance sm:text-start">
-          Helping you build{" "}
-          <span className="text-secondary bg-primary mt-1 mr-1 inline-block rounded-lg px-2.5 py-0.5 font-mono tracking-tight">
-            functional
-          </span>{" "}
-          web apps.
+        <h2 className="mb-14 max-w-md flex-auto text-center text-3xl font-semibold tracking-tight sm:text-start lg:mb-0">
+          <RotatingText />
         </h2>
         <div className="mt-4 max-w-[31rem] flex-auto lg:mt-0">
           <div className="text-muted-foreground space-y-4 text-center text-base/relaxed sm:text-start">
@@ -69,8 +68,7 @@ const ServicesSection = () => (
             </svg>
           </div>
         </div>
-
-        <main className="absolute bottom-12 z-10 flex flex-col justify-center gap-10 overflow-x-auto px-2 py-10 md:items-center">
+        <div className="absolute bottom-12 z-10 flex flex-col justify-center gap-10 overflow-x-auto px-2 py-10 md:items-center">
           <div
             className="bg-background ring-border flex w-full items-center justify-between rounded-xl font-medium shadow-md ring-1 sm:max-w-96"
             aria-live="assertive"
@@ -110,9 +108,9 @@ const ServicesSection = () => (
               />
             </svg>
           </div>
-        </main>
+        </div>
 
-        <div className="bg-background absolute top-6 left-14 z-10 space-y-3 rounded-xl border p-3 px-3 shadow-md sm:top-14">
+        <div className="bg-background absolute top-7 left-14 z-10 space-y-3 rounded-xl border p-3 px-3 shadow-md">
           <div className="flex gap-1">
             <div className="bg-input size-2 rounded-full"></div>
             <div className="bg-input size-2 rounded-full"></div>
@@ -135,7 +133,7 @@ const ServicesSection = () => (
       </div>
 
       <div className="col-span-1 px-6 py-16 sm:p-20 sm:px-16">
-        <h3 className="mb-2 text-xl font-semibold">Web Development</h3>
+        <h4 className="mb-2 text-xl font-semibold">Web Development</h4>
         <p className="text-muted-foreground">
           I can help you build modern, reliable web applications tailored to
           your needs.
@@ -233,118 +231,87 @@ const ServicesSection = () => (
             backgroundSize: "16px 16px",
           }}
         />
-
-        <div
-          data-slot="card"
-          className="bg-card text-card-foreground relative flex flex-col gap-6 rounded-t-3xl border border-b-0 py-6"
-        >
-          <div className="absolute top-36 -left-2 z-10 flex flex-col items-end sm:-left-10">
-            <svg fill="none" height={18} viewBox="0 0 17 18" width={17}>
-              <path
-                d="M15.5036 3.11002L12.5357 15.4055C12.2666 16.5204 10.7637 16.7146 10.22 15.7049L7.4763 10.6094L2.00376 8.65488C0.915938 8.26638 0.891983 6.73663 1.96711 6.31426L13.8314 1.65328C14.7729 1.28341 15.741 2.12672 15.5036 3.11002ZM7.56678 10.6417L7.56645 10.6416C7.56656 10.6416 7.56667 10.6416 7.56678 10.6417L7.65087 10.4062L7.56678 10.6417Z"
-                fill="currentColor"
-                className="dark:text-chart-2 text-chart-2"
-                strokeWidth="1.5"
-              />
-            </svg>
-
-            <div className="bg-chart-2 dark:bg-chart-2 mr-4 ml-auto rounded-lg p-1 px-2 text-sm font-medium text-black">
-              Radivoje
-            </div>
-          </div>
-          <div className="absolute -right-2 bottom-32 z-10 sm:-right-10">
-            <svg fill="none" height={18} viewBox="0 0 17 18" width={17}>
-              <path
-                d="M1.4964 3.11002L4.46428 15.4055C4.73338 16.5204 6.23625 16.7146 6.77997 15.7049L9.5237 10.6094L14.9962 8.65488C16.0841 8.26638 16.108 6.73663 15.0329 6.31426L3.16856 1.65328C2.22708 1.28341 1.25905 2.12672 1.4964 3.11002ZM9.43322 10.6417L9.43355 10.6416C9.43344 10.6416 9.43333 10.6416 9.43322 10.6417L9.34913 10.4062L9.43322 10.6417Z"
-                fill="currentColor"
-                strokeWidth="1.5"
-                className="text-chart-4 dark:text-chart-3"
-              />
-            </svg>
-            <div className="bg-chart-4 dark:bg-chart-3 ml-4 rounded-lg p-1 px-2 text-sm font-medium text-black">
-              You
-            </div>
-          </div>
-
+        <AnimatePresence>
           <div
-            data-slot="card-header"
-            className="@container/card-header flex auto-rows-min grid-rows-[auto_auto] flex-row items-center gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card"
+            className="bg-card text-card-foreground relative flex flex-col gap-6 rounded-t-3xl border border-b-0 py-6"
           >
-            <div className="flex items-center gap-4">
-              <span
-                data-slot="avatar"
-                className="relative flex size-8 shrink-0 overflow-hidden rounded-full border"
-              >
-                <Image
-                  className="bg-muted dark:bg-primary aspect-square size-full"
-                  alt="My photo"
-                  src="/me.png"
-                  width={32}
-                  height={32}
-                />
-              </span>
-              <div className="flex flex-col gap-0.5">
-                <p className="text-sm leading-none font-medium">
-                  Radivoje Katanic
-                </p>
-                <p className="text-muted-foreground text-xs">
-                  rkatanic@outlook.com
-                </p>
-              </div>
-            </div>
-            <button
-              data-slot="tooltip-trigger"
-              className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 ml-auto inline-flex size-8 shrink-0 items-center justify-center gap-2 rounded-full text-sm font-medium whitespace-nowrap shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
-              data-state="closed"
+            <motion.div
+              animate={{ x: [0, 4], y: [0, -5] }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "mirror",
+              }}
+              className="absolute top-36 -left-2 z-10 flex flex-col items-end will-change-transform sm:-left-10"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-plus"
-              >
-                <path d="M5 12h14" />
-                <path d="M12 5v14" />
+              <svg fill="none" height={18} viewBox="0 0 17 18" width={17}>
+                <path
+                  d="M15.5036 3.11002L12.5357 15.4055C12.2666 16.5204 10.7637 16.7146 10.22 15.7049L7.4763 10.6094L2.00376 8.65488C0.915938 8.26638 0.891983 6.73663 1.96711 6.31426L13.8314 1.65328C14.7729 1.28341 15.741 2.12672 15.5036 3.11002ZM7.56678 10.6417L7.56645 10.6416C7.56656 10.6416 7.56667 10.6416 7.56678 10.6417L7.65087 10.4062L7.56678 10.6417Z"
+                  fill="currentColor"
+                  className="dark:text-chart-2 text-chart-2"
+                  strokeWidth="1.5"
+                />
               </svg>
-              <span className="sr-only">New message</span>
-            </button>
-          </div>
-          <div data-slot="card-content" className="px-6">
-            <div className="flex flex-col gap-4">
-              <div className="bg-muted flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
-                Hi, how can I help you today?
+
+              <div className="bg-chart-2 dark:bg-chart-2 mr-4 ml-auto rounded-lg p-1 px-2 text-sm font-medium text-black">
+                Radivoje
               </div>
-              <div className="bg-primary text-primary-foreground ml-auto flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
-                Hey, I&apos;d like to improve my website.
+            </motion.div>
+            <motion.div
+              animate={{ x: [0, -5], y: [0, 5] }}
+              transition={{
+                delay: 0.75,
+                duration: 2,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "mirror",
+              }}
+              className="absolute -right-2 bottom-32 z-10 will-change-transform sm:-right-10"
+            >
+              <svg fill="none" height={18} viewBox="0 0 17 18" width={17}>
+                <path
+                  d="M1.4964 3.11002L4.46428 15.4055C4.73338 16.5204 6.23625 16.7146 6.77997 15.7049L9.5237 10.6094L14.9962 8.65488C16.0841 8.26638 16.108 6.73663 15.0329 6.31426L3.16856 1.65328C2.22708 1.28341 1.25905 2.12672 1.4964 3.11002ZM9.43322 10.6417L9.43355 10.6416C9.43344 10.6416 9.43333 10.6416 9.43322 10.6417L9.34913 10.4062L9.43322 10.6417Z"
+                  fill="currentColor"
+                  strokeWidth="1.5"
+                  className="text-chart-4 dark:text-chart-3"
+                />
+              </svg>
+              <div className="bg-chart-4 dark:bg-chart-3 ml-4 rounded-lg p-1 px-2 text-sm font-medium text-black">
+                You
               </div>
-              <div className="bg-muted flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
-                Let&apos;s make a call and see what we can do!
+            </motion.div>
+            <div
+              data-slot="card-header"
+              className="@container/card-header flex auto-rows-min grid-rows-[auto_auto] flex-row items-center gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            >
+              <div className="flex items-center gap-4">
+                <span
+                  data-slot="avatar"
+                  className="relative flex size-8 shrink-0 overflow-hidden rounded-full border"
+                >
+                  <Image
+                    className="bg-muted dark:bg-primary aspect-square size-full"
+                    alt="My photo"
+                    src="/me.png"
+                    width={32}
+                    height={32}
+                  />
+                </span>
+                <div className="flex flex-col gap-0.5">
+                  <p className="text-sm leading-none font-medium">
+                    Radivoje Katanic
+                  </p>
+                  <p className="text-muted-foreground text-xs">
+                    rkatanic@outlook.com
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div
-            data-slot="card-footer"
-            className="flex items-center px-6 [.border-t]:pt-6"
-          >
-            <form className="relative w-full">
-              <input
-                data-slot="input"
-                className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive flex h-9 w-full min-w-0 flex-1 rounded-md border bg-transparent px-3 py-1 pr-10 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:ring-[3px] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                id="message"
-                placeholder="Type your message..."
-                autoComplete="off"
-                defaultValue=""
-              />
               <button
-                data-slot="button"
-                className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 absolute top-1/2 right-2 inline-flex size-6 shrink-0 -translate-y-1/2 items-center justify-center gap-2 rounded-full text-sm font-medium whitespace-nowrap shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
-                type="button"
+                data-slot="tooltip-trigger"
+                className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 ml-auto inline-flex size-8 shrink-0 items-center justify-center gap-2 rounded-full text-sm font-medium whitespace-nowrap shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+                data-state="closed"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -356,19 +323,69 @@ const ServicesSection = () => (
                   strokeWidth={2}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-arrow-up size-3.5"
+                  className="lucide lucide-plus"
                 >
-                  <path d="m5 12 7-7 7 7" />
-                  <path d="M12 19V5" />
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
                 </svg>
-                <span className="sr-only">Send</span>
+                <span className="sr-only">New message</span>
               </button>
-            </form>
+            </div>
+            <div data-slot="card-content" className="px-6">
+              <div className="flex flex-col gap-4">
+                <div className="bg-muted flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
+                  Hi, how can I help you today?
+                </div>
+                <div className="bg-primary text-primary-foreground ml-auto flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
+                  Hey, I&apos;d like to improve my website.
+                </div>
+                <div className="bg-muted flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm">
+                  Let&apos;s make a call and see what we can do!
+                </div>
+              </div>
+            </div>
+            <div
+              data-slot="card-footer"
+              className="flex items-center px-6 [.border-t]:pt-6"
+            >
+              <form className="relative w-full">
+                <input
+                  data-slot="input"
+                  className="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive flex h-9 w-full min-w-0 flex-1 rounded-md border bg-transparent px-3 py-1 pr-10 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:ring-[3px] disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                  id="message"
+                  placeholder="Type your message..."
+                  autoComplete="off"
+                  defaultValue=""
+                />
+                <button
+                  data-slot="button"
+                  className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 absolute top-1/2 right-2 inline-flex size-6 shrink-0 -translate-y-1/2 items-center justify-center gap-2 rounded-full text-sm font-medium whitespace-nowrap shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+                  type="button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-up size-3.5"
+                  >
+                    <path d="m5 12 7-7 7 7" />
+                    <path d="M12 19V5" />
+                  </svg>
+                  <span className="sr-only">Send</span>
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
+        </AnimatePresence>
       </div>
       <div className="px-6 py-16 sm:px-16 sm:py-20">
-        <h3 className="mb-2 text-xl font-semibold">IT Consulting</h3>
+        <h4 className="mb-2 text-xl font-semibold">IT Consulting</h4>
         <p className="text-muted-foreground">
           I provide guidance to help you make the best decisions aligned with
           your business goals.
