@@ -4,378 +4,87 @@ import ExpandableText from "./_components/ExpandableText";
 import Footer from "./_components/Footer";
 
 const Home = () => (
-  <div className="prose-zinc mx-auto flex max-w-5xl flex-col gap-16 pt-32 dark:prose-invert prose-headings:font-inter prose-p:text-zinc-600 dark:prose-p:text-zinc-400">
-    <main className="max-w-2xl">
-      <img
-        src="/me.png"
-        alt=""
-        className="mb-6 h-20 w-20 rounded-full bg-zinc-200 dark:bg-zinc-300"
+  <section className="mx-auto flex max-w-sm flex-col items-center space-y-6 px-4 py-32">
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 103 82"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      strokeWidth="2px"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="size-20 fill-blue-50/80 text-blue-400"
+    >
+      <path
+        d="M2.30006 40.8635V38.0835C2.23006 39.0235 2.23006 39.9535 2.30006 40.8635Z"
+        stroke="currentColor"
+        strokeLinejoin="round"
       />
-      <h1 className="max-w-2xl pr-4 text-5xl font-bold leading-[1.15] tracking-tight">
-        Building functional and performant web apps.
-      </h1>
-      <p className="mt-6 text-base leading-7">
-        I am Radivoje, a software developer from Doboj, Bosnia & Herzegovina.
-        Thats where I build functional and performant digital solutions at
-        company called ProductDock. Away from work, I enjoy doing sports or
-        spending time outdoors.
-      </p>
-      <div className="mt-6 flex gap-6">
-        <a
-          className="group -m-1 p-1"
-          aria-label="Follow on GitHub"
-          href="https://github.com/rkatanic"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M12 2C6.475 2 2 6.588 2 12.253c0 4.537 2.862 8.369 6.838 9.727.5.09.687-.218.687-.487 0-.243-.013-1.05-.013-1.91C7 20.059 6.35 18.957 6.15 18.38c-.113-.295-.6-1.205-1.025-1.448-.35-.192-.85-.667-.013-.68.788-.012 1.35.744 1.538 1.051.9 1.551 2.338 1.116 2.912.846.088-.666.35-1.115.638-1.371-2.225-.256-4.55-1.14-4.55-5.062 0-1.115.387-2.038 1.025-2.756-.1-.256-.45-1.307.1-2.717 0 0 .837-.269 2.75 1.051.8-.23 1.65-.346 2.5-.346.85 0 1.7.115 2.5.346 1.912-1.333 2.75-1.05 2.75-1.05.55 1.409.2 2.46.1 2.716.637.718 1.025 1.628 1.025 2.756 0 3.934-2.337 4.806-4.562 5.062.362.32.675.936.675 1.897 0 1.371-.013 2.473-.013 2.82 0 .268.188.589.688.486a10.039 10.039 0 0 0 4.932-3.74A10.447 10.447 0 0 0 22 12.253C22 6.588 17.525 2 12 2Z"
-            />
-          </svg>
-        </a>
-        <a
-          className="group -m-1 p-1"
-          aria-label="Follow on LinkedIn"
-          href="https://www.linkedin.com/in/radivoje-katanic/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
-          >
-            <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z" />
-          </svg>
-        </a>
-        <a
-          href="mailto:rkatanic@outlook.com"
-          className="group -m-1 p-1"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="size-6 fill-zinc-500 transition hover:fill-zinc-600 dark:fill-zinc-400 dark:hover:fill-zinc-300"
-          >
-            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-          </svg>
-        </a>
-      </div>
-    </main>
-
-    <section className="flex gap-4">
-      <div className="relative h-48 w-full">
-        <Image
-          width={330}
-          height={197}
-          src="/abstract-bg.jpg"
-          alt="abstract-background"
-          className="absolute h-full w-full opacity-50 grayscale"
+      <path
+        d="M99.9001 32.2035L85.7901 14.3835C85.2201 13.6935 84.5001 13.1035 83.6301 12.5935C82.7601 12.0935 81.7301 11.6735 80.5401 11.3535L49.6601 3.20347C47.6701 2.69347 45.5901 2.5435 43.4501 2.7335C41.3001 2.9235 39.4501 3.47351 37.9001 4.36351L20.2901 14.5335C11.6001 19.5535 5.98005 25.6835 3.43005 32.9235C2.82005 34.6635 2.45006 36.3835 2.31006 38.0835V40.8635C2.51006 43.7435 3.42008 46.5635 5.02008 49.3035C5.86008 50.7235 6.88008 52.1335 8.08008 53.5135C8.33008 53.8035 8.6101 54.0735 8.9201 54.3235C9.2401 54.5735 9.61005 54.8235 10.05 55.0835C10.49 55.3335 10.92 55.5435 11.36 55.7235C11.8 55.9135 12.2601 56.0735 12.7601 56.2135C18.3001 57.8235 24 58.8535 29.86 59.3135C34.79 59.6935 39.8201 59.6735 44.9801 59.2335C46.1201 59.1435 47.2701 59.0335 48.4201 58.8935C60.9701 57.4235 71.5801 54.1835 80.2801 49.1635L92.0901 42.3435L97.8801 39.0035C99.4301 38.1035 100.38 37.0335 100.71 35.7935C100.8 35.4435 100.85 35.1035 100.85 34.7635C100.85 33.8935 100.53 33.0435 99.9001 32.2035ZM50.6801 35.9435L35.7801 44.5535C34.7201 45.1635 33.48 45.4635 32.05 45.4635C30.62 45.4635 29.37 45.1535 28.3 44.5435C27.24 43.9235 26.7101 43.2035 26.7001 42.3735C26.7001 41.5535 27.2201 40.8335 28.2801 40.2235L43.1801 31.6235C44.2401 31.0135 45.4801 30.7035 46.9201 30.7135C48.3501 30.7135 49.6001 31.0235 50.6601 31.6335C51.7201 32.2435 52.2501 32.9635 52.2601 33.7935C52.2601 34.6235 51.7401 35.3435 50.6801 35.9435ZM65.5801 27.3435C65.5801 27.3435 65.5301 27.3735 65.5001 27.3835C64.4701 27.9635 63.2401 28.2535 61.8501 28.2535C60.4601 28.2535 59.17 27.9435 58.11 27.3335C57.05 26.7135 56.5101 25.9935 56.5101 25.1735C56.5101 25.1135 56.5101 25.0635 56.5201 25.0135C56.5701 24.2535 57.1001 23.5835 58.0901 23.0135C59.1401 22.4035 60.3901 22.1035 61.8201 22.1035C63.2501 22.1035 64.5001 22.4135 65.5601 23.0335C66.6201 23.6435 67.1601 24.3635 67.1601 25.1935C67.1601 26.0235 66.6401 26.7335 65.5801 27.3435Z"
+        stroke="currentColor"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M52.2602 33.7936C52.2602 34.6236 51.7402 35.3437 50.6802 35.9437L35.7802 44.5536C34.7202 45.1636 33.4802 45.4636 32.0502 45.4636C30.6202 45.4636 29.3702 45.1536 28.3002 44.5436C27.2402 43.9236 26.7102 43.2036 26.7002 42.3736C26.7002 41.5536 27.2202 40.8336 28.2802 40.2236L43.1802 31.6236C44.2402 31.0136 45.4802 30.7036 46.9202 30.7136C48.3502 30.7136 49.6002 31.0237 50.6602 31.6337C51.7202 32.2437 52.2502 32.9636 52.2602 33.7936Z"
+        stroke="currentColor"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M67.16 25.1935C67.16 26.0135 66.64 26.7335 65.58 27.3435C65.55 27.3635 65.53 27.3735 65.5 27.3835C64.47 27.9635 63.24 28.2535 61.85 28.2535C60.46 28.2535 59.17 27.9435 58.11 27.3335C57.05 26.7135 56.51 25.9935 56.51 25.1735C56.51 25.1135 56.51 25.0635 56.52 25.0135C56.57 24.2535 57.1 23.5835 58.09 23.0135C59.14 22.4035 60.39 22.1035 61.82 22.1035C63.25 22.1035 64.5 22.4135 65.56 23.0335C66.62 23.6435 67.16 24.3635 67.16 25.1935Z"
+        stroke="currentColor"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M100.85 34.7634V54.7634C100.85 55.1034 100.8 55.4435 100.71 55.7935C100.38 57.0335 99.43 58.1035 97.88 59.0035L80.28 69.1635C71.58 74.1835 60.97 77.4234 48.42 78.8934C35.88 80.3634 23.99 79.4734 12.76 76.2134C12.26 76.0734 11.8 75.9134 11.36 75.7234C10.92 75.5434 10.49 75.3334 10.05 75.0834C9.60999 74.8234 9.24004 74.5734 8.92004 74.3234C8.61004 74.0734 8.33002 73.8034 8.08002 73.5134C4.20002 69.0534 2.26 64.4034 2.25 59.5834V59.5535L2.29999 40.8635C2.50999 43.7435 3.42002 46.5635 5.02002 49.3035C5.86002 50.7235 6.88002 52.1334 8.08002 53.5134C8.33002 53.8034 8.61004 54.0734 8.92004 54.3234C9.24004 54.5734 9.60999 54.8234 10.05 55.0834C10.49 55.3334 10.92 55.5434 11.36 55.7234C11.8 55.9134 12.26 56.0734 12.76 56.2134C18.3 57.8234 24 58.8535 29.86 59.3135C34.79 59.6935 39.82 59.6735 44.98 59.2335C46.12 59.1435 47.27 59.0334 48.42 58.8934C60.97 57.4234 71.58 54.1835 80.28 49.1635L92.09 42.3434L97.88 39.0035C99.43 38.1035 100.38 37.0335 100.71 35.7935C100.8 35.4435 100.85 35.1034 100.85 34.7634Z"
+        stroke="currentColor"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M100.85 55.0035V54.7634"
+        stroke="currentColor"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M100.85 34.7635V33.9036"
+        stroke="currentColor"
+        strokeLinejoin="round"
+      />
+    </svg>
+    <h1 className="flex h-5 items-center justify-center gap-4 text-base font-medium">
+      <span>503</span>
+      <div
+        data-orientation="vertical"
+        role="none"
+        data-slot="separator"
+        className="bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-px"
+      />
+      <span>This site is under construction... </span>
+    </h1>
+    <p className="text-muted-foreground text-center">
+      Thank for visiting! Please check back soon — exciting updates are on the
+      way.
+    </p>
+    <a
+      href="mailto:hello@radivojekatanic.com"
+      className="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex h-8 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md px-3 text-sm font-medium outline-none transition-all focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 has-[>svg]:px-2.5 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+    >
+      Get In Touch
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        className="size-4"
+      >
+        <path
+          fillRule="evenodd"
+          d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+          clipRule="evenodd"
         />
-        <div className="h-full w-full bg-teal-600 opacity-50"></div>
-        <div className="absolute bottom-0 z-10 flex flex-col gap-2 p-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="mb-4 size-6 text-zinc-200"
-          >
-            <path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
-            <path d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
-          </svg>
-
-          <h2 className="text-lg font-medium">IT Consulting</h2>
-          <p className="dark:!text-zinc-200">
-            I can help you decide best technical practices for your product.
-          </p>
-        </div>
-      </div>
-      <div className="relative h-48 w-full">
-        <Image
-          width={330}
-          height={197}
-          src="/abstract-bg.jpg"
-          alt="abstract-background"
-          className="absolute h-full w-full rotate-180 opacity-50 grayscale"
-        />
-        <div className="h-full w-full bg-purple-700 opacity-50"></div>
-
-        <div className="absolute bottom-0 z-10 flex flex-col gap-2 p-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="mb-4 size-6 text-zinc-200"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-4.131A15.838 15.838 0 0 1 6.382 15H2.25a.75.75 0 0 1-.75-.75 6.75 6.75 0 0 1 7.815-6.666ZM15 6.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z"
-              clipRule="evenodd"
-            />
-            <path d="M5.26 17.242a.75.75 0 1 0-.897-1.203 5.243 5.243 0 0 0-2.05 5.022.75.75 0 0 0 .625.627 5.243 5.243 0 0 0 5.022-2.051.75.75 0 1 0-1.202-.897 3.744 3.744 0 0 1-3.008 1.51c0-1.23.592-2.323 1.51-3.008Z" />
-          </svg>
-
-          <h2 className="text-lg font-medium">Web Development</h2>
-          <p className="!text-zinc-200 dark:!text-zinc-200">
-            I can help you implement and build your new product.
-          </p>
-        </div>
-      </div>
-      <div className="relative h-48 w-full">
-        <Image
-          width={330}
-          height={197}
-          src="/abstract-bg.jpg"
-          alt="abstract-background"
-          className="absolute h-full w-full opacity-50 grayscale"
-        />
-        <div className="h-full w-full bg-indigo-600 opacity-50"></div>
-        <div className="absolute bottom-0 z-10 flex flex-col gap-2 p-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="mb-4 size-6 text-zinc-200"
-          >
-            <path
-              fillRule="evenodd"
-              d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z"
-              clipRule="evenodd"
-            />
-          </svg>
-
-          <h2 className="text-lg font-medium">Technical Support</h2>
-          <p className="!text-zinc-200">
-            I can help you improve or maintain your existing product.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section className="grid grid-cols-2">
-      <section className="order-2 col-span-1 flex flex-col gap-4 pl-24">
-        <Card
-          title="Experience"
-          icon={
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-              className="h-6 w-6 flex-none"
-            >
-              <path
-                d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-                className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-              />
-              <path
-                d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
-                className="stroke-zinc-400 dark:stroke-zinc-500"
-              />
-            </svg>
-          }
-        >
-          <div className="mt-6 space-y-4">
-            <CardItem
-              title="Software Developer"
-              description="ProductDock"
-              from="2020"
-              to="Present"
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="size-6 text-zinc-400 dark:text-zinc-300"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              }
-            />
-          </div>
-        </Card>
-        <Card
-          title="Education"
-          icon={
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-              />
-            </svg>
-          }
-        >
-          <div className="mt-6 space-y-4">
-            <CardItem
-              title="IT Engineer"
-              description="Slobomir P University"
-              from="2015"
-              to="2019"
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="size-6 text-zinc-400 dark:text-zinc-300"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              }
-            />
-            <CardItem
-              title="Computer Technician"
-              description="Electro-technical High School"
-              from="2011"
-              to="2015"
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="size-6 text-zinc-400 dark:text-zinc-300"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              }
-            />
-          </div>
-        </Card>
-
-        <Card
-          title="Want to know more?"
-          icon={
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-              className="h-6 w-6 flex-none"
-            >
-              <path
-                d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-                className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-              />
-              <path
-                d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-                className="stroke-zinc-400 dark:stroke-zinc-500"
-              />
-            </svg>
-          }
-        >
-          <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-            Have a question, or just want to say hello? Feel free to reach me
-            out via email.
-          </p>
-          <a
-            className="active:text-zinc-white/60 group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-zinc-800 px-3 py-2 text-sm font-medium text-white outline-offset-2 transition hover:bg-zinc-900 active:bg-zinc-900 active:transition-none dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70"
-            href="mailto:rkatanic@outlook.com"
-          >
-            Contact me
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="size-3"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </a>
-        </Card>
-      </section>
-
-      <div className="prose prose-zinc col-span-1 dark:prose-invert prose-headings:font-inter prose-p:leading-7 prose-p:text-zinc-600 prose-ul:text-zinc-600 dark:prose-p:text-zinc-400 dark:prose-ul:text-zinc-400">
-        <h3>Work history</h3>
-        <ExpandableText>
-          <p>
-            In late February 2020, I joined a three-month rookie boot camp
-            program at ProductDock, where I worked alongside other rookies to
-            create an internal employee management app. Upon completing the
-            program successfully, I got full-time job offer.
-          </p>
-          <p>
-            Since then, I have been working at ProductDock, where I am building
-            software solutions for various clients worldwide.
-          </p>
-          <p>
-            This role has allowed me to grow my expertise as a web developer.
-          </p>
-        </ExpandableText>
-
-        <h3>Technologies</h3>
-        <ExpandableText>
-          <p>
-            Mainly focused on frontend technologies, but I do work on backend
-            stuff too. Current tech stack I use is:
-          </p>
-          <ul>
-            <li>
-              <b>Languages -</b> HTML, CSS, JavaScript, Java
-            </li>
-            <li>
-              <b>Frameworks -</b> React, Next.js, Tailwind CSS, Spring Boot
-            </li>
-            <li>
-              <b>Databases -</b> Mongo, MySQL
-            </li>
-          </ul>
-          <p>
-            Lately I am mostly working with Next.js on frontend along with
-            Spring Boot on backend services, but I like trying out new
-            technologies, because tools come and go.
-          </p>
-        </ExpandableText>
-
-        <h3>Interests</h3>
-        <p className="">
-          Away from work, I enjoy doing sports or spending time outdoors. Also
-          interested in movies, technology, literature, architecture, and more.
-        </p>
-      </div>
-    </section>
-    <Footer />
-  </div>
+      </svg>
+    </a>
+  </section>
 );
 
 export default Home;

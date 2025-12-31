@@ -1,5 +1,6 @@
 import { Inter, Nunito } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
+import { GeistSans } from "geist/font/sans";
 
 import "../globals.css";
 
@@ -25,10 +26,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${font.className} ${interFont.variable}`}
+      className={`${GeistSans.className} [font-feature-settings:"ss02"]`}
       suppressHydrationWarning
     >
-      <body className="bg-white antialiased dark:bg-zinc-900">
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
