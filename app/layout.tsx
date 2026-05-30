@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "./_components/ThemeProvider";
-import { GeistSans } from "geist/font/sans";
+import { ThemeProvider } from "../components/ThemeProvider";
 
 import "../globals.css";
 

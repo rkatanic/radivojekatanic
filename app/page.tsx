@@ -1,8 +1,3 @@
-import Image from "next/image";
-import { Card, CardItem } from "./_components/Card";
-import ExpandableText from "./_components/ExpandableText";
-import Footer from "./_components/Footer";
-
 const GITHUB_URL = "https://github.com/rkatanic";
 const INSTAGRAM_URL = "https://www.instagram.com/radivojekatanic";
 const LINKEDIN_URL = "https://www.linkedin.com/in/radivoje-katanic";
