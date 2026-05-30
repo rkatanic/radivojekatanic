@@ -1,10 +1,10 @@
-import { Inter, Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
 import { ThemeProvider } from "./_components/ThemeProvider";
 import { GeistSans } from "geist/font/sans";
 
 import "../globals.css";
 
-const font = Nunito({
+const font = Inter({
   subsets: ["latin"],
 });
 
@@ -13,22 +13,13 @@ export const metadata = {
   description: "Software Developer",
 };
 
-const interFont = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${GeistSans.className} [font-feature-settings:"ss02"]`}
-      suppressHydrationWarning
-    >
+    <html lang="en" className={`${font.className}`} suppressHydrationWarning>
       <body>
         <ThemeProvider
           attribute="class"
